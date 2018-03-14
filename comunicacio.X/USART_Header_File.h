@@ -18,6 +18,8 @@ void USART_SendString(const char *);
 void MSdelay(unsigned int val);
 char USART_ReceiveChar();
 char recieveUSART();
+ void USART_ReceiveString(char *Input, unsigned char length);
+
 //void USART_ReceiveString(char *Input, unsigned char length);
 
 

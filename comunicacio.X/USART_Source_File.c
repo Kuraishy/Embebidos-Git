@@ -3,6 +3,7 @@
 #include "USART_Header_File.h"
 #include "config.h"
 #include <xc.h>
+#include <string.h>
 #define _XTAL_FREQ 8000000
  
 /*****************************USART Initialization*******************************/
@@ -14,7 +15,8 @@ void USART_Init(long baud_rate)
     temp=Baud_value;     
     SPBRG=(int)temp;                /*baud rate=9600, SPBRG = (F_CPU /(64*9600))-1*/
     TXSTA=0x20;                     /*Transmit Enable(TX) enable*/ 
-    RCSTA=0x90;                     /*Receive Enable(RX) enable and serial port enable */
+    //RCSTA=0x90;                     /*Receive Enable(RX) enable and serial port enable */
+    RCSTA=0x94;
 }
 /******************TRANSMIT FUNCTION*****************************************/ 
 void USART_TransmitChar(char out)
@@ -52,68 +54,58 @@ void MSdelay(unsigned int val)
  }
 ///////////////////////
 
-/*
 void USART_ReceiveString(char *Input, unsigned char length)
 {
-    char temp[5];
-   for(int i=0;i<length;i++){
-   temp[i]=0;
-   RCREG=0;
-   while(RCIF==0);//wait for receive interrupt flag
-     temp[i]=RCREG;
-            __delay_us(150);
-          
-         }
-      
-    for(int x=0;x<length-1;x++){
-        Input[x]=temp[x];
-    }
-      //Input++;
-  }
-  */
-
-char recieveUSART()
-{
-    while(RCIF == 0); /*wait for receive interrupt flag*/
-    if(RCSTAbits.OERR)
-    {           
-        CREN = 0;
-        NOP();
-        CREN=1;
-    }
-    return(RCREG);  /*received in RCREG register and return to main program */
+   
+  for(int i=0;i<=length-2;i++) {
+      Input[i]=0;         
+      RCREG=0;
+      while(RCIF==0);             
+//      Char.IsLetter(RCREG);
+      char temp=RCREG;
+          if(temp>=97 && temp <=122){
+                  Input[i] =temp;
+         }else
+          Input[i+1]=0;
+        }  
 }
 
-/*void USART_ReceiveString(char *Input, unsigned char length)
+/*TOLERANCIA RECIBE 4 y puede RECIBIR 3 sin perderse
+void USART_ReceiveString(char *Input, unsigned char length)
 {
    
-  for(int i=0;i<length;i++) {
+  for(int i=0;i<=length-2;i++) {
       Input[i]=0;
-      while(RCIF==0);                 /*wait for receive interrupt flag*/ 
-      /*
-        if(RCREG!='\0'){
-              Input[i] =RCREG;
-            __delay_us(50);
-         }
+                
       RCREG=0;
+      while(RCIF==0);             
+//      Char.IsLetter(RCREG);
+      if(RCREG>=97 && RCREG <=122){
+              Input[i] =RCREG;
+      }else
+          Input[i]=0;
   }
+  //Input[length-2]=0;
   
 }
 */
 
-/*RECIVE BIEN PALABRAS AL INICIO Y LUEGO BASURA, TESTFKODKFOSDFK
- void USART_ReceiveString(char *Input, unsigned char length)
+
+/*ESTE SIRVEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+void USART_ReceiveString(char *Input, unsigned char length)
 {
- 
-   for(int i=0;i<length;i++){
-   Input[i]=0;
-   RCREG=0;
-   while(RCIF==0);/*wait for receive interrupt flag*/ 
-    /* Input[i]=RCREG;
-            __delay_us(150);
-          
-         }
+   
+  for(int i=0;i<=length-2;i++) {
+      Input[i]=0;
+                
+      RCREG=0;
+      while(RCIF==0);                 //wait for receive interrupt flag
       
-      //Input++;
+
+              Input[i] =RCREG;
+
   }
-  */
+  Input[length-2]=0;
+  
+}
+*/
