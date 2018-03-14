@@ -5,7 +5,7 @@
 #define	CONFIG_H
 
 //#include <PIC18f4550.h>
-#include "globalDefinitions.h"// include processor files - each processor file is guarded.  
+//#include "globalDefinitions.h"// include processor files - each processor file is guarded.  
 
 void configBoard(void);
 void wait_in_ms(int time_in_ms);

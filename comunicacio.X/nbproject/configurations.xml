@@ -5,13 +5,10 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>config.h</itemPath>
-      <itemPath>Configuration_Header_File.h</itemPath>
       <itemPath>definicionPines.h</itemPath>
       <itemPath>funciones.h</itemPath>
-      <itemPath>globalDefinitions.h</itemPath>
       <itemPath>lcd.h</itemPath>
       <itemPath>USART_Header_File.h</itemPath>
-      <itemPath>usart.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -22,7 +19,6 @@
                    projectFiles="true">
       <itemPath>config.c</itemPath>
       <itemPath>funciones.c</itemPath>
-      <itemPath>HC-05_Module.c</itemPath>
       <itemPath>lcd.c</itemPath>
       <itemPath>USART_Source_File.c</itemPath>
       <itemPath>comuni.c</itemPath>

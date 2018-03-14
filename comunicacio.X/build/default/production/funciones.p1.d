@@ -3,5 +3,4 @@
  funciones.c  \
 lcd.h  \
 config.h  \
-funciones.h  \
-globalDefinitions.h 
+funciones.h 

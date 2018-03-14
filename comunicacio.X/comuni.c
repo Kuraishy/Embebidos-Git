@@ -12,7 +12,7 @@
 #include<usart.h>
 
 #include <pic18f4550.h>
-#include "Configuration_Header_File.h"
+//#include "Configuration_Header_File.h"
 #include "USART_Header_File.h"
 #include <stdio.h>
 #include <stdlib.h>

@@ -45,7 +45,7 @@ intcode CODE 0 8 8 6 1
 smallconst SMALLCONST 0 800 800 6 1
 dataCOMRAM COMRAM 1 4C 4C 1 1
 bssCOMRAM COMRAM 1 47 47 5 1
-$C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
+$C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 E E 4 1
 reset_vec CODE 0 0 0 4 1
@@ -93,16 +93,16 @@ MEDIUMCONST 13AD-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\comunicacio.X.production.obj
-8 intcode CODE >54:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-8 intcode CODE >28:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\funciones.c
-E82 intcode_body CODE >28:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\funciones.c
-ECC intcode_body CODE >30:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\funciones.c
-ECE intcode_body CODE >32:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\funciones.c
-ED0 intcode_body CODE >35:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\funciones.c
-1266 text22 CODE >49:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-1266 text22 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-1270 text22 CODE >53:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-128A text22 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
+8 intcode CODE >54:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+8 intcode CODE >28:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\funciones.c
+E82 intcode_body CODE >28:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\funciones.c
+ECC intcode_body CODE >30:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\funciones.c
+ECE intcode_body CODE >32:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\funciones.c
+ED0 intcode_body CODE >35:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\funciones.c
+1266 text22 CODE >49:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+1266 text22 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+1270 text22 CODE >53:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+128A text22 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
 D32 text21 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
 D32 text21 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
 D42 text21 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
@@ -239,66 +239,66 @@ A78 text17 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ft
 A7E text17 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
 A84 text17 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
 A94 text17 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-FAC text16 CODE >10:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-FAC text16 CODE >13:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-FAE text16 CODE >14:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-FB0 text16 CODE >15:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-1008 text16 CODE >16:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-101C text16 CODE >17:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-1020 text16 CODE >19:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-1024 text16 CODE >20:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F1C text15 CODE >57:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F1C text15 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F26 text15 CODE >61:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F36 text15 CODE >62:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F3A text15 CODE >63:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F3E text15 CODE >65:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F42 text15 CODE >66:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F4E text15 CODE >67:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F5E text15 CODE >68:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F60 text15 CODE >69:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-F7C text15 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-13A0 text14 CODE >22:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-13A2 text14 CODE >24:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-13A6 text14 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-13AA text14 CODE >27:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-1326 text13 CODE >40:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-1326 text13 CODE >42:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-1328 text13 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-1336 text13 CODE >45:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-133A text13 CODE >42:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-133A text13 CODE >46:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\USART_Source_File.c
-109E text12 CODE >11:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-109E text12 CODE >15:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10A0 text12 CODE >16:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10A2 text12 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10A4 text12 CODE >26:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10A6 text12 CODE >27:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10A8 text12 CODE >29:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10AA text12 CODE >30:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10B2 text12 CODE >31:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10B4 text12 CODE >33:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10BC text12 CODE >36:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10C0 text12 CODE >37:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10C4 text12 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10C8 text12 CODE >47:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10CA text12 CODE >51:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10CC text12 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10D4 text12 CODE >53:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10DC text12 CODE >54:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10E4 text12 CODE >55:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10E6 text12 CODE >56:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10EE text12 CODE >57:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10F0 text12 CODE >58:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10F2 text12 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10F4 text12 CODE >64:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10F6 text12 CODE >66:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10F8 text12 CODE >67:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-10FA text12 CODE >69:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-1100 text12 CODE >70:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-1102 text12 CODE >74:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-1106 text12 CODE >75:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-110A text12 CODE >77:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
+FAC text16 CODE >10:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+FAC text16 CODE >13:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+FAE text16 CODE >14:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+FB0 text16 CODE >15:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+1008 text16 CODE >16:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+101C text16 CODE >17:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+1020 text16 CODE >19:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+1024 text16 CODE >20:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F1C text15 CODE >57:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F1C text15 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F26 text15 CODE >61:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F36 text15 CODE >62:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F3A text15 CODE >63:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F3E text15 CODE >65:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F42 text15 CODE >66:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F4E text15 CODE >67:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F5E text15 CODE >68:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F60 text15 CODE >69:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+F7C text15 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+13A0 text14 CODE >22:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+13A2 text14 CODE >24:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+13A6 text14 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+13AA text14 CODE >27:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+1326 text13 CODE >40:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+1326 text13 CODE >42:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+1328 text13 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+1336 text13 CODE >45:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+133A text13 CODE >42:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+133A text13 CODE >46:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+109E text12 CODE >11:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+109E text12 CODE >15:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10A0 text12 CODE >16:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10A2 text12 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10A4 text12 CODE >26:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10A6 text12 CODE >27:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10A8 text12 CODE >29:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10AA text12 CODE >30:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10B2 text12 CODE >31:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10B4 text12 CODE >33:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10BC text12 CODE >36:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10C0 text12 CODE >37:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10C4 text12 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10C8 text12 CODE >47:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10CA text12 CODE >51:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10CC text12 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10D4 text12 CODE >53:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10DC text12 CODE >54:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10E4 text12 CODE >55:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10E6 text12 CODE >56:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10EE text12 CODE >57:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10F0 text12 CODE >58:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10F2 text12 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10F4 text12 CODE >64:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10F6 text12 CODE >66:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10F8 text12 CODE >67:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+10FA text12 CODE >69:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+1100 text12 CODE >70:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+1102 text12 CODE >74:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+1106 text12 CODE >75:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+110A text12 CODE >77:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
 122E text11 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
 122E text11 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
 1232 text11 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
@@ -306,98 +306,98 @@ F7C text15 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos\comunic
 123E text11 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
 1242 text11 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
 1242 text11 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
-C62 text10 CODE >79:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-C62 text10 CODE >80:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-C6C text10 CODE >81:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-C74 text10 CODE >82:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-C7C text10 CODE >84:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-C80 text10 CODE >87:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-CDE text10 CODE >89:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-CE0 text10 CODE >91:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-CE2 text10 CODE >92:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-CE6 text10 CODE >93:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-CE8 text10 CODE >94:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-CEC text10 CODE >95:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-CF0 text10 CODE >96:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-CFE text10 CODE >97:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-D02 text10 CODE >98:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-D10 text10 CODE >99:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-D18 text10 CODE >100:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-D1A text10 CODE >101:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-D1A text10 CODE >102:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-D22 text10 CODE >91:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-D22 text10 CODE >103:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\config.c
-134A text9 CODE >270:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-134A text9 CODE >271:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-134C text9 CODE >272:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1358 text9 CODE >273:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-135A text9 CODE >274:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1366 text9 CODE >275:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1178 text8 CODE >277:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1178 text8 CODE >278:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-117A text8 CODE >280:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-11B2 text8 CODE >281:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-11B6 text8 CODE >282:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-11DC text8 CODE >283:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-11E0 text8 CODE >284:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B8C text7 CODE >224:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B8C text7 CODE >225:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B8E text7 CODE >226:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B90 text7 CODE >227:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B92 text7 CODE >228:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B94 text7 CODE >229:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B96 text7 CODE >230:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B98 text7 CODE >231:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B9A text7 CODE >233:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B9C text7 CODE >234:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-B9E text7 CODE >235:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BA0 text7 CODE >236:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BA2 text7 CODE >237:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BA4 text7 CODE >238:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BA6 text7 CODE >239:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BA8 text7 CODE >241:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BB4 text7 CODE >242:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BB8 text7 CODE >243:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BBC text7 CODE >244:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BC8 text7 CODE >246:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BCC text7 CODE >247:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BD0 text7 CODE >248:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BDC text7 CODE >250:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BE0 text7 CODE >251:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BE4 text7 CODE >252:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BF0 text7 CODE >254:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BF4 text7 CODE >255:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-BF8 text7 CODE >257:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-C06 text7 CODE >258:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-C12 text7 CODE >260:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-C20 text7 CODE >261:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-C2C text7 CODE >263:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-C3A text7 CODE >264:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-C46 text7 CODE >266:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-C54 text7 CODE >267:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-C60 text7 CODE >268:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1384 text6 CODE >303:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1384 text6 CODE >304:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1392 text6 CODE >305:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-139E text6 CODE >306:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1368 text5 CODE >308:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1368 text5 CODE >309:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1376 text5 CODE >310:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1382 text5 CODE >311:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-110C text4 CODE >286:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-110C text4 CODE >287:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-110E text4 CODE >289:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1146 text4 CODE >290:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-114A text4 CODE >291:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1170 text4 CODE >292:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1174 text4 CODE >293:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-1176 text4 CODE >294:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-129C text3 CODE >296:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-129C text3 CODE >297:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-129E text3 CODE >298:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-12B6 text3 CODE >299:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-12BC text3 CODE >297:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
-12BC text3 CODE >300:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\lcd.c
+C62 text10 CODE >79:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+C62 text10 CODE >80:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+C6C text10 CODE >81:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+C74 text10 CODE >82:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+C7C text10 CODE >84:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+C80 text10 CODE >87:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+CDE text10 CODE >89:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+CE0 text10 CODE >91:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+CE2 text10 CODE >92:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+CE6 text10 CODE >93:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+CE8 text10 CODE >94:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+CEC text10 CODE >95:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+CF0 text10 CODE >96:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+CFE text10 CODE >97:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+D02 text10 CODE >98:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+D10 text10 CODE >99:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+D18 text10 CODE >100:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+D1A text10 CODE >101:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+D1A text10 CODE >102:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+D22 text10 CODE >91:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+D22 text10 CODE >103:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
+134A text9 CODE >270:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+134A text9 CODE >271:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+134C text9 CODE >272:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1358 text9 CODE >273:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+135A text9 CODE >274:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1366 text9 CODE >275:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1178 text8 CODE >277:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1178 text8 CODE >278:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+117A text8 CODE >280:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+11B2 text8 CODE >281:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+11B6 text8 CODE >282:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+11DC text8 CODE >283:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+11E0 text8 CODE >284:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B8C text7 CODE >224:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B8C text7 CODE >225:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B8E text7 CODE >226:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B90 text7 CODE >227:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B92 text7 CODE >228:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B94 text7 CODE >229:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B96 text7 CODE >230:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B98 text7 CODE >231:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B9A text7 CODE >233:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B9C text7 CODE >234:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+B9E text7 CODE >235:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BA0 text7 CODE >236:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BA2 text7 CODE >237:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BA4 text7 CODE >238:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BA6 text7 CODE >239:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BA8 text7 CODE >241:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BB4 text7 CODE >242:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BB8 text7 CODE >243:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BBC text7 CODE >244:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BC8 text7 CODE >246:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BCC text7 CODE >247:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BD0 text7 CODE >248:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BDC text7 CODE >250:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BE0 text7 CODE >251:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BE4 text7 CODE >252:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BF0 text7 CODE >254:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BF4 text7 CODE >255:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+BF8 text7 CODE >257:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+C06 text7 CODE >258:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+C12 text7 CODE >260:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+C20 text7 CODE >261:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+C2C text7 CODE >263:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+C3A text7 CODE >264:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+C46 text7 CODE >266:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+C54 text7 CODE >267:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+C60 text7 CODE >268:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1384 text6 CODE >303:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1384 text6 CODE >304:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1392 text6 CODE >305:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+139E text6 CODE >306:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1368 text5 CODE >308:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1368 text5 CODE >309:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1376 text5 CODE >310:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1382 text5 CODE >311:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+110C text4 CODE >286:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+110C text4 CODE >287:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+110E text4 CODE >289:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1146 text4 CODE >290:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+114A text4 CODE >291:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1170 text4 CODE >292:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1174 text4 CODE >293:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+1176 text4 CODE >294:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+129C text3 CODE >296:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+129C text3 CODE >297:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+129E text3 CODE >298:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+12B6 text3 CODE >299:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+12BC text3 CODE >297:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
+12BC text3 CODE >300:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
 12FA text2 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
 12FA text2 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
 1302 text2 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
@@ -410,52 +410,52 @@ C60 text7 CODE >268:C:\Users\Administrador\OneDrive\universida\Embebidos\comunic
 11EC text1 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcmp.c
 11EC text1 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcmp.c
 1222 text1 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcmp.c
-DE0 text0 CODE >33:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-DE0 text0 CODE >35:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-DE4 text0 CODE >39:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-DE8 text0 CODE >40:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-DEC text0 CODE >41:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-DF0 text0 CODE >42:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E04 text0 CODE >43:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E10 text0 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E10 text0 CODE >45:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E14 text0 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E24 text0 CODE >54:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E30 text0 CODE >55:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E34 text0 CODE >56:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E42 text0 CODE >57:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E5E text0 CODE >58:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E60 text0 CODE >59:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E62 text0 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E62 text0 CODE >61:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E64 text0 CODE >62:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E64 text0 CODE >63:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-E80 text0 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos\comunicacio.X\comuni.c
-12CC cinit CODE >1889:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12CC cinit CODE >1891:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12CC cinit CODE >1894:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12CC cinit CODE >1929:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12CE cinit CODE >1930:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12D0 cinit CODE >1931:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12D2 cinit CODE >1932:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12D4 cinit CODE >1933:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12D6 cinit CODE >1934:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12D8 cinit CODE >1935:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12DA cinit CODE >1936:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12DE cinit CODE >1940:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12E0 cinit CODE >1941:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12E2 cinit CODE >1942:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12E4 cinit CODE >1943:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12E6 cinit CODE >1944:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12E8 cinit CODE >1950:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12E8 cinit CODE >1952:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12EA cinit CODE >1953:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12EC cinit CODE >1955:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12EE cinit CODE >1956:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12F0 cinit CODE >1957:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12F2 cinit CODE >1958:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12F4 cinit CODE >1959:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
-12F6 cinit CODE >1960:C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.
+DE0 text0 CODE >33:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+DE0 text0 CODE >35:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+DE4 text0 CODE >39:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+DE8 text0 CODE >40:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+DEC text0 CODE >41:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+DF0 text0 CODE >42:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E04 text0 CODE >43:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E10 text0 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E10 text0 CODE >45:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E14 text0 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E24 text0 CODE >54:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E30 text0 CODE >55:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E34 text0 CODE >56:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E42 text0 CODE >57:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E5E text0 CODE >58:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E60 text0 CODE >59:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E62 text0 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E62 text0 CODE >61:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E64 text0 CODE >62:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E64 text0 CODE >63:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+E80 text0 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+12CC cinit CODE >1889:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12CC cinit CODE >1891:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12CC cinit CODE >1894:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12CC cinit CODE >1929:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12CE cinit CODE >1930:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12D0 cinit CODE >1931:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12D2 cinit CODE >1932:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12D4 cinit CODE >1933:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12D6 cinit CODE >1934:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12D8 cinit CODE >1935:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12DA cinit CODE >1936:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12DE cinit CODE >1940:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12E0 cinit CODE >1941:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12E2 cinit CODE >1942:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12E4 cinit CODE >1943:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12E6 cinit CODE >1944:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12E8 cinit CODE >1950:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12E8 cinit CODE >1952:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12EA cinit CODE >1953:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12EC cinit CODE >1955:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12EE cinit CODE >1956:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12F0 cinit CODE >1957:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12F2 cinit CODE >1958:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12F4 cinit CODE >1959:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
+12F6 cinit CODE >1960:C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -475,20 +475,20 @@ __Hspace_2 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __end_of_USART_ReceiveString FAC 0 CODE 0 text15 dist/default/production\comunicacio.X.production.obj
 ___ftdiv@exp 32 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\comunicacio.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
 ___awtoft@sign 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\comunicacio.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\comunicacio.X.production.obj
 _RCIF 7CF5 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 _TXIF 7CF4 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
+___sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
 _main DE0 0 CODE 0 text0 dist/default/production\comunicacio.X.production.obj
 btemp 4D 0 COMRAM 1 temp dist/default/production\comunicacio.X.production.obj
 _lcd_origen 1368 0 CODE 0 text5 dist/default/production\comunicacio.X.production.obj
 ___ftadd@f1 34 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 ___ftadd@f2 37 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
-start E 0 CODE 0 init C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
+start E 0 CODE 0 init C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
 wait_in_ms@time_in_ms 43 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 __size_of___ftadd 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __size_of___ftdiv 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
@@ -512,11 +512,11 @@ __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\comunicacio.X.product
 __end_of_lcd_orden 11E2 0 CODE 0 text8 dist/default/production\comunicacio.X.production.obj
 __end_of_lcd_pulso 1368 0 CODE 0 text9 dist/default/production\comunicacio.X.production.obj
 __end_of_lcd_texto 12CC 0 CODE 0 text3 dist/default/production\comunicacio.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
-intlevel0 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
-intlevel1 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
-intlevel2 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
-intlevel3 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
+__accesstop 60 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
+intlevel0 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
+intlevel1 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
+intlevel2 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
+intlevel3 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
 __size_of_lcd_orden 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __size_of_lcd_pulso 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\comunicacio.X.production.obj
@@ -535,8 +535,8 @@ _ADCint 8 0 CODE 0 intcode dist/default/production\comunicacio.X.production.obj
 _ADRESH FC4 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 _ADRESL FC3 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __end_of_lcd_origen 1384 0 CODE 0 text5 dist/default/production\comunicacio.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
 __size_of___altoft 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\comunicacio.X.production.obj
 __size_of___awtoft 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
@@ -616,7 +616,7 @@ __Htext9 0 0 ABS 0 text9 dist/default/production\comunicacio.X.production.obj
 USART_SendString@out 14 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\comunicacio.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\comunicacio.X.production.obj
-__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\comunicacio.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\comunicacio.X.production.obj
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\comunicacio.X.production.obj
@@ -757,8 +757,8 @@ _strcmp 11E2 0 CODE 0 text1 dist/default/production\comunicacio.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\comunicacio.X.production.obj
 USART_ReceiveString@Input 13 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 __end_of_lcd_caracter 1178 0 CODE 0 text4 dist/default/production\comunicacio.X.production.obj
-stackhi 7FF 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
-stacklo 76 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
+stackhi 7FF 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
+stacklo 76 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\comunicacio.X.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\comunicacio.X.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\comunicacio.X.production.obj
@@ -816,7 +816,7 @@ __Ltext20 0 0 ABS 0 text20 dist/default/production\comunicacio.X.production.obj
 __Ltext21 0 0 ABS 0 text21 dist/default/production\comunicacio.X.production.obj
 __Ltext22 0 0 ABS 0 text22 dist/default/production\comunicacio.X.production.obj
 __size_of_lcd_iniciar 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Users\ADMINI~1\AppData\Local\Temp\sb2o.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\ADMINI~1\AppData\Local\Temp\s3uk.obj
 __end_of_USART_SendString 134A 0 CODE 0 text13 dist/default/production\comunicacio.X.production.obj
 __Lpowerup E 0 CODE 0 powerup dist/default/production\comunicacio.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\comunicacio.X.production.obj
