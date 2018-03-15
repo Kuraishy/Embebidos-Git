@@ -4340,88 +4340,88 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 59: extern char * strrchr(const char *, int);
 [; ;string.h: 60: extern char * strrichr(const char *, int);
 [v $root$_main `(v ~T0 @X0 0 e ]
-"33 comuni.c
+"29 comuni.c
 [v _main `(v ~T0 @X0 1 ef ]
-"34
+"30
 {
-[; ;comuni.c: 33: void main()
-[; ;comuni.c: 34: {
+[; ;comuni.c: 29: void main()
+[; ;comuni.c: 30: {
 [e :U _main ]
 [f ]
-[; ;comuni.c: 35: OSCCON=0x72;
-"35
+[; ;comuni.c: 31: OSCCON=0x72;
+"31
 [e = _OSCCON -> -> 114 `i `uc ]
-[; ;comuni.c: 39: TRISC=0;
-"39
+[; ;comuni.c: 33: TRISC=0;
+"33
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;comuni.c: 40: configBoard();
-"40
+[; ;comuni.c: 34: configBoard();
+"34
 [e ( _configBoard ..  ]
-[; ;comuni.c: 41: lcd_iniciar();
-"41
+[; ;comuni.c: 35: lcd_iniciar();
+"35
 [e ( _lcd_iniciar ..  ]
-[; ;comuni.c: 42: USART_Init(9600);
-"42
+[; ;comuni.c: 36: USART_Init(9600);
+"36
 [e ( _USART_Init (1 -> -> 9600 `i `l ]
-[; ;comuni.c: 43: MSdelay(50);
-"43
+[; ;comuni.c: 37: MSdelay(50);
+"37
 [e ( _MSdelay (1 -> -> 50 `i `ui ]
-[; ;comuni.c: 44: while(1) {
-"44
+[; ;comuni.c: 38: while(1) {
+"38
 [e :U 405 ]
 {
-[; ;comuni.c: 45: lcd_origen();
-"45
+[; ;comuni.c: 39: lcd_origen();
+"39
 [e ( _lcd_origen ..  ]
-"48
+"40
 [v F4900 `uc ~T0 @X0 -> 12 `i s temp ]
-[; ;comuni.c: 48: static char temp[12];
-[; ;comuni.c: 53: USART_ReceiveString(&temp, sizeof temp );
-"53
+[; ;comuni.c: 40: static char temp[12];
+[; ;comuni.c: 41: USART_ReceiveString(&temp, sizeof temp );
+"41
 [e ( _USART_ReceiveString (2 , &U F4900 -> -> # F4900 `ui `uc ]
-[; ;comuni.c: 55: USART_SendString(temp);
-"55
+[; ;comuni.c: 42: USART_SendString(temp);
+"42
 [e ( _USART_SendString (1 -> &U F4900 `*Cuc ]
-[; ;comuni.c: 56: lcd_limpiar();
-"56
+[; ;comuni.c: 43: lcd_limpiar();
+"43
 [e ( _lcd_limpiar ..  ]
-[; ;comuni.c: 57: lcd_texto(temp);
-"57
+[; ;comuni.c: 44: lcd_texto(temp);
+"44
 [e ( _lcd_texto (1 &U F4900 ]
-[; ;comuni.c: 58: if(!strcmp("on",temp)){
-"58
+[; ;comuni.c: 45: if(!strcmp("on",temp)){
+"45
 [e $ ! ! != ( _strcmp (2 , :s 1C -> &U F4900 `*Cuc -> 0 `i 407  ]
 {
-[; ;comuni.c: 59: PORTCbits.RC2=1;
-"59
+[; ;comuni.c: 46: PORTCbits.RC2=1;
+"46
 [e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
-"60
+"47
 }
-[; ;comuni.c: 60: }
+[; ;comuni.c: 47: }
 [e $U 408  ]
-"61
+"48
 [e :U 407 ]
-[; ;comuni.c: 61: else{
+[; ;comuni.c: 48: else{
 {
-[; ;comuni.c: 62: PORTCbits.RC2=0;
-"62
+[; ;comuni.c: 49: PORTCbits.RC2=0;
+"49
 [e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
-"63
+"50
 }
 [e :U 408 ]
-[; ;comuni.c: 63: }
-[; ;comuni.c: 64: memset(temp, 0, sizeof temp);
-"64
+[; ;comuni.c: 50: }
+[; ;comuni.c: 51: memset(temp, 0, sizeof temp);
+"51
 [e ( _memset (3 , , -> &U F4900 `*v -> 0 `i -> # F4900 `ui ]
-"65
+"52
 }
 [e :U 404 ]
-"44
+"38
 [e $U 405  ]
 [e :U 406 ]
-[; ;comuni.c: 65: }
-[; ;comuni.c: 67: }
-"67
+[; ;comuni.c: 52: }
+[; ;comuni.c: 54: }
+"54
 [e :UE 403 ]
 }
 [a 1C 111 110 0 ]

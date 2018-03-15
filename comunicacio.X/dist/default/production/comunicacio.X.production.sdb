@@ -33,7 +33,7 @@
 [v _strcmp strcmp `(i  1 e 2 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"33 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+"29 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
 [v _main main `(v  1 e 1 0 ]
 "11 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\config.c
 [v _configBoard configBoard `(v  1 e 1 0 ]
@@ -345,12 +345,12 @@
 [v _TRISC7 TRISC7 `VEb  1 e 0 @31911 ]
 "10327
 [v _TXIF TXIF `VEb  1 e 0 @31988 ]
-"33 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+"29 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
 [v _main main `(v  1 e 1 0 ]
 {
-"48
+"40
 [v main@temp temp `[12]uc  1 s 12 temp ]
-"67
+"54
 } 0
 "33 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcmp.c
 [v _strcmp strcmp `(i  1 e 2 0 ]
@@ -455,14 +455,14 @@
 "58
 [v _USART_ReceiveString USART_ReceiveString `(v  1 e 1 0 ]
 {
-"68
+"65
 [v USART_ReceiveString@temp temp `uc  1 a 1 28 ]
-"62
+"61
 [v USART_ReceiveString@i i `i  1 a 2 26 ]
 "58
 [v USART_ReceiveString@Input Input `*.39uc  1 p 2 18 ]
 [v USART_ReceiveString@length length `uc  1 p 1 20 ]
-"80
+"75
 } 0
 "29
 [v _USART_ReceiveChar USART_ReceiveChar `(uc  1 e 1 0 ]

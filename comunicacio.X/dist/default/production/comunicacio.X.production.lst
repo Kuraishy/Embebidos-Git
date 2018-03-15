@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Wed Mar 14 20:33:25 2018
+                                                                                               Thu Mar 15 01:23:22 2018
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	18F4550
@@ -486,7 +486,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    472 ;;
    473 ;; *************** function _main *****************
    474 ;; Defined at:
-   475 ;;		line 33 in file "comuni.c"
+   475 ;;		line 29 in file "comuni.c"
    476 ;; Parameters:    Size  Location     Type
    477 ;;		None
    478 ;; Auto vars:     Size  Location     Type
@@ -529,23 +529,23 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    515  000E8C                     _main:
    516                           	opt stack 24
    517                           
-   518                           ;comuni.c: 35: OSCCON=0x72;
+   518                           ;comuni.c: 31: OSCCON=0x72;
    519                           
    520                           ;incstack = 0
    521  000E8C  0E72               	movlw	114
    522  000E8E  6ED3               	movwf	4051,c	;volatile
    523                           
-   524                           ;comuni.c: 39: TRISC=0;
+   524                           ;comuni.c: 33: TRISC=0;
    525  000E90  0E00               	movlw	0
    526  000E92  6E94               	movwf	3988,c	;volatile
    527                           
-   528                           ;comuni.c: 40: configBoard();
+   528                           ;comuni.c: 34: configBoard();
    529  000E94  EC5E  F008         	call	_configBoard	;wreg free
    530                           
-   531                           ;comuni.c: 41: lcd_iniciar();
+   531                           ;comuni.c: 35: lcd_iniciar();
    532  000E98  ECC9  F005         	call	_lcd_iniciar	;wreg free
    533                           
-   534                           ;comuni.c: 42: USART_Init(9600);
+   534                           ;comuni.c: 36: USART_Init(9600);
    535  000E9C  0E80               	movlw	128
    536  000E9E  0100               	movlb	0	; () banked
    537  000EA0  6F6B               	movwf	USART_Init@baud_rate& (0+255),b
@@ -557,18 +557,18 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    543  000EAC  6F6E               	movwf	(USART_Init@baud_rate+3)& (0+255),b
    544  000EAE  ECE5  F007         	call	_USART_Init	;wreg free
    545                           
-   546                           ;comuni.c: 43: MSdelay(50);
+   546                           ;comuni.c: 37: MSdelay(50);
    547  000EB2  0E00               	movlw	0
    548  000EB4  6E14               	movwf	MSdelay@val+1,c
    549  000EB6  0E32               	movlw	50
    550  000EB8  6E13               	movwf	MSdelay@val,c
    551  000EBA  EC42  F009         	call	_MSdelay	;wreg free
    552  000EBE                     
-   553                           ;comuni.c: 45: lcd_origen();
+   553                           ;comuni.c: 39: lcd_origen();
    554  000EBE  ECC4  F009         	call	_lcd_origen	;wreg free
    555                           
-   556                           ;comuni.c: 48: static char temp[12];
-   557                           ;comuni.c: 53: USART_ReceiveString(&temp, sizeof temp );
+   556                           ;comuni.c: 40: static char temp[12];
+   557                           ;comuni.c: 41: USART_ReceiveString(&temp, sizeof temp );
    558  000EC2  0E40               	movlw	low main@temp
    559  000EC4  6E13               	movwf	USART_ReceiveString@Input,c
    560  000EC6  0E00               	movlw	high main@temp
@@ -577,17 +577,17 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    563  000ECC  6E15               	movwf	USART_ReceiveString@length,c
    564  000ECE  ECF3  F006         	call	_USART_ReceiveString	;wreg free
    565                           
-   566                           ;comuni.c: 55: USART_SendString(temp);
+   566                           ;comuni.c: 42: USART_SendString(temp);
    567  000ED2  0E40               	movlw	low main@temp
    568  000ED4  6E14               	movwf	USART_SendString@out,c
    569  000ED6  0E00               	movlw	high main@temp
    570  000ED8  6E15               	movwf	USART_SendString@out+1,c
    571  000EDA  ECA3  F009         	call	_USART_SendString	;wreg free
    572                           
-   573                           ;comuni.c: 56: lcd_limpiar();
+   573                           ;comuni.c: 43: lcd_limpiar();
    574  000EDE  ECD2  F009         	call	_lcd_limpiar	;wreg free
    575                           
-   576                           ;comuni.c: 57: lcd_texto(temp);
+   576                           ;comuni.c: 44: lcd_texto(temp);
    577  000EE2  0E40               	movlw	low main@temp
    578  000EE4  0100               	movlb	0	; () banked
    579  000EE6  6F7A               	movwf	lcd_texto@cadena& (0+255),b
@@ -595,7 +595,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    581  000EEA  6F7B               	movwf	(lcd_texto@cadena+1)& (0+255),b
    582  000EEC  EC75  F009         	call	_lcd_texto	;wreg free
    583                           
-   584                           ;comuni.c: 58: if(!strcmp("on",temp)){
+   584                           ;comuni.c: 45: if(!strcmp("on",temp)){
    585  000EF0  0E01               	movlw	low STR_1
    586  000EF2  6E13               	movwf	strcmp@s1,c
    587  000EF4  0E08               	movlw	high STR_1
@@ -610,20 +610,20 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    596  000F08  A4D8               	btfss	status,2,c
    597  000F0A  D002               	goto	l262
    598                           
-   599                           ;comuni.c: 59: PORTCbits.RC2=1;
+   599                           ;comuni.c: 46: PORTCbits.RC2=1;
    600  000F0C  8482               	bsf	3970,2,c	;volatile
    601                           
-   602                           ;comuni.c: 60: }
+   602                           ;comuni.c: 47: }
    603  000F0E  D001               	goto	l263
    604  000F10                     l262:
    605                           
-   606                           ;comuni.c: 61: else{
-   607                           ;comuni.c: 62: PORTCbits.RC2=0;
+   606                           ;comuni.c: 48: else{
+   607                           ;comuni.c: 49: PORTCbits.RC2=0;
    608  000F10  9482               	bcf	3970,2,c	;volatile
    609  000F12                     l263:
    610                           
-   611                           ;comuni.c: 63: }
-   612                           ;comuni.c: 64: memset(temp, 0, sizeof temp);
+   611                           ;comuni.c: 50: }
+   612                           ;comuni.c: 51: memset(temp, 0, sizeof temp);
    613  000F12  0E40               	movlw	low main@temp
    614  000F14  6E13               	movwf	memset@p1,c
    615  000F16  0E00               	movlw	high main@temp
@@ -2148,7 +2148,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2134  000DE6                     _USART_ReceiveString:
   2135                           	opt stack 28
   2136                           
-  2137                           ;USART_Source_File.c: 62: for(int i=0;i<=length-2;i++) {
+  2137                           ;USART_Source_File.c: 61: for(int i=0;i<=length-2;i++) {
   2138                           
   2139                           ;incstack = 0
   2140  000DE6  0E00               	movlw	0
@@ -2157,7 +2157,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2143  000DEC  6E1B               	movwf	USART_ReceiveString@i,c
   2144  000DEE  D038               	goto	l217
   2145  000DF0                     
-  2146                           ;USART_Source_File.c: 65: Input[i]=0;
+  2146                           ;USART_Source_File.c: 62: Input[i]=0;
   2147  000DF0  501B               	movf	USART_ReceiveString@i,w,c
   2148  000DF2  2413               	addwf	USART_ReceiveString@Input,w,c
   2149  000DF4  6ED9               	movwf	fsr2l,c
@@ -2167,15 +2167,15 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2153  000DFC  0E00               	movlw	0
   2154  000DFE  6EDF               	movwf	indf2,c
   2155                           
-  2156                           ;USART_Source_File.c: 66: RCREG=0;
+  2156                           ;USART_Source_File.c: 63: RCREG=0;
   2157  000E00  0E00               	movlw	0
   2158  000E02  6EAE               	movwf	4014,c	;volatile
   2159                           
-  2160                           ;USART_Source_File.c: 68: char temp=USART_ReceiveChar();
+  2160                           ;USART_Source_File.c: 65: char temp=USART_ReceiveChar();
   2161  000E04  ECE6  F009         	call	_USART_ReceiveChar	;wreg free
   2162  000E08  6E1D               	movwf	USART_ReceiveString@temp,c
   2163                           
-  2164                           ;USART_Source_File.c: 69: if(temp>=97 && temp <=122 || temp==32){
+  2164                           ;USART_Source_File.c: 66: if(temp>=97 && temp <=122 || temp==32){
   2165  000E0A  0E60               	movlw	96
   2166  000E0C  641D               	cpfsgt	USART_ReceiveString@temp,c
   2167  000E0E  D003               	goto	u1500
@@ -2189,7 +2189,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2175  000E1C  D009               	goto	l219
   2176  000E1E                     u1510:
   2177                           
-  2178                           ;USART_Source_File.c: 70: Input[i] =temp;
+  2178                           ;USART_Source_File.c: 67: Input[i] =temp;
   2179  000E1E  501B               	movf	USART_ReceiveString@i,w,c
   2180  000E20  2413               	addwf	USART_ReceiveString@Input,w,c
   2181  000E22  6ED9               	movwf	fsr2l,c
@@ -2198,11 +2198,11 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2184  000E28  6EDA               	movwf	fsr2h,c
   2185  000E2A  C01D  FFDF         	movff	USART_ReceiveString@temp,indf2
   2186                           
-  2187                           ;USART_Source_File.c: 71: }else{
+  2187                           ;USART_Source_File.c: 68: }else{
   2188  000E2E  D014               	goto	l224
   2189  000E30                     l219:
   2190                           
-  2191                           ;USART_Source_File.c: 72: Input[i+1]=0;
+  2191                           ;USART_Source_File.c: 69: Input[i+1]=0;
   2192  000E30  0E01               	movlw	1
   2193  000E32  241B               	addwf	USART_ReceiveString@i,w,c
   2194  000E34  6E16               	movwf	??_USART_ReceiveString& (0+255),c
@@ -2218,7 +2218,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2204  000E48  0E00               	movlw	0
   2205  000E4A  6EDF               	movwf	indf2,c
   2206                           
-  2207                           ;USART_Source_File.c: 73: i=length-1;
+  2207                           ;USART_Source_File.c: 70: i=length-1;
   2208  000E4C  0EFF               	movlw	255
   2209  000E4E  2415               	addwf	USART_ReceiveString@length,w,c
   2210  000E50  6E1B               	movwf	USART_ReceiveString@i,c
@@ -2227,8 +2227,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2213  000E56  221C               	addwfc	USART_ReceiveString@i+1,f,c
   2214  000E58                     l224:
   2215                           
-  2216                           ;USART_Source_File.c: 75: }
-  2217                           ;USART_Source_File.c: 76: temp=0;
+  2216                           ;USART_Source_File.c: 72: }
+  2217                           ;USART_Source_File.c: 73: temp=0;
   2218  000E58  0E00               	movlw	0
   2219  000E5A  6E1D               	movwf	USART_ReceiveString@temp,c
   2220  000E5C  4A1B               	infsnz	USART_ReceiveString@i,f,c
@@ -4233,7 +4233,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Wed Mar 14 20:33:25 2018
+Symbol Table                                                                                   Thu Mar 15 01:23:22 2018
 
                 ___altoft@exp 0023                 ___altoft@sign 0024                            l43 0CE8  
                           l46 0D20                            l47 0D28                   __CFG_BORV$3 000000  

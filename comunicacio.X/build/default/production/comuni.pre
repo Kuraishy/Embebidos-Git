@@ -5910,12 +5910,12 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 33 "comuni.c"
+# 29 "comuni.c"
 void main()
 {
 OSCCON=0x72;
 
-# 39
+# 33
 TRISC=0;
 configBoard();
 lcd_iniciar();
@@ -5923,13 +5923,8 @@ USART_Init(9600);
 MSdelay(50);
 while(1) {
 lcd_origen();
-
-
 static char temp[12];
-
-# 53
 USART_ReceiveString(&temp, sizeof temp );
-
 USART_SendString(temp);
 lcd_limpiar();
 lcd_texto(temp);

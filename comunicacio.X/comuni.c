@@ -8,11 +8,7 @@
 #include <xc.h>            // use this for ANSI C and CCI conformance. See docus under CCI
 #include <stdlib.h>        // always throw this one in, it is basic functions
 #include <stdio.h>        // use this one for communications stuff, else try leaving it out if not needed
-//#include "plib\usart.h"
-#include<usart.h>
-
 #include <pic18f4550.h>
-//#include "Configuration_Header_File.h"
 #include "USART_Header_File.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,10 +28,7 @@
            
 void main()
 {
-    OSCCON=0x72;  /* use internal oscillator frequency
-                               //  which is set to 8 MHz */
- //   OSCCON= 01110010;
-   // OSCCON=01100000;
+    OSCCON=0x72;  // use internal oscillator frequency USA EL CRISTAL, NO SE CAMBIA SIN IMPORTAR QUE CRITSAL SE USA
     TRISC=0;
      configBoard();
     lcd_iniciar();      //Se inicializa el LCD
@@ -43,25 +36,18 @@ void main()
     MSdelay(50);
     while(1)   {
                 lcd_origen();
-                
-              //  char temp[6];//para 4 caracteres
-               static char temp[12];
-           /*    for(int i=0;i<5;i++){
-                    temp[i]=NULL;
-                }*/
-                
-USART_ReceiveString(&temp, sizeof temp );
-           
-             USART_SendString(temp);
-             lcd_limpiar();
-            lcd_texto(temp);
-            if(!strcmp("on",temp)){
-                PORTCbits.RC2=1;
+               static char temp[12];//array donde se guarda el dato entrante, longitud maxima + 2
+               USART_ReceiveString(&temp, sizeof temp );//enviamos la direccion en la memoria del array y su longitud
+             USART_SendString(temp);//enviamos lo que recibimos para verificar que este correcto
+             lcd_limpiar();//se limpia la lcd
+            lcd_texto(temp);//se imprime lo que recibimos
+            if(!strcmp("on",temp)){//si lo que recibimos es = on
+                PORTCbits.RC2=1;//se prende el led
             }
-            else{
-                PORTCbits.RC2=0;
+            else{//sino
+                PORTCbits.RC2=0;//se apaga
             }
-              memset(temp, 0, sizeof temp);
+              memset(temp, 0, sizeof temp);//vacia la memoria del array que recibe mensajes, para usarlo con diferentes tamaños
     }
     
 }

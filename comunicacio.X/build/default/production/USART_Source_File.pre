@@ -5758,10 +5758,7 @@ for(j=0;j<81;j++);
 void USART_ReceiveString(char *Input, unsigned char length)
 {
 
-
 for(int i=0;i<=length-2;i++) {
-
-
 Input[i]=0;
 RCREG=0;
 
@@ -5775,7 +5772,4 @@ i=length-1;
 }
 temp=0;
 }
-
-
 }
-

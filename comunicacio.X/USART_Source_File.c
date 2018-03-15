@@ -54,87 +54,22 @@ void MSdelay(unsigned int val)
             for(j=0;j<81;j++);      /*This count Provide delay of 1 ms for 8MHz Frequency */
  }
 
-
-void USART_ReceiveString(char *Input, unsigned char length)
+/********************************Recibir Strigns***********************************/
+void USART_ReceiveString(char *Input, unsigned char length)//usa un poitner de un array y su longitud
 {
-    //unsigned char bool=0;
-   // int i=0;
-       for(int i=0;i<=length-2;i++) {
-     // if(RCREG!=0){
-   // while(bool==0){
-      Input[i]=0;         
-      RCREG=0;
+ 
+       for(int i=0;i<=length-2;i++) {//un ciclo, el total de espacios usados va a ser de la longitud del array - 2, debido al error y al terminador
+      Input[i]=0;         //limpiamos el registro
+      RCREG=0;          //limpiamos el registro
      
-      char temp=USART_ReceiveChar();
-          if(temp>=97 && temp <=122 || temp==32){
-                  Input[i] =temp;
-         }else{
-          Input[i+1]=0;
-          i=length-1;
+      char temp=USART_ReceiveChar();//recibimos un char
+          if(temp>=97 && temp <=122 || temp==32){//vemos si ese char es una letra o un espacio (ASCII)
+                  Input[i] =temp;//si es una letra o espacio se guarda en el array
+         }else{//si es otra cosa (basura)
+          Input[i+1]=0;//crea un terminador pues ya terminamos de recibir info, recibimos basura
+          i=length-1;//salte del ciclo for
          // bool=1;
          }
-      temp=0;//}
-  }  
-  
-   
+      temp=0;//se limpia el registro
+  }    
 }
-///////////////////////
-/*
-void USART_ReceiveString(char *Input, unsigned char length)
-{
-   
-  for(int i=0;i<=length-2;i++) {
-      Input[i]=0;         
-      RCREG=0;
-      while(RCIF==0);             
-//      Char.IsLetter(RCREG);
-      char temp=RCREG;
-          if(temp>=97 && temp <=122){
-                  Input[i] =temp;
-         }else
-          Input[i+1]=0;
-        }  
-}
- * */
-
-
-
-/*TOLERANCIA RECIBE 4 y puede RECIBIR 3 sin perderse
-void USART_ReceiveString(char *Input, unsigned char length)
-{
-   
-  for(int i=0;i<=length-2;i++) {
-      Input[i]=0;
-                
-      RCREG=0;
-      while(RCIF==0);             
-//      Char.IsLetter(RCREG);
-      if(RCREG>=97 && RCREG <=122){
-              Input[i] =RCREG;
-      }else
-          Input[i]=0;
-  }
-  //Input[length-2]=0;
-  
-}
-*/
-
-
-/*ESTE SIRVEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-void USART_ReceiveString(char *Input, unsigned char length)
-{
-   
-  for(int i=0;i<=length-2;i++) {
-      Input[i]=0;
-                
-      RCREG=0;
-      while(RCIF==0);                 //wait for receive interrupt flag
-      
-
-              Input[i] =RCREG;
-
-  }
-  Input[length-2]=0;
-  
-}
-*/

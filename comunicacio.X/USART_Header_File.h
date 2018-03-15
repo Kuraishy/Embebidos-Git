@@ -26,7 +26,7 @@ char recieveUSART();
   
 
 
-#define F_CPU 8000000/64
+#define F_CPU 8000000/64//AQUI SE CAMBIA EL 8M POR EL TAMAÑO DEL CRISTAL DESEADO
 //#define Baud_value(baud_rate) (((float)(F_CPU)/(float)baud_rate)-1)
 #define Baud_value (((float)(F_CPU)/(float)baud_rate)-1)
 
