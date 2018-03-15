@@ -4296,29 +4296,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 "47
 [e :UE 406 ]
 }
-"49
+"50
 [v _MSdelay `(v ~T0 @X0 1 ef1`ui ]
-"50
-{
-[; ;USART_Source_File.c: 49: void MSdelay(unsigned int val)
-[; ;USART_Source_File.c: 50: {
-[e :U _MSdelay ]
-"49
-[v _val `ui ~T0 @X0 1 r1 ]
-"50
-[f ]
 "51
+{
+[; ;USART_Source_File.c: 50: void MSdelay(unsigned int val)
+[; ;USART_Source_File.c: 51: {
+[e :U _MSdelay ]
+"50
+[v _val `ui ~T0 @X0 1 r1 ]
+"51
+[f ]
+"52
 [v _i `ui ~T0 @X0 1 a ]
 [v _j `ui ~T0 @X0 1 a ]
-[; ;USART_Source_File.c: 51: unsigned int i,j;
-[; ;USART_Source_File.c: 52: for(i=0;i<=val;i++)
-"52
+[; ;USART_Source_File.c: 52: unsigned int i,j;
+[; ;USART_Source_File.c: 53: for(i=0;i<=val;i++)
+"53
 {
 [e = _i -> -> 0 `i `ui ]
 [e $U 414  ]
-"53
+"54
 [e :U 411 ]
-[; ;USART_Source_File.c: 53: for(j=0;j<81;j++);
+[; ;USART_Source_File.c: 54: for(j=0;j<81;j++);
 {
 [e = _j -> -> 0 `i `ui ]
 [e $ < _j -> -> 81 `i `ui 415  ]
@@ -4328,81 +4328,84 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $ < _j -> -> 81 `i `ui 415  ]
 [e :U 416 ]
 }
-"52
+"53
 [e ++ _i -> -> 1 `i `ui ]
 [e :U 414 ]
 [e $ <= _i _val 411  ]
 [e :U 412 ]
-"53
-}
-[; ;USART_Source_File.c: 54: }
 "54
+}
+[; ;USART_Source_File.c: 55: }
+"55
 [e :UE 410 ]
 }
-"57
-[v _USART_ReceiveString `(v ~T0 @X0 1 ef2`*uc`uc ]
 "58
+[v _USART_ReceiveString `(v ~T0 @X0 1 ef2`*uc`uc ]
+"59
 {
-[; ;USART_Source_File.c: 57: void USART_ReceiveString(char *Input, unsigned char length)
-[; ;USART_Source_File.c: 58: {
+[; ;USART_Source_File.c: 58: void USART_ReceiveString(char *Input, unsigned char length)
+[; ;USART_Source_File.c: 59: {
 [e :U _USART_ReceiveString ]
-"57
+"58
 [v _Input `*uc ~T0 @X0 1 r1 ]
 [v _length `uc ~T0 @X0 1 r2 ]
-"58
+"59
 [f ]
-[; ;USART_Source_File.c: 60: for(int i=0;i<=length-2;i++) {
-"60
+[; ;USART_Source_File.c: 62: for(int i=0;i<=length-2;i++) {
+"62
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $U 422  ]
 [e :U 419 ]
 {
-[; ;USART_Source_File.c: 61: Input[i]=0;
-"61
-[e = *U + _Input * -> _i `x -> -> # *U _Input `i `x -> -> 0 `i `uc ]
-[; ;USART_Source_File.c: 62: RCREG=0;
-"62
-[e = _RCREG -> -> 0 `i `uc ]
-[; ;USART_Source_File.c: 63: while(RCIF==0);
-"63
-[e $U 423  ]
-[e :U 424 ]
-[e :U 423 ]
-[e $ == -> _RCIF `i -> 0 `i 424  ]
-[e :U 425 ]
+[; ;USART_Source_File.c: 65: Input[i]=0;
 "65
-[v _temp `uc ~T0 @X0 1 a ]
-[; ;USART_Source_File.c: 65: char temp=RCREG;
-[e = _temp _RCREG ]
-[; ;USART_Source_File.c: 66: if(temp>=97 && temp <=122){
+[e = *U + _Input * -> _i `x -> -> # *U _Input `i `x -> -> 0 `i `uc ]
+[; ;USART_Source_File.c: 66: RCREG=0;
 "66
-[e $ ! && >= -> _temp `i -> 97 `i <= -> _temp `i -> 122 `i 426  ]
-{
-[; ;USART_Source_File.c: 67: Input[i] =temp;
-"67
-[e = *U + _Input * -> _i `x -> -> # *U _Input `i `x _temp ]
+[e = _RCREG -> -> 0 `i `uc ]
 "68
-}
-[; ;USART_Source_File.c: 68: }else
-[e $U 427  ]
-[e :U 426 ]
-[; ;USART_Source_File.c: 69: Input[i+1]=0;
+[v _temp `uc ~T0 @X0 1 a ]
+[; ;USART_Source_File.c: 68: char temp=USART_ReceiveChar();
+[e = _temp ( _USART_ReceiveChar ..  ]
+[; ;USART_Source_File.c: 69: if(temp>=97 && temp <=122 || temp==32){
 "69
-[e = *U + _Input * -> + _i -> 1 `i `x -> -> # *U _Input `i `x -> -> 0 `i `uc ]
-[e :U 427 ]
+[e $ ! || && >= -> _temp `i -> 97 `i <= -> _temp `i -> 122 `i == -> _temp `i -> 32 `i 423  ]
+{
+[; ;USART_Source_File.c: 70: Input[i] =temp;
 "70
+[e = *U + _Input * -> _i `x -> -> # *U _Input `i `x _temp ]
+"71
 }
-"60
+[; ;USART_Source_File.c: 71: }else{
+[e $U 424  ]
+[e :U 423 ]
+{
+[; ;USART_Source_File.c: 72: Input[i+1]=0;
+"72
+[e = *U + _Input * -> + _i -> 1 `i `x -> -> # *U _Input `i `x -> -> 0 `i `uc ]
+[; ;USART_Source_File.c: 73: i=length-1;
+"73
+[e = _i - -> _length `i -> 1 `i ]
+"75
+}
+[e :U 424 ]
+[; ;USART_Source_File.c: 75: }
+[; ;USART_Source_File.c: 76: temp=0;
+"76
+[e = _temp -> -> 0 `i `uc ]
+"77
+}
+"62
 [e ++ _i -> 1 `i ]
 [e :U 422 ]
 [e $ <= _i - -> _length `i -> 2 `i 419  ]
 [e :U 420 ]
-"70
+"77
 }
-[; ;USART_Source_File.c: 70: }
-[; ;USART_Source_File.c: 71: }
-"71
+[; ;USART_Source_File.c: 77: }
+[; ;USART_Source_File.c: 80: }
+"80
 [e :UE 418 ]
 }

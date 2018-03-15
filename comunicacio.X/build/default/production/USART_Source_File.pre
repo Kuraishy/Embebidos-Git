@@ -5746,6 +5746,7 @@ out++;
 }
 }
 
+
 void MSdelay(unsigned int val)
 {
 unsigned int i,j;
@@ -5757,16 +5758,24 @@ for(j=0;j<81;j++);
 void USART_ReceiveString(char *Input, unsigned char length)
 {
 
+
 for(int i=0;i<=length-2;i++) {
+
+
 Input[i]=0;
 RCREG=0;
-while(RCIF==0);
 
-char temp=RCREG;
-if(temp>=97 && temp <=122){
+char temp=USART_ReceiveChar();
+if(temp>=97 && temp <=122 || temp==32){
 Input[i] =temp;
-}else
+}else{
 Input[i+1]=0;
+i=length-1;
+
 }
+temp=0;
+}
+
+
 }
 

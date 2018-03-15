@@ -4374,54 +4374,54 @@ Version 3.2 HI-TECH Software Intermediate Code
 "45
 [e ( _lcd_origen ..  ]
 "48
-[v _temp `uc ~T0 @X0 -> 6 `i a ]
-[; ;comuni.c: 48: char temp[6];
-[; ;comuni.c: 52: USART_ReceiveString(&temp, sizeof temp );
-"52
-[e ( _USART_ReceiveString (2 , &U _temp -> -> # _temp `ui `uc ]
-[; ;comuni.c: 54: USART_SendString(temp);
-"54
-[e ( _USART_SendString (1 -> &U _temp `*Cuc ]
-[; ;comuni.c: 55: lcd_limpiar();
+[v F4900 `uc ~T0 @X0 -> 12 `i s temp ]
+[; ;comuni.c: 48: static char temp[12];
+[; ;comuni.c: 53: USART_ReceiveString(&temp, sizeof temp );
+"53
+[e ( _USART_ReceiveString (2 , &U F4900 -> -> # F4900 `ui `uc ]
+[; ;comuni.c: 55: USART_SendString(temp);
 "55
-[e ( _lcd_limpiar ..  ]
-[; ;comuni.c: 56: lcd_texto(temp);
+[e ( _USART_SendString (1 -> &U F4900 `*Cuc ]
+[; ;comuni.c: 56: lcd_limpiar();
 "56
-[e ( _lcd_texto (1 &U _temp ]
-[; ;comuni.c: 57: if(!strcmp("on",temp)){
+[e ( _lcd_limpiar ..  ]
+[; ;comuni.c: 57: lcd_texto(temp);
 "57
-[e $ ! ! != ( _strcmp (2 , :s 1C -> &U _temp `*Cuc -> 0 `i 407  ]
-{
-[; ;comuni.c: 58: PORTCbits.RC2=1;
+[e ( _lcd_texto (1 &U F4900 ]
+[; ;comuni.c: 58: if(!strcmp("on",temp)){
 "58
-[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
-"59
-}
-[; ;comuni.c: 59: }
-[e $U 408  ]
-"60
-[e :U 407 ]
-[; ;comuni.c: 60: else{
+[e $ ! ! != ( _strcmp (2 , :s 1C -> &U F4900 `*Cuc -> 0 `i 407  ]
 {
-[; ;comuni.c: 61: PORTCbits.RC2=0;
+[; ;comuni.c: 59: PORTCbits.RC2=1;
+"59
+[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
+"60
+}
+[; ;comuni.c: 60: }
+[e $U 408  ]
 "61
-[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
+[e :U 407 ]
+[; ;comuni.c: 61: else{
+{
+[; ;comuni.c: 62: PORTCbits.RC2=0;
 "62
+[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
+"63
 }
 [e :U 408 ]
-[; ;comuni.c: 62: }
-[; ;comuni.c: 63: memset(temp, 0, sizeof temp);
-"63
-[e ( _memset (3 , , -> &U _temp `*v -> 0 `i -> # _temp `ui ]
+[; ;comuni.c: 63: }
+[; ;comuni.c: 64: memset(temp, 0, sizeof temp);
 "64
+[e ( _memset (3 , , -> &U F4900 `*v -> 0 `i -> # F4900 `ui ]
+"65
 }
 [e :U 404 ]
 "44
 [e $U 405  ]
 [e :U 406 ]
-[; ;comuni.c: 64: }
-[; ;comuni.c: 66: }
-"66
+[; ;comuni.c: 65: }
+[; ;comuni.c: 67: }
+"67
 [e :UE 403 ]
 }
 [a 1C 111 110 0 ]

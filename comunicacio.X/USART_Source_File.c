@@ -45,6 +45,7 @@ void USART_SendString(const char *out)
         out++;
    }
 }
+
 /*********************************Delay Function********************************/
 void MSdelay(unsigned int val)
 {
@@ -52,8 +53,33 @@ void MSdelay(unsigned int val)
         for(i=0;i<=val;i++)
             for(j=0;j<81;j++);      /*This count Provide delay of 1 ms for 8MHz Frequency */
  }
-///////////////////////
 
+
+void USART_ReceiveString(char *Input, unsigned char length)
+{
+    //unsigned char bool=0;
+   // int i=0;
+       for(int i=0;i<=length-2;i++) {
+     // if(RCREG!=0){
+   // while(bool==0){
+      Input[i]=0;         
+      RCREG=0;
+     
+      char temp=USART_ReceiveChar();
+          if(temp>=97 && temp <=122 || temp==32){
+                  Input[i] =temp;
+         }else{
+          Input[i+1]=0;
+          i=length-1;
+         // bool=1;
+         }
+      temp=0;//}
+  }  
+  
+   
+}
+///////////////////////
+/*
 void USART_ReceiveString(char *Input, unsigned char length)
 {
    
@@ -69,6 +95,9 @@ void USART_ReceiveString(char *Input, unsigned char length)
           Input[i+1]=0;
         }  
 }
+ * */
+
+
 
 /*TOLERANCIA RECIBE 4 y puede RECIBIR 3 sin perderse
 void USART_ReceiveString(char *Input, unsigned char length)

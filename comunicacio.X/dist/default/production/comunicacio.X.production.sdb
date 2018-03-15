@@ -63,15 +63,17 @@
 [v _USART_Init USART_Init `(v  1 e 1 0 ]
 "22
 [v _USART_TransmitChar USART_TransmitChar `(v  1 e 1 0 ]
+"29
+[v _USART_ReceiveChar USART_ReceiveChar `(uc  1 e 1 0 ]
 "40
 [v _USART_SendString USART_SendString `(v  1 e 1 0 ]
-"49
+"50
 [v _MSdelay MSdelay `(v  1 e 1 0 ]
-"57
+"58
 [v _USART_ReceiveString USART_ReceiveString `(v  1 e 1 0 ]
 "2312 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
-[s S675 . 1 `uc 1 RC0 1 0 :1:0 
+[s S676 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -81,29 +83,29 @@
 `uc 1 RC7 1 0 :1:7 
 ]
 "2603
-[s S684 . 1 `uc 1 T1OSO 1 0 :1:0 
+[s S685 . 1 `uc 1 T1OSO 1 0 :1:0 
 `uc 1 T1OSI 1 0 :1:1 
 `uc 1 CCP1 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 TX 1 0 :1:6 
 `uc 1 RX 1 0 :1:7 
 ]
-[s S691 . 1 `uc 1 T13CKI 1 0 :1:0 
+[s S692 . 1 `uc 1 T13CKI 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 P1A 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 CK 1 0 :1:6 
 `uc 1 DT 1 0 :1:7 
 ]
-[s S698 . 1 `uc 1 . 1 0 :1:0 
+[s S699 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP2 1 0 :1:1 
 `uc 1 PA1 1 0 :1:2 
 ]
-[s S702 . 1 `uc 1 . 1 0 :1:0 
+[s S703 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 PA2 1 0 :1:1 
 ]
-[u S705 . 1 `S675 1 . 1 0 `S684 1 . 1 0 `S691 1 . 1 0 `S698 1 . 1 0 `S702 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES705  1 e 1 @3970 ]
+[u S706 . 1 `S676 1 . 1 0 `S685 1 . 1 0 `S692 1 . 1 0 `S699 1 . 1 0 `S703 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES706  1 e 1 @3970 ]
 "2703
 [v _PORTD PORTD `VEuc  1 e 1 @3971 ]
 [s S501 . 1 `uc 1 RD0 1 0 :1:0 
@@ -347,8 +349,8 @@
 [v _main main `(v  1 e 1 0 ]
 {
 "48
-[v main@temp temp `[6]uc  1 a 6 16 ]
-"66
+[v main@temp temp `[12]uc  1 s 12 temp ]
+"67
 } 0
 "33 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcmp.c
 [v _strcmp strcmp `(i  1 e 2 0 ]
@@ -374,13 +376,13 @@
 "296 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\lcd.c
 [v _lcd_texto lcd_texto `(v  1 e 1 0 ]
 {
-[v lcd_texto@cadena cadena `*.39uc  1 p 2 13 ]
+[v lcd_texto@cadena cadena `*.39uc  1 p 2 26 ]
 "301
 } 0
 "286
 [v _lcd_caracter lcd_caracter `(v  1 e 1 0 ]
 {
-[v lcd_caracter@caracter caracter `ui  1 p 2 6 ]
+[v lcd_caracter@caracter caracter `ui  1 p 2 19 ]
 "294
 } 0
 "308
@@ -401,7 +403,7 @@
 "277
 [v _lcd_orden lcd_orden `(v  1 e 1 0 ]
 {
-[v lcd_orden@orden orden `ui  1 p 2 6 ]
+[v lcd_orden@orden orden `ui  1 p 2 19 ]
 "284
 } 0
 "270
@@ -413,13 +415,13 @@
 [v _wait_in_ms wait_in_ms `(v  1 e 1 0 ]
 {
 "81
-[v wait_in_ms@count_ms count_ms `ui  1 a 2 4 ]
+[v wait_in_ms@count_ms count_ms `ui  1 a 2 17 ]
 "80
-[v wait_in_ms@count count `ui  1 a 2 2 ]
+[v wait_in_ms@count count `ui  1 a 2 15 ]
 "82
-[v wait_in_ms@flag flag `ui  1 a 2 0 ]
+[v wait_in_ms@flag flag `ui  1 a 2 13 ]
 "79
-[v wait_in_ms@time_in_ms time_in_ms `i  1 p 2 66 ]
+[v wait_in_ms@time_in_ms time_in_ms `i  1 p 2 55 ]
 "107
 } 0
 "32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
@@ -450,35 +452,40 @@
 [v USART_TransmitChar@out out `uc  1 a 1 18 ]
 "27
 } 0
-"57
+"58
 [v _USART_ReceiveString USART_ReceiveString `(v  1 e 1 0 ]
 {
-"65
-[v USART_ReceiveString@temp temp `uc  1 a 1 26 ]
-"60
-[v USART_ReceiveString@i i `i  1 a 2 27 ]
-"57
+"68
+[v USART_ReceiveString@temp temp `uc  1 a 1 28 ]
+"62
+[v USART_ReceiveString@i i `i  1 a 2 26 ]
+"58
 [v USART_ReceiveString@Input Input `*.39uc  1 p 2 18 ]
 [v USART_ReceiveString@length length `uc  1 p 1 20 ]
-"71
+"80
+} 0
+"29
+[v _USART_ReceiveChar USART_ReceiveChar `(uc  1 e 1 0 ]
+{
+"34
 } 0
 "10
 [v _USART_Init USART_Init `(v  1 e 1 0 ]
 {
 "12
-[v USART_Init@temp temp `f  1 a 3 0 ]
+[v USART_Init@temp temp `f  1 a 3 15 ]
 "10
-[v USART_Init@baud_rate baud_rate `l  1 p 4 66 ]
+[v USART_Init@baud_rate baud_rate `l  1 p 4 11 ]
 "20
 } 0
 "44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
 {
 "47
-[v ___fttol@lval lval `ul  1 a 4 61 ]
+[v ___fttol@lval lval `ul  1 a 4 6 ]
 "46
-[v ___fttol@exp1 exp1 `uc  1 a 1 65 ]
-[v ___fttol@sign1 sign1 `uc  1 a 1 60 ]
+[v ___fttol@exp1 exp1 `uc  1 a 1 10 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 5 ]
 "44
 [v ___fttol@f1 f1 `f  1 p 3 51 ]
 "73
@@ -501,9 +508,9 @@
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
 {
 "88
-[v ___ftadd@exp1 exp1 `uc  1 a 1 62 ]
-[v ___ftadd@exp2 exp2 `uc  1 a 1 61 ]
-[v ___ftadd@sign sign `uc  1 a 1 60 ]
+[v ___ftadd@exp1 exp1 `uc  1 a 1 5 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 4 ]
+[v ___ftadd@sign sign `uc  1 a 1 3 ]
 "86
 [v ___ftadd@f1 f1 `f  1 p 3 51 ]
 [v ___ftadd@f2 f2 `f  1 p 3 54 ]
@@ -527,15 +534,15 @@
 [v ___ftpack@sign sign `uc  1 p 1 22 ]
 "86
 } 0
-"49 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
+"50 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
 [v _MSdelay MSdelay `(v  1 e 1 0 ]
 {
-"51
+"52
 [v MSdelay@j j `ui  1 a 2 22 ]
 [v MSdelay@i i `ui  1 a 2 20 ]
-"49
+"50
 [v MSdelay@val val `ui  1 p 2 18 ]
-"54
+"55
 } 0
 "28 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\funciones.c
 [v _ADCint ADCint `II(v  1 e 1 0 ]

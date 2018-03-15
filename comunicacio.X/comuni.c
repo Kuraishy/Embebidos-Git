@@ -45,10 +45,11 @@ void main()
                 lcd_origen();
                 
               //  char temp[6];//para 4 caracteres
-                char temp[6];
+               static char temp[12];
            /*    for(int i=0;i<5;i++){
                     temp[i]=NULL;
                 }*/
+                
 USART_ReceiveString(&temp, sizeof temp );
            
              USART_SendString(temp);

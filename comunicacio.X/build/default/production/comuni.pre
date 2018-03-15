@@ -5925,9 +5925,9 @@ while(1) {
 lcd_origen();
 
 
-char temp[6];
+static char temp[12];
 
-# 52
+# 53
 USART_ReceiveString(&temp, sizeof temp );
 
 USART_SendString(temp);
