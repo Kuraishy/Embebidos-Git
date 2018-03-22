@@ -61,7 +61,7 @@ void configBoard() {
   //ADCON1bits.PCFG=0b1011;//A0, A1, A2 y A3 es analogico (1))
   //TRISAbits.RA0=1;//Puerta A0 (2)
   //TRISAbits.RA1=1;//puerta A1
-  ADCON0bits.ADON=1;//encender el a/d module(3e)
+  ADCON0bits.ADON=0;//encender el a/d module(3e)
   
    PIE1bits.ADIE=1;//activa interrupcion del adc(4))
   PIR1bits.ADIF=0;//bandera de la interrupcion(4))
@@ -69,6 +69,7 @@ void configBoard() {
   ADCON2bits.ACQT=0b111;//tiempo adquisicion (5)
   ADCON0bits.GO=1;//Prende el ciclo?
  
+  RCIF=0;
 
  
               TRISD=0;

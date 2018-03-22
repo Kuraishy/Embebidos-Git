@@ -1,0 +1,1 @@
+ build/default/production/CCCP.d  build/default/production/CCCP.p1:  CCCP.c lcd.h config.h definicionPines.h

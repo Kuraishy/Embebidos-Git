@@ -73,3 +73,4 @@ void USART_ReceiveString(char *Input, unsigned char length)//usa un poitner de u
       temp=0;//se limpia el registro
   }    
 }
+

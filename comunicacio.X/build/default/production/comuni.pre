@@ -5910,31 +5910,64 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 29 "comuni.c"
+# 27 "comuni.c"
+static char Input[22];
+
+static char Input2;
+int i=0;
+int memoriaAnterior;
+unsigned char banderaSerial=0;
+void setInput(char *temp);
+
 void main()
 {
 OSCCON=0x72;
-
-# 33
 TRISC=0;
 configBoard();
 lcd_iniciar();
 USART_Init(9600);
 MSdelay(50);
+PIE1bits.RCIE=1;
+
 while(1) {
 lcd_origen();
-static char temp[12];
-USART_ReceiveString(&temp, sizeof temp );
-USART_SendString(temp);
+
+
+
+
+char text;
 lcd_limpiar();
-lcd_texto(temp);
-if(!strcmp("on",temp)){
+lcd_texto(Input);
+
+USART_SendString(Input);
+if(!strcmp("on",Input)){
 PORTCbits.RC2=1;
 }
-else{
+else if(!strcmp("off",Input)){
 PORTCbits.RC2=0;
 }
-memset(temp, 0, sizeof temp);
+memset(Input, 0, sizeof Input);
+wait_in_ms(500);
+
 }
 
 }
+
+void interrupt test(){
+
+if(RCIF){
+char temp=RCREG;
+
+if(temp>=97 && temp <=122 || temp==32){
+Input[i]=temp;
+i++;
+}
+else{
+
+
+
+i=0;
+}
+}
+}
+

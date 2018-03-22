@@ -119,6 +119,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S172 . . . ]
 "4490
 [v _PIR1bits `VS172 ~T0 @X0 0 e@3998 ]
+"9927
+[v _RCIF `Vb ~T0 @X0 0 e@31989 ]
 "3999
 [v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
 "2312
@@ -4332,9 +4334,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;config.c: 60: ADCON2bits.ADFM=1;
 "60
 [e = . . _ADCON2bits 0 3 -> -> 1 `i `uc ]
-[; ;config.c: 64: ADCON0bits.ADON=1;
+[; ;config.c: 64: ADCON0bits.ADON=0;
 "64
-[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
+[e = . . _ADCON0bits 1 0 -> -> 0 `i `uc ]
 [; ;config.c: 66: PIE1bits.ADIE=1;
 "66
 [e = . . _PIE1bits 0 6 -> -> 1 `i `uc ]
@@ -4347,142 +4349,145 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;config.c: 70: ADCON0bits.GO=1;
 "70
 [e = . . _ADCON0bits 4 1 -> -> 1 `i `uc ]
-[; ;config.c: 74: TRISD=0;
-"74
-[e = _TRISD -> -> 0 `i `uc ]
-[; ;config.c: 75: PORTA=0;
+[; ;config.c: 72: RCIF=0;
+"72
+[e = _RCIF -> -> 0 `i `b ]
+[; ;config.c: 75: TRISD=0;
 "75
+[e = _TRISD -> -> 0 `i `uc ]
+[; ;config.c: 76: PORTA=0;
+"76
 [e = _PORTA -> -> 0 `i `uc ]
-[; ;config.c: 77: }
-"77
+[; ;config.c: 78: }
+"78
 [e :UE 397 ]
 }
-"79
+"80
 [v _wait_in_ms `(v ~T0 @X0 1 ef1`i ]
 {
-[; ;config.c: 79: void wait_in_ms(int time_in_ms){
+[; ;config.c: 80: void wait_in_ms(int time_in_ms){
 [e :U _wait_in_ms ]
 [v _time_in_ms `i ~T0 @X0 1 r1 ]
 [f ]
-"80
-[v _count `ui ~T0 @X0 1 a ]
-[; ;config.c: 80: unsigned int count = 0;
-[e = _count -> -> 0 `i `ui ]
 "81
-[v _count_ms `ui ~T0 @X0 1 a ]
-[; ;config.c: 81: unsigned int count_ms = 0;
-[e = _count_ms -> -> 0 `i `ui ]
+[v _count `ui ~T0 @X0 1 a ]
+[; ;config.c: 81: unsigned int count = 0;
+[e = _count -> -> 0 `i `ui ]
 "82
+[v _count_ms `ui ~T0 @X0 1 a ]
+[; ;config.c: 82: unsigned int count_ms = 0;
+[e = _count_ms -> -> 0 `i `ui ]
+"83
 [v _flag `ui ~T0 @X0 1 a ]
-[; ;config.c: 82: unsigned int flag = 0;
+[; ;config.c: 83: unsigned int flag = 0;
 [e = _flag -> -> 0 `i `ui ]
-[; ;config.c: 84: TMR0L = 131;
-"84
+[; ;config.c: 85: TMR0L = 131;
+"85
 [e = _TMR0L -> -> 131 `i `uc ]
-[; ;config.c: 87: count_ms = ((8000000)*0.001)/((256-TMR0L)*32);
-"87
+[; ;config.c: 88: count_ms = ((8000000)*0.001)/((256-TMR0L)*32);
+"88
 [e = _count_ms -> / * -> -> 8000000 `l `d .0.001 -> * - -> 256 `i -> _TMR0L `i -> 32 `i `d `ui ]
-[; ;config.c: 89: TMR0ON = 1;
-"89
+[; ;config.c: 90: TMR0ON = 1;
+"90
 [e = _TMR0ON -> -> 1 `i `b ]
-[; ;config.c: 91: while (count < count_ms){
-"91
+[; ;config.c: 92: while (count < count_ms){
+"92
 [e $U 399  ]
 [e :U 400 ]
 {
-[; ;config.c: 92: if(TMR0IF == 1){
-"92
+[; ;config.c: 93: if(TMR0IF == 1){
+"93
 [e $ ! == -> _TMR0IF `i -> 1 `i 402  ]
 {
-[; ;config.c: 93: TMR0IF = 0;
-"93
-[e = _TMR0IF -> -> 0 `i `b ]
-[; ;config.c: 94: TMR0L = 131;
+[; ;config.c: 94: TMR0IF = 0;
 "94
-[e = _TMR0L -> -> 131 `i `uc ]
-[; ;config.c: 95: count ++;
+[e = _TMR0IF -> -> 0 `i `b ]
+[; ;config.c: 95: TMR0L = 131;
 "95
-[e ++ _count -> -> 1 `i `ui ]
-[; ;config.c: 96: if (count == count_ms){
+[e = _TMR0L -> -> 131 `i `uc ]
+[; ;config.c: 96: count ++;
 "96
+[e ++ _count -> -> 1 `i `ui ]
+[; ;config.c: 97: if (count == count_ms){
+"97
 [e $ ! == _count _count_ms 403  ]
 {
-[; ;config.c: 97: flag++;
-"97
-[e ++ _flag -> -> 1 `i `ui ]
-[; ;config.c: 98: if (flag != time_in_ms){
+[; ;config.c: 98: flag++;
 "98
+[e ++ _flag -> -> 1 `i `ui ]
+[; ;config.c: 99: if (flag != time_in_ms){
+"99
 [e $ ! != _flag -> _time_in_ms `ui 404  ]
 {
-[; ;config.c: 99: count = 0;
-"99
-[e = _count -> -> 0 `i `ui ]
+[; ;config.c: 100: count = 0;
 "100
-}
-[; ;config.c: 100: }
-[e $U 405  ]
+[e = _count -> -> 0 `i `ui ]
 "101
-[e :U 404 ]
-[; ;config.c: 101: else{
-{
-[; ;config.c: 102: count = count_ms;
-"102
-[e = _count _count_ms ]
-"103
 }
-[e :U 405 ]
+[; ;config.c: 101: }
+[e $U 405  ]
+"102
+[e :U 404 ]
+[; ;config.c: 102: else{
+{
+[; ;config.c: 103: count = count_ms;
+"103
+[e = _count _count_ms ]
 "104
 }
-[e :U 403 ]
+[e :U 405 ]
 "105
 }
-[e :U 402 ]
+[e :U 403 ]
 "106
 }
+[e :U 402 ]
+"107
+}
 [e :U 399 ]
-"91
+"92
 [e $ < _count _count_ms 400  ]
 [e :U 401 ]
-[; ;config.c: 103: }
 [; ;config.c: 104: }
 [; ;config.c: 105: }
 [; ;config.c: 106: }
 [; ;config.c: 107: }
-"107
+[; ;config.c: 108: }
+"108
 [e :UE 398 ]
 }
-"108
+"109
 [v _wait_in_us `(v ~T0 @X0 1 ef1`ui ]
 {
-[; ;config.c: 108: void wait_in_us(unsigned int microseconds){
+[; ;config.c: 109: void wait_in_us(unsigned int microseconds){
 [e :U _wait_in_us ]
 [v _microseconds `ui ~T0 @X0 1 r1 ]
 [f ]
-"109
-[v _micro `ui ~T0 @X0 1 a ]
-[; ;config.c: 109: unsigned int micro;
-[; ;config.c: 110: micro = 0;
 "110
+[v _micro `ui ~T0 @X0 1 a ]
+[; ;config.c: 110: unsigned int micro;
+[; ;config.c: 111: micro = 0;
+"111
 [e = _micro -> -> 0 `i `ui ]
-[; ;config.c: 112: while (micro < microseconds) {
-"112
+[; ;config.c: 113: while (micro < microseconds) {
+"113
 [e $U 407  ]
 [e :U 408 ]
 {
-[; ;config.c: 113: _delay((unsigned long)((1)*(8000000/4000000.0)));
-"113
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-[; ;config.c: 114: micro++;
+[; ;config.c: 114: _delay((unsigned long)((1)*(8000000/4000000.0)));
 "114
-[e ++ _micro -> -> 1 `i `ui ]
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+[; ;config.c: 115: micro++;
 "115
+[e ++ _micro -> -> 1 `i `ui ]
+"116
 }
 [e :U 407 ]
-"112
+"113
 [e $ < _micro _microseconds 408  ]
 [e :U 409 ]
-[; ;config.c: 115: }
 [; ;config.c: 116: }
-"116
+[; ;config.c: 117: }
+"117
 [e :UE 406 ]
 }

@@ -12,16 +12,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _USART_Init `(v ~T0 @X0 0 ef1`l ]
 "18
 [v _MSdelay `(v ~T0 @X0 0 ef1`ui ]
+"4388 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+[s S170 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S170 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE SPPIE ]
+"4398
+[s S171 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S171 . . TX1IE RC1IE . PSPIE ]
+"4387
+[u S169 `S170 1 `S171 1 ]
+[n S169 . . . ]
+"4406
+[v _PIE1bits `VS169 ~T0 @X0 0 e@3997 ]
 "47 lcd.h
 [v _lcd_origen `(v ~T0 @X0 0 ef ]
-"21 USART_Header_File.h
-[v _USART_ReceiveString `(v ~T0 @X0 0 ef2`*uc`uc ]
-"17
-[v _USART_SendString `(v ~T0 @X0 0 ef1`*Cuc ]
-"46 lcd.h
+"46
 [v _lcd_limpiar `(v ~T0 @X0 0 ef ]
 "44
 [v _lcd_texto `(v ~T0 @X0 0 ef1`*uc ]
+"17 USART_Header_File.h
+[v _USART_SendString `(v ~T0 @X0 0 ef1`*Cuc ]
 "45 C:\Program Files (x86)\Microchip\xc8\v1.45\include\string.h
 [v _strcmp `(i ~T0 @X0 0 ef2`*Cuc`*Cuc ]
 "2567 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
@@ -46,6 +55,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTCbits `VS105 ~T0 @X0 0 e@3970 ]
 "16 C:\Program Files (x86)\Microchip\xc8\v1.45\include\string.h
 [v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"11 config.h
+[v _wait_in_ms `(v ~T0 @X0 0 ef1`i ]
+"9927 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+[v _RCIF `Vb ~T0 @X0 0 e@31989 ]
+"5412
+[v _RCREG `Vuc ~T0 @X0 0 e@4014 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -4339,90 +4354,166 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 58: extern char * strichr(const char *, int);
 [; ;string.h: 59: extern char * strrchr(const char *, int);
 [; ;string.h: 60: extern char * strrichr(const char *, int);
-[v $root$_main `(v ~T0 @X0 0 e ]
-"29 comuni.c
-[v _main `(v ~T0 @X0 1 ef ]
+"27 comuni.c
+[v _Input `uc ~T0 @X0 -> 22 `i s ]
+[; ;comuni.c: 27: static char Input[22];
+"29
+[v _Input2 `uc ~T0 @X0 1 s ]
+[; ;comuni.c: 29: static char Input2;
 "30
+[v _i `i ~T0 @X0 1 e ]
+[i _i
+-> 0 `i
+]
+[; ;comuni.c: 30: int i=0;
+"31
+[v _memoriaAnterior `i ~T0 @X0 1 e ]
+[; ;comuni.c: 31: int memoriaAnterior;
+"32
+[v _banderaSerial `uc ~T0 @X0 1 e ]
+[i _banderaSerial
+-> -> 0 `i `uc
+]
+[; ;comuni.c: 32: unsigned char banderaSerial=0;
+[; ;comuni.c: 33: void setInput(char *temp);
+[v $root$_main `(v ~T0 @X0 0 e ]
+"35
+[v _main `(v ~T0 @X0 1 ef ]
+"36
 {
-[; ;comuni.c: 29: void main()
-[; ;comuni.c: 30: {
+[; ;comuni.c: 35: void main()
+[; ;comuni.c: 36: {
 [e :U _main ]
 [f ]
-[; ;comuni.c: 31: OSCCON=0x72;
-"31
-[e = _OSCCON -> -> 114 `i `uc ]
-[; ;comuni.c: 33: TRISC=0;
-"33
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;comuni.c: 34: configBoard();
-"34
-[e ( _configBoard ..  ]
-[; ;comuni.c: 35: lcd_iniciar();
-"35
-[e ( _lcd_iniciar ..  ]
-[; ;comuni.c: 36: USART_Init(9600);
-"36
-[e ( _USART_Init (1 -> -> 9600 `i `l ]
-[; ;comuni.c: 37: MSdelay(50);
+[; ;comuni.c: 37: OSCCON=0x72;
 "37
-[e ( _MSdelay (1 -> -> 50 `i `ui ]
-[; ;comuni.c: 38: while(1) {
+[e = _OSCCON -> -> 114 `i `uc ]
+[; ;comuni.c: 38: TRISC=0;
 "38
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;comuni.c: 39: configBoard();
+"39
+[e ( _configBoard ..  ]
+[; ;comuni.c: 40: lcd_iniciar();
+"40
+[e ( _lcd_iniciar ..  ]
+[; ;comuni.c: 41: USART_Init(9600);
+"41
+[e ( _USART_Init (1 -> -> 9600 `i `l ]
+[; ;comuni.c: 42: MSdelay(50);
+"42
+[e ( _MSdelay (1 -> -> 50 `i `ui ]
+[; ;comuni.c: 43: PIE1bits.RCIE=1;
+"43
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+[; ;comuni.c: 45: while(1) {
+"45
 [e :U 405 ]
 {
-[; ;comuni.c: 39: lcd_origen();
-"39
-[e ( _lcd_origen ..  ]
-"40
-[v F4900 `uc ~T0 @X0 -> 12 `i s temp ]
-[; ;comuni.c: 40: static char temp[12];
-[; ;comuni.c: 41: USART_ReceiveString(&temp, sizeof temp );
-"41
-[e ( _USART_ReceiveString (2 , &U F4900 -> -> # F4900 `ui `uc ]
-[; ;comuni.c: 42: USART_SendString(temp);
-"42
-[e ( _USART_SendString (1 -> &U F4900 `*Cuc ]
-[; ;comuni.c: 43: lcd_limpiar();
-"43
-[e ( _lcd_limpiar ..  ]
-[; ;comuni.c: 44: lcd_texto(temp);
-"44
-[e ( _lcd_texto (1 &U F4900 ]
-[; ;comuni.c: 45: if(!strcmp("on",temp)){
-"45
-[e $ ! ! != ( _strcmp (2 , :s 1C -> &U F4900 `*Cuc -> 0 `i 407  ]
-{
-[; ;comuni.c: 46: PORTCbits.RC2=1;
+[; ;comuni.c: 46: lcd_origen();
 "46
-[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
-"47
-}
-[; ;comuni.c: 47: }
-[e $U 408  ]
-"48
-[e :U 407 ]
-[; ;comuni.c: 48: else{
-{
-[; ;comuni.c: 49: PORTCbits.RC2=0;
-"49
-[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
-"50
-}
-[e :U 408 ]
-[; ;comuni.c: 50: }
-[; ;comuni.c: 51: memset(temp, 0, sizeof temp);
+[e ( _lcd_origen ..  ]
 "51
-[e ( _memset (3 , , -> &U F4900 `*v -> 0 `i -> # F4900 `ui ]
+[v _text `uc ~T0 @X0 1 a ]
+[; ;comuni.c: 51: char text;
+[; ;comuni.c: 52: lcd_limpiar();
 "52
+[e ( _lcd_limpiar ..  ]
+[; ;comuni.c: 53: lcd_texto(Input);
+"53
+[e ( _lcd_texto (1 &U _Input ]
+[; ;comuni.c: 55: USART_SendString(Input);
+"55
+[e ( _USART_SendString (1 -> &U _Input `*Cuc ]
+[; ;comuni.c: 56: if(!strcmp("on",Input)){
+"56
+[e $ ! ! != ( _strcmp (2 , :s 1C -> &U _Input `*Cuc -> 0 `i 407  ]
+{
+[; ;comuni.c: 57: PORTCbits.RC2=1;
+"57
+[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
+"58
+}
+[; ;comuni.c: 58: }
+[e $U 408  ]
+"59
+[e :U 407 ]
+[; ;comuni.c: 59: else if(!strcmp("off",Input)){
+[e $ ! ! != ( _strcmp (2 , :s 2C -> &U _Input `*Cuc -> 0 `i 409  ]
+{
+[; ;comuni.c: 60: PORTCbits.RC2=0;
+"60
+[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
+"61
+}
+[e :U 409 ]
+"62
+[e :U 408 ]
+[; ;comuni.c: 61: }
+[; ;comuni.c: 62: memset(Input, 0, sizeof Input);
+[e ( _memset (3 , , -> &U _Input `*v -> 0 `i -> # _Input `ui ]
+[; ;comuni.c: 63: wait_in_ms(500);
+"63
+[e ( _wait_in_ms (1 -> 500 `i ]
+"65
 }
 [e :U 404 ]
-"38
+"45
 [e $U 405  ]
 [e :U 406 ]
-[; ;comuni.c: 52: }
-[; ;comuni.c: 54: }
-"54
+[; ;comuni.c: 65: }
+[; ;comuni.c: 67: }
+"67
 [e :UE 403 ]
 }
+[v $root$_test `(v ~T0 @X0 0 e ]
+[v F4909 `(v ~T0 @X0 1 tf ]
+"69
+[v _test `IF4909 ~T0 @X0 1 e ]
+{
+[; ;comuni.c: 69: void interrupt test(){
+[e :U _test ]
+[f ]
+[; ;comuni.c: 71: if(RCIF){
+"71
+[e $ ! _RCIF 411  ]
+{
+"72
+[v _temp `uc ~T0 @X0 1 a ]
+[; ;comuni.c: 72: char temp=RCREG;
+[e = _temp _RCREG ]
+[; ;comuni.c: 74: if(temp>=97 && temp <=122 || temp==32){
+"74
+[e $ ! || && >= -> _temp `i -> 97 `i <= -> _temp `i -> 122 `i == -> _temp `i -> 32 `i 412  ]
+{
+[; ;comuni.c: 75: Input[i]=temp;
+"75
+[e = *U + &U _Input * -> -> _i `ui `ux -> -> # *U &U _Input `ui `ux _temp ]
+[; ;comuni.c: 76: i++;
+"76
+[e ++ _i -> 1 `i ]
+"77
+}
+[; ;comuni.c: 77: }
+[e $U 413  ]
+"78
+[e :U 412 ]
+[; ;comuni.c: 78: else{
+{
+[; ;comuni.c: 82: i=0;
+"82
+[e = _i -> 0 `i ]
+"83
+}
+[e :U 413 ]
+"84
+}
+[e :U 411 ]
+[; ;comuni.c: 83: }
+[; ;comuni.c: 84: }
+[; ;comuni.c: 85: }
+"85
+[e :UE 410 ]
+}
 [a 1C 111 110 0 ]
-
+[a 2C 111 102 102 0 ]

@@ -5829,16 +5829,7 @@ unsigned char presionoBoton=0;
 signed int puntuacion =0;
 unsigned char cantidadBotones=0;
 
-void interrupt ADCint(void){
-
-if(PIR1bits.ADIF == 1)
-{
-PIR1bits.ADIF = 0;
-
-}
-}
-
-
+# 38
 unsigned int ADC_Read (unsigned int channel){
 
 # 46

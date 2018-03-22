@@ -5711,7 +5711,7 @@ ADCON2bits.ADFM=1;
 
 
 
-ADCON0bits.ADON=1;
+ADCON0bits.ADON=0;
 
 PIE1bits.ADIE=1;
 PIR1bits.ADIF=0;
@@ -5719,6 +5719,7 @@ PIR1bits.ADIF=0;
 ADCON2bits.ACQT=0b111;
 ADCON0bits.GO=1;
 
+RCIF=0;
 
 
 TRISD=0;

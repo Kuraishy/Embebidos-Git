@@ -1,16 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"4472 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
-[s S173 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S173 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF SPPIF ]
-"4482
-[s S174 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S174 . . TX1IF RC1IF . PSPIF ]
-"4471
-[u S172 `S173 1 `S174 1 ]
-[n S172 . . . ]
-"4490
-[v _PIR1bits `VS172 ~T0 @X0 0 e@3998 ]
-"6670
+"6670 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [s S268 :1 `uc 1 :1 `uc 1 ]
 [n S268 . . GO_NOT_DONE ]
 "6674
@@ -4299,31 +4288,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ]
 [; ;funciones.c: 26: unsigned char cantidadBotones=0;
-[v $root$_ADCint `(v ~T0 @X0 0 e ]
-[v F4778 `(v ~T0 @X0 1 tf ]
-"28
-[v _ADCint `IF4778 ~T0 @X0 1 e ]
-{
-[; ;funciones.c: 28: void interrupt ADCint(void){
-[e :U _ADCint ]
-[f ]
-[; ;funciones.c: 30: if(PIR1bits.ADIF == 1)
-"30
-[e $ ! == -> . . _PIR1bits 0 6 `i -> 1 `i 403  ]
-[; ;funciones.c: 31: {
-"31
-{
-[; ;funciones.c: 32: PIR1bits.ADIF = 0;
-"32
-[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
-"34
-}
-[e :U 403 ]
-[; ;funciones.c: 34: }
-[; ;funciones.c: 35: }
-"35
-[e :UE 402 ]
-}
 "38
 [v _ADC_Read `(ui ~T0 @X0 1 ef1`ui ]
 {
@@ -4333,146 +4297,146 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 [; ;funciones.c: 46: if (channel == 0){
 "46
-[e $ ! == _channel -> -> 0 `i `ui 405  ]
+[e $ ! == _channel -> -> 0 `i `ui 403  ]
 {
 [; ;funciones.c: 47: ADCON0bits.CHS = 0b0000;
 "47
 [e = . . _ADCON0bits 1 2 -> -> 0 `i `uc ]
 "48
 }
-[e :U 405 ]
+[e :U 403 ]
 [; ;funciones.c: 48: }
 [; ;funciones.c: 49: if (channel == 1){
 "49
-[e $ ! == _channel -> -> 1 `i `ui 406  ]
+[e $ ! == _channel -> -> 1 `i `ui 404  ]
 {
 [; ;funciones.c: 50: ADCON0bits.CHS = 0b0001;
 "50
 [e = . . _ADCON0bits 1 2 -> -> 1 `i `uc ]
 "51
 }
-[e :U 406 ]
+[e :U 404 ]
 [; ;funciones.c: 51: }
 [; ;funciones.c: 52: if (channel == 2){
 "52
-[e $ ! == _channel -> -> 2 `i `ui 407  ]
+[e $ ! == _channel -> -> 2 `i `ui 405  ]
 {
 [; ;funciones.c: 53: ADCON0bits.CHS = 0010;
 "53
 [e = . . _ADCON0bits 1 2 -> -> 8 `i `uc ]
 "54
 }
-[e :U 407 ]
+[e :U 405 ]
 [; ;funciones.c: 54: }
 [; ;funciones.c: 55: if (channel == 3){
 "55
-[e $ ! == _channel -> -> 3 `i `ui 408  ]
+[e $ ! == _channel -> -> 3 `i `ui 406  ]
 {
 [; ;funciones.c: 56: ADCON0bits.CHS = 0011;
 "56
 [e = . . _ADCON0bits 1 2 -> -> 9 `i `uc ]
 "57
 }
-[e :U 408 ]
+[e :U 406 ]
 [; ;funciones.c: 57: }
 [; ;funciones.c: 58: if (channel == 4){
 "58
-[e $ ! == _channel -> -> 4 `i `ui 409  ]
+[e $ ! == _channel -> -> 4 `i `ui 407  ]
 {
 [; ;funciones.c: 59: ADCON0bits.CHS = 0100;
 "59
 [e = . . _ADCON0bits 1 2 -> -> 64 `i `uc ]
 "60
 }
-[e :U 409 ]
+[e :U 407 ]
 [; ;funciones.c: 60: }
 [; ;funciones.c: 61: if (channel == 5){
 "61
-[e $ ! == _channel -> -> 5 `i `ui 410  ]
+[e $ ! == _channel -> -> 5 `i `ui 408  ]
 {
 [; ;funciones.c: 62: ADCON0bits.CHS = 0101;
 "62
 [e = . . _ADCON0bits 1 2 -> -> 65 `i `uc ]
 "63
 }
-[e :U 410 ]
+[e :U 408 ]
 [; ;funciones.c: 63: }
 [; ;funciones.c: 64: if (channel == 6){
 "64
-[e $ ! == _channel -> -> 6 `i `ui 411  ]
+[e $ ! == _channel -> -> 6 `i `ui 409  ]
 {
 [; ;funciones.c: 65: ADCON0bits.CHS = 0110;
 "65
 [e = . . _ADCON0bits 1 2 -> -> 72 `i `uc ]
 "66
 }
-[e :U 411 ]
+[e :U 409 ]
 [; ;funciones.c: 66: }
 [; ;funciones.c: 67: if (channel == 7){
 "67
-[e $ ! == _channel -> -> 7 `i `ui 412  ]
+[e $ ! == _channel -> -> 7 `i `ui 410  ]
 {
 [; ;funciones.c: 68: ADCON0bits.CHS = 0111;
 "68
 [e = . . _ADCON0bits 1 2 -> -> 73 `i `uc ]
 "69
 }
-[e :U 412 ]
+[e :U 410 ]
 [; ;funciones.c: 69: }
 [; ;funciones.c: 70: if (channel == 8){
 "70
-[e $ ! == _channel -> -> 8 `i `ui 413  ]
+[e $ ! == _channel -> -> 8 `i `ui 411  ]
 {
 [; ;funciones.c: 71: ADCON0bits.CHS = 1000;
 "71
 [e = . . _ADCON0bits 1 2 -> -> 1000 `i `uc ]
 "72
 }
-[e :U 413 ]
+[e :U 411 ]
 [; ;funciones.c: 72: }
 [; ;funciones.c: 73: if (channel == 9){
 "73
-[e $ ! == _channel -> -> 9 `i `ui 414  ]
+[e $ ! == _channel -> -> 9 `i `ui 412  ]
 {
 [; ;funciones.c: 74: ADCON0bits.CHS = 1001;
 "74
 [e = . . _ADCON0bits 1 2 -> -> 1001 `i `uc ]
 "75
 }
-[e :U 414 ]
+[e :U 412 ]
 [; ;funciones.c: 75: }
 [; ;funciones.c: 76: if (channel == 10){
 "76
-[e $ ! == _channel -> -> 10 `i `ui 415  ]
+[e $ ! == _channel -> -> 10 `i `ui 413  ]
 {
 [; ;funciones.c: 77: ADCON0bits.CHS = 1010;
 "77
 [e = . . _ADCON0bits 1 2 -> -> 1010 `i `uc ]
 "78
 }
-[e :U 415 ]
+[e :U 413 ]
 [; ;funciones.c: 78: }
 [; ;funciones.c: 79: if (channel == 11){
 "79
-[e $ ! == _channel -> -> 11 `i `ui 416  ]
+[e $ ! == _channel -> -> 11 `i `ui 414  ]
 {
 [; ;funciones.c: 80: ADCON0bits.CHS = 1011;
 "80
 [e = . . _ADCON0bits 1 2 -> -> 1011 `i `uc ]
 "81
 }
-[e :U 416 ]
+[e :U 414 ]
 [; ;funciones.c: 81: }
 [; ;funciones.c: 82: if (channel == 12){
 "82
-[e $ ! == _channel -> -> 12 `i `ui 417  ]
+[e $ ! == _channel -> -> 12 `i `ui 415  ]
 {
 [; ;funciones.c: 83: ADCON0bits.CHS = 1100;
 "83
 [e = . . _ADCON0bits 1 2 -> -> 1100 `i `uc ]
 "84
 }
-[e :U 417 ]
+[e :U 415 ]
 [; ;funciones.c: 84: }
 [; ;funciones.c: 91: wait_in_ms(2);
 "91
@@ -4482,16 +4446,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
 [; ;funciones.c: 93: while(ADCON0bits.GO_nDONE);
 "93
-[e $U 418  ]
-[e :U 419 ]
+[e $U 416  ]
+[e :U 417 ]
+[e :U 416 ]
+[e $ != -> . . _ADCON0bits 1 1 `i -> -> -> 0 `i `Vuc `i 417  ]
 [e :U 418 ]
-[e $ != -> . . _ADCON0bits 1 1 `i -> -> -> 0 `i `Vuc `i 419  ]
-[e :U 420 ]
 [; ;funciones.c: 94: return ((ADRESH<<8)+ADRESL);
 "94
 [e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
-[e $UE 404  ]
+[e $UE 402  ]
 [; ;funciones.c: 95: }
 "95
-[e :UE 404 ]
+[e :UE 402 ]
 }

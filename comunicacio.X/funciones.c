@@ -24,7 +24,7 @@ unsigned char numTopos=0;
 unsigned char presionoBoton=0;
 signed int puntuacion =0;
 unsigned char cantidadBotones=0;
-
+/*
 void interrupt ADCint(void){
      
     if(PIR1bits.ADIF == 1) //Interrupcion por finalizacion de conversion ADC
@@ -32,7 +32,7 @@ void interrupt ADCint(void){
         PIR1bits.ADIF = 0;  //A/D Converter Interrupt Flag
     
     }
-}
+}*/
 
 
 unsigned int ADC_Read (unsigned int channel){
