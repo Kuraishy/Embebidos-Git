@@ -57,11 +57,11 @@
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"11 C:\Users\Administrador\OneDrive\universida\Embebidos\ADC_LCDb.X\config.c
+"11 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\ADC_LCDb.X\config.c
 [v _configBoard configBoard `(v  1 e 1 0 ]
 "93
 [v _wait_in_ms wait_in_ms `(v  1 e 1 0 ]
-"225 C:\Users\Administrador\OneDrive\universida\Embebidos\ADC_LCDb.X\lcd.c
+"225 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\ADC_LCDb.X\lcd.c
 [v _lcd_iniciar lcd_iniciar `(v  1 e 1 0 ]
 "271
 [v _lcd_pulso lcd_pulso `(v  1 e 1 0 ]
@@ -81,11 +81,9 @@
 [v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
 "351
 [v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
-"56 C:\Users\Administrador\OneDrive\universida\Embebidos\ADC_LCDb.X\main_ADC_b.c
+"56 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\ADC_LCDb.X\main_ADC_b.c
 [v _ADCint ADCint `II(v  1 e 1 0 ]
 "84
-[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
-"143
 [v _main main `(v  1 e 1 0 ]
 "2312 C:\Program Files (x86)\Microchip\xc8\v1.45\include\PIC18f4550.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
@@ -98,7 +96,7 @@
 `uc 1 RA6 1 0 :1:6 
 ]
 "2351 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
-[s S844 . 1 `uc 1 AN0 1 0 :1:0 
+[s S842 . 1 `uc 1 AN0 1 0 :1:0 
 `uc 1 AN1 1 0 :1:1 
 `uc 1 AN2 1 0 :1:2 
 `uc 1 AN3 1 0 :1:3 
@@ -106,19 +104,19 @@
 `uc 1 AN4 1 0 :1:5 
 `uc 1 OSC2 1 0 :1:6 
 ]
-[s S852 . 1 `uc 1 . 1 0 :2:0 
+[s S850 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 VREFM 1 0 :1:2 
 `uc 1 VREFP 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
 `uc 1 LVDIN 1 0 :1:5 
 ]
-[s S858 . 1 `uc 1 . 1 0 :5:0 
+[s S856 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 HLVDIN 1 0 :1:5 
 ]
-[s S861 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+[s S859 . 1 `uc 1 ULPWUIN 1 0 :1:0 
 ]
-[u S863 . 1 `S210 1 . 1 0 `S844 1 . 1 0 `S852 1 . 1 0 `S858 1 . 1 0 `S861 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES863  1 e 1 @3968 ]
+[u S861 . 1 `S210 1 . 1 0 `S842 1 . 1 0 `S850 1 . 1 0 `S856 1 . 1 0 `S859 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES861  1 e 1 @3968 ]
 "2451 C:\Program Files (x86)\Microchip\xc8\v1.45\include\PIC18f4550.h
 [v _PORTB PORTB `VEuc  1 e 1 @3969 ]
 "2561
@@ -306,10 +304,6 @@
 ]
 [u S50 . 1 `S21 1 . 1 0 `S24 1 . 1 0 `S28 1 . 1 0 `S35 1 . 1 0 `S38 1 . 1 0 `S41 1 . 1 0 `S44 1 . 1 0 `S47 1 . 1 0 ]
 [v _ADCON0bits ADCON0bits `VES50  1 e 1 @4034 ]
-"6790 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
-[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
-"6797
-[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
 [s S435 . 1 `uc 1 T0PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
@@ -317,7 +311,7 @@
 `uc 1 T08BIT 1 0 :1:6 
 `uc 1 TMR0ON 1 0 :1:7 
 ]
-"8087 C:\Program Files (x86)\Microchip\xc8\v1.45\include\PIC18f4550.h
+"8087
 [s S442 . 1 `uc 1 T0PS0 1 0 :1:0 
 `uc 1 T0PS1 1 0 :1:1 
 `uc 1 T0PS2 1 0 :1:2 
@@ -406,7 +400,7 @@
 [v __powers_ _powers_ `C[13]d  1 e 39 0 ]
 "39
 [v __npowers_ _npowers_ `C[13]d  1 e 39 0 ]
-"45 C:\Users\Administrador\OneDrive\universida\Embebidos\ADC_LCDb.X\main_ADC_b.c
+"45 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\ADC_LCDb.X\main_ADC_b.c
 [v _int0flag int0flag `ui  1 e 2 0 ]
 "46
 [v _int1flag int1flag `ui  1 e 2 0 ]
@@ -414,27 +408,27 @@
 [v _int2flag int2flag `ui  1 e 2 0 ]
 "48
 [v _pir1flag pir1flag `ui  1 e 2 0 ]
-"143
+"84
 [v _main main `(v  1 e 1 0 ]
 {
-"163
+"104
 [v main@voltaje_an0 voltaje_an0 `f  1 a 3 62 ]
-"164
+"105
 [v main@voltaje_an1 voltaje_an1 `f  1 a 3 55 ]
-"176
+"117
 [v main@str str `[2]uc  1 a 2 65 ]
-"146
+"87
 [v main@an1 an1 `ui  1 a 2 60 ]
-"145
+"86
 [v main@an0 an0 `ui  1 a 2 58 ]
-"188
+"129
 } 0
 "492 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[u S987 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
+[u S986 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
 "526
-[v sprintf@tmpval tmpval `S987  1 a 4 39 ]
+[v sprintf@tmpval tmpval `S986  1 a 4 39 ]
 "528
 [v sprintf@val val `ul  1 a 4 35 ]
 "516
@@ -620,7 +614,7 @@
 [v ___ftge@ff2 ff2 `f  1 p 3 21 ]
 "13
 } 0
-"314 C:\Users\Administrador\OneDrive\universida\Embebidos\ADC_LCDb.X\lcd.c
+"314 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\ADC_LCDb.X\lcd.c
 [v _lcd_ubicarXY lcd_ubicarXY `(v  1 e 1 0 ]
 {
 [v lcd_ubicarXY@linea linea `uc  1 a 1 wreg ]
@@ -672,24 +666,7 @@
 {
 "276
 } 0
-"11 C:\Users\Administrador\OneDrive\universida\Embebidos\ADC_LCDb.X\config.c
-[v _configBoard configBoard `(v  1 e 1 0 ]
-{
-"91
-} 0
-"28 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwtoft.c
-[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
-{
-[v ___lwtoft@c c `ui  1 p 2 26 ]
-"31
-} 0
-"84 C:\Users\Administrador\OneDrive\universida\Embebidos\ADC_LCDb.X\main_ADC_b.c
-[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
-{
-[v ADC_Read@channel channel `ui  1 p 2 27 ]
-"141
-} 0
-"93 C:\Users\Administrador\OneDrive\universida\Embebidos\ADC_LCDb.X\config.c
+"93 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\ADC_LCDb.X\config.c
 [v _wait_in_ms wait_in_ms `(v  1 e 1 0 ]
 {
 "95
@@ -737,6 +714,17 @@
 [v ___awtoft@c c `i  1 p 2 26 ]
 "42
 } 0
+"11 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\ADC_LCDb.X\config.c
+[v _configBoard configBoard `(v  1 e 1 0 ]
+{
+"91
+} 0
+"28 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 26 ]
+"31
+} 0
 "62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
 {
@@ -745,7 +733,7 @@
 [v ___ftpack@sign sign `uc  1 p 1 22 ]
 "86
 } 0
-"56 C:\Users\Administrador\OneDrive\universida\Embebidos\ADC_LCDb.X\main_ADC_b.c
+"56 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\ADC_LCDb.X\main_ADC_b.c
 [v _ADCint ADCint `II(v  1 e 1 0 ]
 {
 "83

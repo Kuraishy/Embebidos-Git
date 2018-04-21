@@ -19,16 +19,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TRISCbits `VS148 ~T0 @X0 0 e@3988 ]
 "7296
 [v _PR2 `Vuc ~T0 @X0 0 e@4043 ]
-"6494
-[v _CCPR1L `Vuc ~T0 @X0 0 e@4030 ]
 "7198
 [v _T2CON `Vuc ~T0 @X0 0 e@4042 ]
+"6494
+[v _CCPR1L `Vuc ~T0 @X0 0 e@4030 ]
 "6325
 [v _CCP1CON `Vuc ~T0 @X0 0 e@4029 ]
-"7406
-[v _TMR2 `Vuc ~T0 @X0 0 e@4044 ]
-"10197
-[v _TMR2ON `Vb ~T0 @X0 0 e@32338 ]
+"6311
+[v _CCPR2L `Vuc ~T0 @X0 0 e@4027 ]
+"11 config.h
+[v _wait_in_ms `(v ~T0 @X0 0 ef1`i ]
 [; ;pic18f4550.h: 50: extern volatile unsigned char SPPDATA @ 0xF62;
 "52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [; ;pic18f4550.h: 52: asm("SPPDATA equ 0F62h");
@@ -3710,9 +3710,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;comuni.c: 24: {
 [e :U _main ]
 [f ]
-"25
-[v _dc `uc ~T0 @X0 1 a ]
-[; ;comuni.c: 25: unsigned char dc ;
 [; ;comuni.c: 26: OSCCON=0x72;
 "26
 [e = _OSCCON -> -> 114 `i `uc ]
@@ -3725,36 +3722,87 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;comuni.c: 32: TRISCbits.RC2=0;
 "32
 [e = . . _TRISCbits 1 2 -> -> 0 `i `uc ]
-[; ;comuni.c: 36: PR2=0b01111100;
-"36
-[e = _PR2 -> -> 124 `i `uc ]
-[; ;comuni.c: 37: CCPR1L=0b01001010;
-"37
-[e = _CCPR1L -> -> 74 `i `uc ]
-[; ;comuni.c: 38: T2CON=0b00000111;
-"38
-[e = _T2CON -> -> 7 `i `uc ]
-[; ;comuni.c: 39: CCP1CON=0b00111100;
-"39
+"43
+[v _dc `uc ~T0 @X0 1 a ]
+[; ;comuni.c: 43: unsigned char dc ;
+[; ;comuni.c: 46: PR2 = 0b11111001 ;
+"46
+[e = _PR2 -> -> 249 `i `uc ]
+[; ;comuni.c: 47: T2CON = 0b00000101 ;
+"47
+[e = _T2CON -> -> 5 `i `uc ]
+[; ;comuni.c: 48: CCPR1L = 0b01111100 ;
+"48
+[e = _CCPR1L -> -> 124 `i `uc ]
+[; ;comuni.c: 49: CCP1CON = 0b00111100 ;
+"49
 [e = _CCP1CON -> -> 60 `i `uc ]
-[; ;comuni.c: 40: TMR2=0;
-"40
-[e = _TMR2 -> -> 0 `i `uc ]
-[; ;comuni.c: 41: TMR2ON=1;
-"41
-[e = _TMR2ON -> -> 1 `i `b ]
-[; ;comuni.c: 44: while(1) {
-"44
+[; ;comuni.c: 52: while(1) {
+"52
 [e :U 370 ]
 {
+[; ;comuni.c: 54: for(dc = 0 ; dc < 255 ; dc+=12) {
+"54
+{
+[e = _dc -> -> 0 `i `uc ]
+[e $ < -> _dc `i -> 255 `i 372  ]
+[e $U 373  ]
+[e :U 372 ]
+{
+[; ;comuni.c: 55: CCPR1L = dc ;
+"55
+[e = _CCPR1L _dc ]
+[; ;comuni.c: 56: CCPR2L = 128 - dc ;
+"56
+[e = _CCPR2L -> - -> 128 `i -> _dc `i `uc ]
+[; ;comuni.c: 57: wait_in_ms(300) ;
+"57
+[e ( _wait_in_ms (1 -> 300 `i ]
 "58
 }
+"54
+[e =+ _dc -> -> 12 `i `uc ]
+[e $ < -> _dc `i -> 255 `i 372  ]
+[e :U 373 ]
+"58
+}
+[; ;comuni.c: 58: }
+[; ;comuni.c: 60: for(dc = 254 ; dc > 0 ; dc-=12)
+"60
+{
+[e = _dc -> -> 254 `i `uc ]
+[e $ > -> _dc `i -> 0 `i 375  ]
+[e $U 376  ]
+"61
+[e :U 375 ]
+[; ;comuni.c: 61: {
+{
+[; ;comuni.c: 62: CCPR1L = dc ;
+"62
+[e = _CCPR1L _dc ]
+[; ;comuni.c: 63: CCPR2L = dc-128 ;
+"63
+[e = _CCPR2L -> - -> _dc `i -> 128 `i `uc ]
+[; ;comuni.c: 64: wait_in_ms(300) ;
+"64
+[e ( _wait_in_ms (1 -> 300 `i ]
+"65
+}
+"60
+[e =- _dc -> -> 12 `i `uc ]
+[e $ > -> _dc `i -> 0 `i 375  ]
+[e :U 376 ]
+"65
+}
+"68
+}
 [e :U 369 ]
-"44
+"52
 [e $U 370  ]
 [e :U 371 ]
-[; ;comuni.c: 58: }
-[; ;comuni.c: 60: }
-"60
+[; ;comuni.c: 65: }
+[; ;comuni.c: 68: }
+[; ;comuni.c: 69: }
+"69
 [e :UE 368 ]
 }

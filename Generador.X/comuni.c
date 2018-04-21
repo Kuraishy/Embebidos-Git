@@ -22,7 +22,7 @@
 
 void main()
 {
-      unsigned char   dc ;
+
     OSCCON=0x72;  // use internal oscillator frequency USA EL CRISTAL, NO SE CAMBIA SIN IMPORTAR QUE CRITSAL SE USA
     
      configBoard();
@@ -33,28 +33,38 @@ void main()
      //PR2 + 1 = ((1/cristal) x cristal) / 16
   //  PWM period = [(PR2) + 1] x 4 x Tosc x (TMR2 prescale value)
     //1/1k=(pr2+1)(1/8M)*16)
-    PR2=0b01111100;
-    CCPR1L=0b01001010;
-    T2CON=0b00000111;
+   // PR2=0b01111100;
+  /*  CCPR1L=0b01001010;
+  //  T2CON=0b00000111;
     CCP1CON=0b00111100;//pwm modo y no decimal
     TMR2=0;//timer2 limpio
     TMR2ON=1;//timer ON 
+    */
+          unsigned char   dc ;
     
-    
+ 
+PR2 = 0b11111001 ;
+T2CON = 0b00000101 ;
+CCPR1L = 0b01111100 ;
+CCP1CON = 0b00111100 ;
+     
+     
     while(1)       {    
-       
-             /*   for(dc = 0 ; dc < 128 ; dc++)
-                        {
+    
+        for(dc = 0 ; dc < 255 ; dc+=12)   {
                         CCPR1L = dc ;
                         CCPR2L = 128 - dc ;
-                        wait_in_ms(10) ;
+                        wait_in_ms(300) ;
                         }
-                for(dc = 127 ; dc > 0 ; dc--)
+        
+                for(dc = 254 ; dc > 0 ; dc-=12)
                         {
                         CCPR1L = dc ;
-                        CCPR2L = 128 - dc ;
-                        wait_in_ms(10) ;
-                        }*/
+                        CCPR2L = dc-128 ;
+                        wait_in_ms(300) ;
+                        }
+        
+        
+                }
     }  
     
-}
