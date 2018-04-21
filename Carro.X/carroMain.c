@@ -23,23 +23,14 @@
 void main()
 {
 
-    OSCCON=0x72;  // use internal oscillator frequency USA EL CRISTAL, NO SE CAMBIA SIN IMPORTAR QUE CRITSAL SE USA
+    //OSCCON=0x72;  // use internal oscillator frequency USA EL CRISTAL, NO SE CAMBIA SIN IMPORTAR QUE CRITSAL SE USA
     
      configBoard();
    
    
-     //setup para generador con PWM
+
     TRISCbits.RC2=0;//ccp1 output para PWM
-     //PR2 + 1 = ((1/cristal) x cristal) / 16
-  //  PWM period = [(PR2) + 1] x 4 x Tosc x (TMR2 prescale value)
-    //1/1k=(pr2+1)(1/8M)*16)
-   // PR2=0b01111100;
-  /*  CCPR1L=0b01001010;
-  //  T2CON=0b00000111;
-    CCP1CON=0b00111100;//pwm modo y no decimal
-    TMR2=0;//timer2 limpio
-    TMR2ON=1;//timer ON 
-    */
+
           unsigned char   dc ;
     
  
