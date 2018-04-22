@@ -29,13 +29,13 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "34 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
 [v _main main `(v  1 e 1 0 ]
-"76
+"74
 [v _carroAvanzar carroAvanzar `(v  1 e 1 0 ]
-"84
+"82
 [v _carroAtras carroAtras `(v  1 e 1 0 ]
-"93
+"91
 [v _carroGirar carroGirar `(v  1 e 1 0 ]
-"109
+"107
 [v _carroMatar carroMatar `(v  1 e 1 0 ]
 "11 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
 [v _configBoard configBoard `(v  1 e 1 0 ]
@@ -43,70 +43,37 @@
 [v _wait_in_ms wait_in_ms `(v  1 e 1 0 ]
 "2312 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
-[s S64 . 1 `uc 1 RA0 1 0 :1:0 
-`uc 1 RA1 1 0 :1:1 
-`uc 1 RA2 1 0 :1:2 
-`uc 1 RA3 1 0 :1:3 
-`uc 1 RA4 1 0 :1:4 
-`uc 1 RA5 1 0 :1:5 
-`uc 1 RA6 1 0 :1:6 
+[s S158 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
 ]
-"2351
-[s S213 . 1 `uc 1 AN0 1 0 :1:0 
-`uc 1 AN1 1 0 :1:1 
-`uc 1 AN2 1 0 :1:2 
-`uc 1 AN3 1 0 :1:3 
-`uc 1 T0CKI 1 0 :1:4 
-`uc 1 AN4 1 0 :1:5 
-`uc 1 OSC2 1 0 :1:6 
+"2996
+[s S166 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
 ]
-[s S221 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 VREFM 1 0 :1:2 
-`uc 1 VREFP 1 0 :1:3 
-`uc 1 . 1 0 :1:4 
-`uc 1 LVDIN 1 0 :1:5 
+[u S174 . 1 `S158 1 . 1 0 `S166 1 . 1 0 ]
+[v _LATAbits LATAbits `VES174  1 e 1 @3977 ]
+[s S138 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
 ]
-[s S227 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 HLVDIN 1 0 :1:5 
+"3390
+[s S142 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
 ]
-[s S230 . 1 `uc 1 ULPWUIN 1 0 :1:0 
-]
-[u S232 . 1 `S64 1 . 1 0 `S213 1 . 1 0 `S221 1 . 1 0 `S227 1 . 1 0 `S230 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES232  1 e 1 @3968 ]
-[s S138 . 1 `uc 1 RE0 1 0 :1:0 
-`uc 1 RE1 1 0 :1:1 
-`uc 1 RE2 1 0 :1:2 
-`uc 1 RE3 1 0 :1:3 
-`uc 1 . 1 0 :3:4 
-`uc 1 RDPU 1 0 :1:7 
-]
-"2866
-[s S145 . 1 `uc 1 CK1SPP 1 0 :1:0 
-`uc 1 CK2SPP 1 0 :1:1 
-`uc 1 OESPP 1 0 :1:2 
-]
-[s S149 . 1 `uc 1 PD2 1 0 :1:0 
-`uc 1 PC2 1 0 :1:1 
-`uc 1 CCP10 1 0 :1:2 
-`uc 1 CCP9E 1 0 :1:3 
-`uc 1 . 1 0 :3:4 
-`uc 1 CCP2E 1 0 :1:7 
-]
-[s S156 . 1 `uc 1 RDE 1 0 :1:0 
-`uc 1 WRE 1 0 :1:1 
-`uc 1 CS 1 0 :1:2 
-`uc 1 PC3E 1 0 :1:3 
-`uc 1 . 1 0 :3:4 
-`uc 1 PA2E 1 0 :1:7 
-]
-[s S163 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PB2 1 0 :1:2 
-`uc 1 . 1 0 :4:3 
-`uc 1 RE7 1 0 :1:7 
-]
-[u S168 . 1 `S138 1 . 1 0 `S145 1 . 1 0 `S149 1 . 1 0 `S156 1 . 1 0 `S163 1 . 1 0 ]
-[v _PORTEbits PORTEbits `VES168  1 e 1 @3972 ]
-[s S56 . 1 `uc 1 TRISA0 1 0 :1:0 
+[u S146 . 1 `S138 1 . 1 0 `S142 1 . 1 0 ]
+[v _LATEbits LATEbits `VES146  1 e 1 @3981 ]
+[s S60 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
@@ -115,22 +82,30 @@
 `uc 1 TRISA6 1 0 :1:6 
 ]
 "3455
-[u S72 . 1 `S56 1 . 1 0 `S64 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES72  1 e 1 @3986 ]
+[s S68 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+]
+[u S76 . 1 `S60 1 . 1 0 `S68 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES76  1 e 1 @3986 ]
 "3999
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
-[s S92 . 1 `uc 1 TRISE0 1 0 :1:0 
+[s S96 . 1 `uc 1 TRISE0 1 0 :1:0 
 `uc 1 TRISE1 1 0 :1:1 
 `uc 1 TRISE2 1 0 :1:2 
 ]
 "4243
-[s S96 . 1 `uc 1 RE0 1 0 :1:0 
+[s S100 . 1 `uc 1 RE0 1 0 :1:0 
 `uc 1 RE1 1 0 :1:1 
 `uc 1 RE2 1 0 :1:2 
 ]
-[u S100 . 1 `S92 1 . 1 0 `S96 1 . 1 0 ]
-[v _TRISEbits TRISEbits `VES100  1 e 1 @3990 ]
-[s S514 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[u S104 . 1 `S96 1 . 1 0 `S100 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES104  1 e 1 @3990 ]
+[s S439 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -140,15 +115,15 @@
 `uc 1 SPPIE 1 0 :1:7 
 ]
 "4406
-[s S523 . 1 `uc 1 . 1 0 :4:0 
+[s S448 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TX1IE 1 0 :1:4 
 `uc 1 RC1IE 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 PSPIE 1 0 :1:7 
 ]
-[u S529 . 1 `S514 1 . 1 0 `S523 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES529  1 e 1 @3997 ]
-[s S548 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S454 . 1 `S439 1 . 1 0 `S448 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES454  1 e 1 @3997 ]
+[s S473 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -158,82 +133,82 @@
 `uc 1 SPPIF 1 0 :1:7 
 ]
 "4490
-[s S557 . 1 `uc 1 . 1 0 :4:0 
+[s S482 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TX1IF 1 0 :1:4 
 `uc 1 RC1IF 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 PSPIF 1 0 :1:7 
 ]
-[u S563 . 1 `S548 1 . 1 0 `S557 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES563  1 e 1 @3998 ]
-[s S466 . 1 `uc 1 ADCS 1 0 :3:0 
+[u S488 . 1 `S473 1 . 1 0 `S482 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES488  1 e 1 @3998 ]
+[s S391 . 1 `uc 1 ADCS 1 0 :3:0 
 `uc 1 ACQT 1 0 :3:3 
 `uc 1 . 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
 "6529
-[s S471 . 1 `uc 1 ADCS0 1 0 :1:0 
+[s S396 . 1 `uc 1 ADCS0 1 0 :1:0 
 `uc 1 ADCS1 1 0 :1:1 
 `uc 1 ADCS2 1 0 :1:2 
 `uc 1 ACQT0 1 0 :1:3 
 `uc 1 ACQT1 1 0 :1:4 
 `uc 1 ACQT2 1 0 :1:5 
 ]
-[u S478 . 1 `S466 1 . 1 0 `S471 1 . 1 0 ]
-[v _ADCON2bits ADCON2bits `VES478  1 e 1 @4032 ]
-[s S21 . 1 `uc 1 PCFG 1 0 :4:0 
+[u S403 . 1 `S391 1 . 1 0 `S396 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES403  1 e 1 @4032 ]
+[s S25 . 1 `uc 1 PCFG 1 0 :4:0 
 `uc 1 VCFG 1 0 :2:4 
 ]
 "6604
-[s S24 . 1 `uc 1 PCFG0 1 0 :1:0 
+[s S28 . 1 `uc 1 PCFG0 1 0 :1:0 
 `uc 1 PCFG1 1 0 :1:1 
 `uc 1 PCFG2 1 0 :1:2 
 `uc 1 PCFG3 1 0 :1:3 
 `uc 1 VCFG0 1 0 :1:4 
 `uc 1 VCFG1 1 0 :1:5 
 ]
-[s S31 . 1 `uc 1 . 1 0 :3:0 
+[s S35 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 CHSN3 1 0 :1:3 
 `uc 1 VCFG01 1 0 :1:4 
 `uc 1 VCFG11 1 0 :1:5 
 ]
-[u S36 . 1 `S21 1 . 1 0 `S24 1 . 1 0 `S31 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES36  1 e 1 @4033 ]
+[u S40 . 1 `S25 1 . 1 0 `S28 1 . 1 0 `S35 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES40  1 e 1 @4033 ]
 "6664
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S398 . 1 `uc 1 . 1 0 :1:0 
+[s S323 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
 "6708
-[s S401 . 1 `uc 1 ADON 1 0 :1:0 
+[s S326 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :4:2 
 ]
-[s S405 . 1 `uc 1 . 1 0 :1:0 
+[s S330 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
 `uc 1 CHS2 1 0 :1:4 
 `uc 1 CHS3 1 0 :1:5 
 ]
-[s S412 . 1 `uc 1 . 1 0 :1:0 
+[s S337 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 ]
-[s S415 . 1 `uc 1 . 1 0 :1:0 
+[s S340 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[s S418 . 1 `uc 1 . 1 0 :1:0 
+[s S343 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
-[s S421 . 1 `uc 1 . 1 0 :1:0 
+[s S346 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[s S424 . 1 `uc 1 . 1 0 :1:0 
+[s S349 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 ]
-[u S427 . 1 `S398 1 . 1 0 `S401 1 . 1 0 `S405 1 . 1 0 `S412 1 . 1 0 `S415 1 . 1 0 `S418 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES427  1 e 1 @4034 ]
-[s S350 . 1 `uc 1 T0PS 1 0 :3:0 
+[u S352 . 1 `S323 1 . 1 0 `S326 1 . 1 0 `S330 1 . 1 0 `S337 1 . 1 0 `S340 1 . 1 0 `S343 1 . 1 0 `S346 1 . 1 0 `S349 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES352  1 e 1 @4034 ]
+[s S275 . 1 `uc 1 T0PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -241,15 +216,15 @@
 `uc 1 TMR0ON 1 0 :1:7 
 ]
 "8087
-[s S357 . 1 `uc 1 T0PS0 1 0 :1:0 
+[s S282 . 1 `uc 1 T0PS0 1 0 :1:0 
 `uc 1 T0PS1 1 0 :1:1 
 `uc 1 T0PS2 1 0 :1:2 
 ]
-[u S361 . 1 `S350 1 . 1 0 `S357 1 . 1 0 ]
-[v _T0CONbits T0CONbits `VES361  1 e 1 @4053 ]
+[u S286 . 1 `S275 1 . 1 0 `S282 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES286  1 e 1 @4053 ]
 "8144
 [v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
-[s S301 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S226 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -259,7 +234,7 @@
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "8612
-[s S310 . 1 `uc 1 . 1 0 :1:0 
+[s S235 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -268,12 +243,12 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S319 . 1 `uc 1 . 1 0 :6:0 
+[s S244 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S323 . 1 `S301 1 . 1 0 `S310 1 . 1 0 `S319 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES323  1 e 1 @4082 ]
+[u S248 . 1 `S226 1 . 1 0 `S235 1 . 1 0 `S244 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES248  1 e 1 @4082 ]
 "9927
 [v _RCIF RCIF `VEb  1 e 0 @31989 ]
 "10109
@@ -285,7 +260,7 @@
 "34 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
 [v _main main `(v  1 e 1 0 ]
 {
-"74
+"72
 } 0
 "80 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
 [v _wait_in_ms wait_in_ms `(v  1 e 1 0 ]
@@ -348,27 +323,27 @@
 {
 "78
 } 0
-"109 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+"107 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
 [v _carroMatar carroMatar `(v  1 e 1 0 ]
 {
-"114
+"112
 } 0
-"93
+"91
 [v _carroGirar carroGirar `(v  1 e 1 0 ]
 {
 [v carroGirar@direccion direccion `uc  1 a 1 wreg ]
 [v carroGirar@direccion direccion `uc  1 a 1 wreg ]
-"95
+"93
 [v carroGirar@direccion direccion `uc  1 a 1 0 ]
-"107
+"105
 } 0
-"76
+"74
 [v _carroAvanzar carroAvanzar `(v  1 e 1 0 ]
 {
-"82
+"80
 } 0
-"84
+"82
 [v _carroAtras carroAtras `(v  1 e 1 0 ]
 {
-"90
+"88
 } 0

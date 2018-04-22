@@ -43,7 +43,7 @@ void configBoard() {
  
   ADCON0 = 0b00000111;
           /*ADC******************************************************/
- 
+
     ADCON0bits.ADON = 0;    //ADC is shut-off; consumes no operating power
   //  ADCON0bits.CHS = 0000;  //Analog Channel Select AN0
    // ADCON1bits.VCFG = 0b00;     //Voltage Reference Configuration (VREF- VREF+ source) (VDD VSS source)  
