@@ -4815,8 +4815,8 @@ void configBoard() {
 
 
 
-INTCONbits.GIE = 1;
-INTCONbits.PEIE = 1;
+INTCONbits.GIE = 0;
+INTCONbits.PEIE = 0;
 
 # 25
 T0CONbits.TMR0ON = 1;
@@ -4829,10 +4829,6 @@ INTCONbits.TMR0IF = 0;
 
 ADCON1bits.PCFG = 0b1111;
 
-
-TRISA=0b00000000;
-TRISB=0b00000000;
-
 # 44
 ADCON0 = 0b00000111;
 
@@ -4844,7 +4840,7 @@ ADCON0bits.ADON = 0;
 ADCON2bits.ADFM = 1;
 ADCON2bits.ADCS = 0b110;
 ADCON2bits.ACQT = 0b101;
-ADCON1bits.PCFG=0b1101;
+
 TRISAbits.RA1=1;
 ADCON2bits.ADCS=0b110;
 ADCON1bits.VCFG1=0;

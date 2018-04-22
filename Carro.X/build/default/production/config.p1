@@ -40,10 +40,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S263 . . . . ]
 "6604
 [v _ADCON1bits `VS263 ~T0 @X0 0 e@4033 ]
-"3425
-[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
-"3623
-[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
 "6664
 [v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
 "6670
@@ -3654,12 +3650,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;config.c: 11: void configBoard() {
 [e :U _configBoard ]
 [f ]
-[; ;config.c: 15: INTCONbits.GIE = 1;
+[; ;config.c: 15: INTCONbits.GIE = 0;
 "15
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;config.c: 16: INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+[; ;config.c: 16: INTCONbits.PEIE = 0;
 "16
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+[e = . . _INTCONbits 1 6 -> -> 0 `i `uc ]
 [; ;config.c: 25: T0CONbits.TMR0ON = 1;
 "25
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
@@ -3681,12 +3677,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;config.c: 33: ADCON1bits.PCFG = 0b1111;
 "33
 [e = . . _ADCON1bits 0 0 -> -> 15 `i `uc ]
-[; ;config.c: 36: TRISA=0b00000000;
-"36
-[e = _TRISA -> -> 0 `i `uc ]
-[; ;config.c: 37: TRISB=0b00000000;
-"37
-[e = _TRISB -> -> 0 `i `uc ]
 [; ;config.c: 44: ADCON0 = 0b00000111;
 "44
 [e = _ADCON0 -> -> 7 `i `uc ]
@@ -3702,9 +3692,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;config.c: 53: ADCON2bits.ACQT = 0b101;
 "53
 [e = . . _ADCON2bits 0 1 -> -> 5 `i `uc ]
-[; ;config.c: 54: ADCON1bits.PCFG=0b1101;
-"54
-[e = . . _ADCON1bits 0 0 -> -> 13 `i `uc ]
 [; ;config.c: 55: TRISAbits.RA1=1;
 "55
 [e = . . _TRISAbits 1 1 -> -> 1 `i `uc ]

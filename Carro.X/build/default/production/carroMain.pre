@@ -4945,7 +4945,8 @@ void wait_in_us(unsigned int microseconds);
 
 # 14 "definicionPines.h"
 #pragma config PLLDIV = 2
-#pragma config CPUDIV = OSC1_PLL2
+
+#pragma config CPUDIV = OSC4_PLL6
 
 
 #pragma config FOSC = HSPLL_HS
@@ -5024,44 +5025,86 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 23 "carroMain.c"
+# 29 "carroMain.c"
+void carroAvanzar();
+void carroAtras();
+void carroGirar(unsigned char direccion);
+void carroMatar();
+
 void main()
 {
 
-OSCCON=0x72;
+ADCON1bits.PCFG = 0b1111;
+
+
+TRISAbits.RA0=0;
+TRISAbits.RA1=0;
+TRISEbits.RE0=0;
+TRISEbits.RE1=0;
 
 configBoard();
 
-
-
-TRISCbits.RC2=0;
-
-# 43
-unsigned char dc ;
-
-
-PR2 = 0b11111001 ;
-T2CON = 0b00000101 ;
-CCPR1L = 0b01111100 ;
-CCP1CON = 0b00111100 ;
-
-
+# 52
 while(1) {
 
-for(dc = 0 ; dc < 255 ; dc+=12) {
-CCPR1L = dc ;
-CCPR2L = 128 - dc ;
-wait_in_ms(300) ;
+carroAvanzar();
+
+wait_in_ms(1000);
+
+carroAtras();
+wait_in_ms(1000);
+
+carroGirar(1);
+
+wait_in_ms(1000);
+
+carroGirar(2);
+
+wait_in_ms(1000);
+carroMatar();
+wait_in_ms(1000);
+
+
+
+}
 }
 
-for(dc = 254 ; dc > 0 ; dc-=12)
+void carroAvanzar(){
+PORTEbits.RE1=1;
+PORTEbits.RE0=0;
+PORTAbits.RA0=1;
+PORTAbits.RA1=0;
+
+}
+
+void carroAtras(){
+PORTEbits.RE1=0;
+PORTEbits.RE0=1;
+PORTAbits.RA1=1;
+PORTAbits.RA0=0;
+
+}
+
+
+void carroGirar(unsigned char direccion)
 {
-CCPR1L = dc ;
-CCPR2L = dc-128 ;
-wait_in_ms(300) ;
+if(direccion==1){
+PORTAbits.RA0=1;
+PORTAbits.RA1=0;
+PORTEbits.RE1 =0;
+PORTEbits.RE0=0;
+}
+else if(direccion==2){
+PORTAbits.RA0=1;
+PORTAbits.RA1=0;
+PORTEbits.RE1 =0;
+PORTEbits.RE0=1;
+}
 }
 
-
+void carroMatar(){
+PORTAbits.RA0=0;
+PORTAbits.RA1=0;
+PORTEbits.RE1 =0;
+PORTEbits.RE0=0;
 }
-}
-

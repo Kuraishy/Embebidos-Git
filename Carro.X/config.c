@@ -12,8 +12,8 @@ void configBoard() {
 
     //Interrupts setting
     
-    INTCONbits.GIE = 1;    //Enable1/Disable0 global
-    INTCONbits.PEIE = 1;    //Peripheral Interrupt Enable1/Disable0
+    INTCONbits.GIE = 0;    //Enable1/Disable0 global
+    INTCONbits.PEIE = 0;    //Peripheral Interrupt Enable1/Disable0
   /*  INTCONbits.INT0IE = 0;  //INT0 External Interrupt Enable1/Disable0
     INTCONbits.TMR0IE = 0;  //Overflow Interrupt Enable1/Disable0*/
     
@@ -32,11 +32,11 @@ void configBoard() {
 
     ADCON1bits.PCFG = 0b1111;//opcion de todos los pines en digitales
             
+/*
+    TRISA=0b00000000; //set all pins of PORT A as output
+    TRISB=0b00000000; //set all pins of PORT A as output
 
-    TRISA=0b00000000; //set all pins of PORT A as output*/
-    TRISB=0b00000000; //set all pins of PORT A as output*/
-
-  
+  */
 //  TRISB=1;
   
 
@@ -51,7 +51,7 @@ void configBoard() {
     ADCON2bits.ADFM = 1;     //A/D Result Format Select Justified (1 right, 0 left)
     ADCON2bits.ADCS = 0b110;   //A/D Conversion Clock Select TADmin 0.7 us(48MHz/64= 1.33us = TAD)
     ADCON2bits.ACQT = 0b101;   // A/D Acquisition Time Select (12TAD)
-   ADCON1bits.PCFG=0b1101;//A0 y A1es analogico (1))
+  // ADCON1bits.PCFG=0b1101;//A0 y A1es analogico (1))
   TRISAbits.RA1=1;//Puerta A0 (2)
   ADCON2bits.ADCS=0b110;//reloj conversion adc(3a))
   ADCON1bits.VCFG1=0;// VSS (3b)
