@@ -15,6 +15,8 @@
 #define MotorDerechoAvanzar LATEbits.LE1 //(IN1)
 #define MotorDerechoAtras LATEbits.LE0 //(IN2)
 
+#define StatusPWM T2CONbits.TMR2ON
+
 #include <pic18f4550.h>
 
 #include <stdio.h>
@@ -24,13 +26,17 @@
 #include "definicionPines.h"
 #include <time.h>
 #include <string.h>
-#define _XTAL_FREQ 80000000
+#include "Pwm Header.h"
+#define _XTAL_FREQ 48000000 //Se define la frecuencia con la que trebaja nuestro oscilador para que tenga un areferencia con el comando __delay_ms
 
 void carroAvanzar();//funcion de avanzar
 void carroAtras();//funcion de retroceder 
 void carroGirar(unsigned char direccion);//1 es a derecha  0 es izquierda
 void carroMatar();//para el carro
 
+
+ 
+   
 void main()
 {
     configBoard();
@@ -41,7 +47,16 @@ void main()
     TRISEbits.RE0=0;
     TRISEbits.RE1=0;
     //////////////////////////
-
+  /*********Configuracion de pines***********/
+    TRISCbits.RC2 = 0; //Pin del CCP1 es declarada como salida 
+    TRISCbits.RC1 = 0;
+       /*********Funciones para configurar señal PWM ***********/
+    config_timer2(0,16); //(Encendido/Apagado , Prescaler )
+    coinfig_ccpcon(48000000,5000);//(Fosc(Hz), Frecuencia (HZ))
+    config_ccp1(25);//(DutyCycle(%))
+    config_ccp2(35);//(DutyCycle(%))
+    
+   StatusPWM = 1;
    
   
 
@@ -51,7 +66,7 @@ void main()
     while(1)       {    
     
    //    carroAvanzar();
-        wait_in_ms(1000);    
+       /* wait_in_ms(1000);    
         carroAvanzar();
         wait_in_ms(1000);    
         carroAtras();
@@ -60,7 +75,7 @@ void main()
         carroGirar(1);
         wait_in_ms(1000);    
         carroMatar();
-        carroGirar(2);
+        carroGirar(2);*/
     
         
         

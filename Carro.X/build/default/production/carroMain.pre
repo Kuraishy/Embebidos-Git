@@ -4945,8 +4945,8 @@ void wait_in_us(unsigned int microseconds);
 
 # 14 "definicionPines.h"
 #pragma config PLLDIV = 2
+#pragma config CPUDIV = OSC1_PLL2
 
-#pragma config CPUDIV = OSC4_PLL6
 
 
 #pragma config FOSC = HSPLL_HS
@@ -5025,11 +5025,53 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 29 "carroMain.c"
+# 30 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\math.h"
+extern double fabs(double);
+extern double floor(double);
+extern double ceil(double);
+extern double modf(double, double *);
+extern double sqrt(double);
+extern double atof(const char *);
+extern double sin(double) ;
+extern double cos(double) ;
+extern double tan(double) ;
+extern double asin(double) ;
+extern double acos(double) ;
+extern double atan(double);
+extern double atan2(double, double) ;
+extern double log(double);
+extern double log10(double);
+extern double pow(double, double) ;
+extern double exp(double) ;
+extern double sinh(double) ;
+extern double cosh(double) ;
+extern double tanh(double);
+extern double eval_poly(double, const double *, int);
+extern double frexp(double, int *);
+extern double ldexp(double, int);
+extern double fmod(double, double);
+extern double trunc(double);
+extern double round(double);
+
+# 15 "Pwm Header.h"
+void config_timer2(int onoff, int presc);
+void coinfig_ccpcon(float fosc, float freq);
+void config_ccp1(int duty1);
+void config_ccp2(int duty2);
+
+
+
+float prescg;
+float pr2g;
+
+# 32 "carroMain.c"
 void carroAvanzar();
 void carroAtras();
 void carroGirar(unsigned char direccion);
 void carroMatar();
+
+
+
 
 void main()
 {
@@ -5041,22 +5083,21 @@ TRISAbits.RA1=0;
 TRISEbits.RE0=0;
 TRISEbits.RE1=0;
 
-# 51
+
+TRISCbits.RC2 = 0;
+TRISCbits.RC1 = 0;
+
+config_timer2(0,16);
+coinfig_ccpcon(48000000,5000);
+config_ccp1(25);
+config_ccp2(35);
+
+T2CONbits.TMR2ON = 1;
+
+# 66
 while(1) {
 
-
-wait_in_ms(1000);
-carroAvanzar();
-wait_in_ms(1000);
-carroAtras();
-wait_in_ms(1000);
-carroMatar();
-carroGirar(1);
-wait_in_ms(1000);
-carroMatar();
-carroGirar(2);
-
-# 71
+# 86
 }
 }
 
