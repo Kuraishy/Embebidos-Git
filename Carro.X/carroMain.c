@@ -17,6 +17,11 @@
 
 #define StatusPWM T2CONbits.TMR2ON
 
+#define Sensor1 PORTBbits.RB5
+#define Sensor2 PORTBbits.RB4
+#define Sensor3 PORTBbits.RB3
+
+
 #include <pic18f4550.h>
 
 #include <stdio.h>
@@ -46,7 +51,12 @@ void main()
     TRISAbits.RA1=0;
     TRISEbits.RE0=0;
     TRISEbits.RE1=0;
-    //////////////////////////
+   /*********PInes para sensores****************/
+    TRISBbits.RB5=1;
+    TRISBbits.RB4=1;
+    TRISBbits.RB3=1;
+    
+   
   /*********Configuracion de pines***********/
     TRISCbits.RC2 = 0; //Pin del CCP1 es declarada como salida 
     TRISCbits.RC1 = 0;
@@ -56,7 +66,7 @@ void main()
     config_ccp1(25);//(DutyCycle(%))
     config_ccp2(35);//(DutyCycle(%))
     
-   StatusPWM = 1;
+   StatusPWM = 0;
    
   
 

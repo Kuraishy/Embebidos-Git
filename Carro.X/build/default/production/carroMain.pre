@@ -5064,7 +5064,7 @@ void config_ccp2(int duty2);
 float prescg;
 float pr2g;
 
-# 32 "carroMain.c"
+# 37 "carroMain.c"
 void carroAvanzar();
 void carroAtras();
 void carroGirar(unsigned char direccion);
@@ -5083,6 +5083,11 @@ TRISAbits.RA1=0;
 TRISEbits.RE0=0;
 TRISEbits.RE1=0;
 
+TRISBbits.RB5=1;
+TRISBbits.RB4=1;
+TRISBbits.RB3=1;
+
+
 
 TRISCbits.RC2 = 0;
 TRISCbits.RC1 = 0;
@@ -5092,12 +5097,12 @@ coinfig_ccpcon(48000000,5000);
 config_ccp1(25);
 config_ccp2(35);
 
-T2CONbits.TMR2ON = 1;
+T2CONbits.TMR2ON = 0;
 
-# 66
+# 76
 while(1) {
 
-# 86
+# 96
 }
 }
 

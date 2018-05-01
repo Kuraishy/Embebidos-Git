@@ -38,6 +38,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S160 . . . ]
 "4243
 [v _TRISEbits `VS160 ~T0 @X0 0 e@3990 ]
+"3634
+[s S143 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S143 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"3644
+[s S144 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S144 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"3633
+[u S142 `S143 1 `S144 1 ]
+[n S142 . . . ]
+"3655
+[v _TRISBbits `VS142 ~T0 @X0 0 e@3987 ]
 "3856
 [s S149 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S149 . TRISC0 TRISC1 TRISC2 . TRISC6 TRISC7 ]
@@ -3785,193 +3796,202 @@ Version 3.2 HI-TECH Software Intermediate Code
 "23
 [v _pr2g `f ~T0 @X0 1 e ]
 [; ;Pwm Header.h: 23: float pr2g;
-[; ;carroMain.c: 32: void carroAvanzar();
-[; ;carroMain.c: 33: void carroAtras();
-[; ;carroMain.c: 34: void carroGirar(unsigned char direccion);
-[; ;carroMain.c: 35: void carroMatar();
+[; ;carroMain.c: 37: void carroAvanzar();
+[; ;carroMain.c: 38: void carroAtras();
+[; ;carroMain.c: 39: void carroGirar(unsigned char direccion);
+[; ;carroMain.c: 40: void carroMatar();
 [v $root$_main `(v ~T0 @X0 0 e ]
-"40 carroMain.c
+"45 carroMain.c
 [v _main `(v ~T0 @X0 1 ef ]
-"41
+"46
 {
-[; ;carroMain.c: 40: void main()
-[; ;carroMain.c: 41: {
+[; ;carroMain.c: 45: void main()
+[; ;carroMain.c: 46: {
 [e :U _main ]
 [f ]
-[; ;carroMain.c: 42: configBoard();
-"42
-[e ( _configBoard ..  ]
-[; ;carroMain.c: 43: ADCON1bits.PCFG = 0b1111;
-"43
-[e = . . _ADCON1bits 0 0 -> -> 15 `i `uc ]
-[; ;carroMain.c: 45: TRISAbits.RA0=0;
-"45
-[e = . . _TRISAbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 46: TRISAbits.RA1=0;
-"46
-[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 47: TRISEbits.RE0=0;
+[; ;carroMain.c: 47: configBoard();
 "47
-[e = . . _TRISEbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 48: TRISEbits.RE1=0;
+[e ( _configBoard ..  ]
+[; ;carroMain.c: 48: ADCON1bits.PCFG = 0b1111;
 "48
-[e = . . _TRISEbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 51: TRISCbits.RC2 = 0;
+[e = . . _ADCON1bits 0 0 -> -> 15 `i `uc ]
+[; ;carroMain.c: 50: TRISAbits.RA0=0;
+"50
+[e = . . _TRISAbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 51: TRISAbits.RA1=0;
 "51
-[e = . . _TRISCbits 1 2 -> -> 0 `i `uc ]
-[; ;carroMain.c: 52: TRISCbits.RC1 = 0;
+[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 52: TRISEbits.RE0=0;
 "52
-[e = . . _TRISCbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 54: config_timer2(0,16);
-"54
-[e ( _config_timer2 (2 , -> 0 `i -> 16 `i ]
-[; ;carroMain.c: 55: coinfig_ccpcon(48000000,5000);
+[e = . . _TRISEbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 53: TRISEbits.RE1=0;
+"53
+[e = . . _TRISEbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 55: TRISBbits.RB5=1;
 "55
-[e ( _coinfig_ccpcon (2 , -> -> 48000000 `l `f -> -> 5000 `i `f ]
-[; ;carroMain.c: 56: config_ccp1(25);
+[e = . . _TRISBbits 1 5 -> -> 1 `i `uc ]
+[; ;carroMain.c: 56: TRISBbits.RB4=1;
 "56
-[e ( _config_ccp1 (1 -> 25 `i ]
-[; ;carroMain.c: 57: config_ccp2(35);
+[e = . . _TRISBbits 1 4 -> -> 1 `i `uc ]
+[; ;carroMain.c: 57: TRISBbits.RB3=1;
 "57
-[e ( _config_ccp2 (1 -> 35 `i ]
-[; ;carroMain.c: 59: T2CONbits.TMR2ON = 1;
-"59
-[e = . . _T2CONbits 0 1 -> -> 1 `i `uc ]
-[; ;carroMain.c: 66: while(1) {
+[e = . . _TRISBbits 1 3 -> -> 1 `i `uc ]
+[; ;carroMain.c: 61: TRISCbits.RC2 = 0;
+"61
+[e = . . _TRISCbits 1 2 -> -> 0 `i `uc ]
+[; ;carroMain.c: 62: TRISCbits.RC1 = 0;
+"62
+[e = . . _TRISCbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 64: config_timer2(0,16);
+"64
+[e ( _config_timer2 (2 , -> 0 `i -> 16 `i ]
+[; ;carroMain.c: 65: coinfig_ccpcon(48000000,5000);
+"65
+[e ( _coinfig_ccpcon (2 , -> -> 48000000 `l `f -> -> 5000 `i `f ]
+[; ;carroMain.c: 66: config_ccp1(25);
 "66
+[e ( _config_ccp1 (1 -> 25 `i ]
+[; ;carroMain.c: 67: config_ccp2(35);
+"67
+[e ( _config_ccp2 (1 -> 35 `i ]
+[; ;carroMain.c: 69: T2CONbits.TMR2ON = 0;
+"69
+[e = . . _T2CONbits 0 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 76: while(1) {
+"76
 [e :U 370 ]
 {
-"86
+"96
 }
 [e :U 369 ]
-"66
+"76
 [e $U 370  ]
 [e :U 371 ]
-[; ;carroMain.c: 86: }
-[; ;carroMain.c: 87: }
-"87
+[; ;carroMain.c: 96: }
+[; ;carroMain.c: 97: }
+"97
 [e :UE 368 ]
 }
-"89
+"99
 [v _carroAvanzar `(v ~T0 @X0 1 ef ]
 {
-[; ;carroMain.c: 89: void carroAvanzar(){
+[; ;carroMain.c: 99: void carroAvanzar(){
 [e :U _carroAvanzar ]
 [f ]
-[; ;carroMain.c: 90: LATEbits.LE1=1;
-"90
+[; ;carroMain.c: 100: LATEbits.LE1=1;
+"100
 [e = . . _LATEbits 1 1 -> -> 1 `i `uc ]
-[; ;carroMain.c: 91: LATEbits.LE0=0;
-"91
+[; ;carroMain.c: 101: LATEbits.LE0=0;
+"101
 [e = . . _LATEbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 92: LATAbits.LA0=1;
-"92
+[; ;carroMain.c: 102: LATAbits.LA0=1;
+"102
 [e = . . _LATAbits 1 0 -> -> 1 `i `uc ]
-[; ;carroMain.c: 93: LATAbits.LA1=0;
-"93
+[; ;carroMain.c: 103: LATAbits.LA1=0;
+"103
 [e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 95: }
-"95
+[; ;carroMain.c: 105: }
+"105
 [e :UE 372 ]
 }
-"97
+"107
 [v _carroAtras `(v ~T0 @X0 1 ef ]
 {
-[; ;carroMain.c: 97: void carroAtras(){
+[; ;carroMain.c: 107: void carroAtras(){
 [e :U _carroAtras ]
 [f ]
-[; ;carroMain.c: 98: LATEbits.LE1=0;
-"98
+[; ;carroMain.c: 108: LATEbits.LE1=0;
+"108
 [e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 99: LATEbits.LE0=1;
-"99
+[; ;carroMain.c: 109: LATEbits.LE0=1;
+"109
 [e = . . _LATEbits 1 0 -> -> 1 `i `uc ]
-[; ;carroMain.c: 100: LATAbits.LA0=0;
-"100
+[; ;carroMain.c: 110: LATAbits.LA0=0;
+"110
 [e = . . _LATAbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 101: LATAbits.LA1=1;
-"101
+[; ;carroMain.c: 111: LATAbits.LA1=1;
+"111
 [e = . . _LATAbits 1 1 -> -> 1 `i `uc ]
-[; ;carroMain.c: 103: }
-"103
+[; ;carroMain.c: 113: }
+"113
 [e :UE 373 ]
 }
-"106
+"116
 [v _carroGirar `(v ~T0 @X0 1 ef1`uc ]
-"107
+"117
 {
-[; ;carroMain.c: 106: void carroGirar(unsigned char direccion)
-[; ;carroMain.c: 107: {
+[; ;carroMain.c: 116: void carroGirar(unsigned char direccion)
+[; ;carroMain.c: 117: {
 [e :U _carroGirar ]
-"106
+"116
 [v _direccion `uc ~T0 @X0 1 r1 ]
-"107
+"117
 [f ]
-[; ;carroMain.c: 108: if(direccion==1){
-"108
+[; ;carroMain.c: 118: if(direccion==1){
+"118
 [e $ ! == -> _direccion `i -> 1 `i 375  ]
 {
-[; ;carroMain.c: 109: LATAbits.LA0=1;
-"109
+[; ;carroMain.c: 119: LATAbits.LA0=1;
+"119
 [e = . . _LATAbits 1 0 -> -> 1 `i `uc ]
-[; ;carroMain.c: 110: LATAbits.LA1=0;
-"110
+[; ;carroMain.c: 120: LATAbits.LA1=0;
+"120
 [e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 111: LATEbits.LE1 =0;
-"111
+[; ;carroMain.c: 121: LATEbits.LE1 =0;
+"121
 [e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 112: LATEbits.LE0=0;
-"112
+[; ;carroMain.c: 122: LATEbits.LE0=0;
+"122
 [e = . . _LATEbits 1 0 -> -> 0 `i `uc ]
-"113
+"123
 }
-[; ;carroMain.c: 113: }
+[; ;carroMain.c: 123: }
 [e $U 376  ]
-"114
+"124
 [e :U 375 ]
-[; ;carroMain.c: 114: else if(direccion==2){
+[; ;carroMain.c: 124: else if(direccion==2){
 [e $ ! == -> _direccion `i -> 2 `i 377  ]
 {
-[; ;carroMain.c: 115: LATAbits.LA0=1;
-"115
+[; ;carroMain.c: 125: LATAbits.LA0=1;
+"125
 [e = . . _LATAbits 1 0 -> -> 1 `i `uc ]
-[; ;carroMain.c: 116: LATAbits.LA1=0;
-"116
+[; ;carroMain.c: 126: LATAbits.LA1=0;
+"126
 [e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 117: LATEbits.LE1 =0;
-"117
+[; ;carroMain.c: 127: LATEbits.LE1 =0;
+"127
 [e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 118: LATEbits.LE0=1;
-"118
+[; ;carroMain.c: 128: LATEbits.LE0=1;
+"128
 [e = . . _LATEbits 1 0 -> -> 1 `i `uc ]
-"119
+"129
 }
 [e :U 377 ]
-"120
+"130
 [e :U 376 ]
-[; ;carroMain.c: 119: }
-[; ;carroMain.c: 120: }
+[; ;carroMain.c: 129: }
+[; ;carroMain.c: 130: }
 [e :UE 374 ]
 }
-"122
+"132
 [v _carroMatar `(v ~T0 @X0 1 ef ]
 {
-[; ;carroMain.c: 122: void carroMatar(){
+[; ;carroMain.c: 132: void carroMatar(){
 [e :U _carroMatar ]
 [f ]
-[; ;carroMain.c: 123: LATAbits.LA0=0;
-"123
+[; ;carroMain.c: 133: LATAbits.LA0=0;
+"133
 [e = . . _LATAbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 124: LATAbits.LA1=0;
-"124
+[; ;carroMain.c: 134: LATAbits.LA1=0;
+"134
 [e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 125: LATEbits.LE1 =0;
-"125
+[; ;carroMain.c: 135: LATEbits.LE1 =0;
+"135
 [e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 126: LATEbits.LE0=0;
-"126
+[; ;carroMain.c: 136: LATEbits.LE0=0;
+"136
 [e = . . _LATEbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 127: }
-"127
+[; ;carroMain.c: 137: }
+"137
 [e :UE 378 ]
 }
