@@ -64,10 +64,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _config_timer2 `(v ~T0 @X0 0 ef2`i`i ]
 "16
 [v _coinfig_ccpcon `(v ~T0 @X0 0 ef2`f`f ]
-"17
-[v _config_ccp1 `(v ~T0 @X0 0 ef1`i ]
-"18
-[v _config_ccp2 `(v ~T0 @X0 0 ef1`i ]
 "7204 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [s S296 :2 `uc 1 :1 `uc 1 :4 `uc 1 ]
 [n S296 . T2CKPS TMR2ON TOUTPS ]
@@ -82,7 +78,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S295 . . . . ]
 "7226
 [v _T2CONbits `VS295 ~T0 @X0 0 e@4042 ]
-"3379
+"2457
+[s S102 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S102 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"2467
+[s S103 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S103 . INT0 INT1 INT2 . PGM PGC PGD ]
+"2476
+[s S104 :3 `uc 1 :1 `uc 1 ]
+[n S104 . . CCP2_PA2 ]
+"2456
+[u S101 `S102 1 `S103 1 `S104 1 ]
+[n S101 . . . . ]
+"2481
+[v _PORTBbits `VS101 ~T0 @X0 0 e@3969 ]
+"41 carroMain.c
+[v _carroAvanzarEspecial `(v ~T0 @X0 0 ef ]
+"39
+[v _carroGirar `(v ~T0 @X0 0 ef1`uc ]
+"37
+[v _carroAvanzar `(v ~T0 @X0 0 ef ]
+"40
+[v _carroMatar `(v ~T0 @X0 0 ef ]
+"3379 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [s S134 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S134 . LATE0 LATE1 LATE2 ]
 "3384
@@ -104,6 +122,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S121 . . . ]
 "2996
 [v _LATAbits `VS121 ~T0 @X0 0 e@3977 ]
+"17 Pwm Header.h
+[v _config_ccp1 `(v ~T0 @X0 0 ef1`i ]
+"18
+[v _config_ccp2 `(v ~T0 @X0 0 ef1`i ]
 [; ;pic18f4550.h: 50: extern volatile unsigned char SPPDATA @ 0xF62;
 "52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [; ;pic18f4550.h: 52: asm("SPPDATA equ 0F62h");
@@ -3800,198 +3822,356 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;carroMain.c: 38: void carroAtras();
 [; ;carroMain.c: 39: void carroGirar(unsigned char direccion);
 [; ;carroMain.c: 40: void carroMatar();
+[; ;carroMain.c: 41: void carroAvanzarEspecial();
 [v $root$_main `(v ~T0 @X0 0 e ]
-"45 carroMain.c
+"47 carroMain.c
 [v _main `(v ~T0 @X0 1 ef ]
-"46
+"48
 {
-[; ;carroMain.c: 45: void main()
-[; ;carroMain.c: 46: {
+[; ;carroMain.c: 47: void main()
+[; ;carroMain.c: 48: {
 [e :U _main ]
 [f ]
-[; ;carroMain.c: 47: configBoard();
-"47
+[; ;carroMain.c: 49: configBoard();
+"49
 [e ( _configBoard ..  ]
-[; ;carroMain.c: 48: ADCON1bits.PCFG = 0b1111;
-"48
-[e = . . _ADCON1bits 0 0 -> -> 15 `i `uc ]
-[; ;carroMain.c: 50: TRISAbits.RA0=0;
+[; ;carroMain.c: 50: ADCON1bits.PCFG = 0b1111;
 "50
-[e = . . _TRISAbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 51: TRISAbits.RA1=0;
-"51
-[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 52: TRISEbits.RE0=0;
+[e = . . _ADCON1bits 0 0 -> -> 15 `i `uc ]
+[; ;carroMain.c: 52: TRISAbits.RA0=0;
 "52
-[e = . . _TRISEbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 53: TRISEbits.RE1=0;
+[e = . . _TRISAbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 53: TRISAbits.RA1=0;
 "53
-[e = . . _TRISEbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 55: TRISBbits.RB5=1;
+[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 54: TRISEbits.RE0=0;
+"54
+[e = . . _TRISEbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 55: TRISEbits.RE1=0;
 "55
-[e = . . _TRISBbits 1 5 -> -> 1 `i `uc ]
-[; ;carroMain.c: 56: TRISBbits.RB4=1;
-"56
-[e = . . _TRISBbits 1 4 -> -> 1 `i `uc ]
-[; ;carroMain.c: 57: TRISBbits.RB3=1;
+[e = . . _TRISEbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 57: TRISBbits.RB5=1;
 "57
+[e = . . _TRISBbits 1 5 -> -> 1 `i `uc ]
+[; ;carroMain.c: 58: TRISBbits.RB4=1;
+"58
+[e = . . _TRISBbits 1 4 -> -> 1 `i `uc ]
+[; ;carroMain.c: 59: TRISBbits.RB3=1;
+"59
 [e = . . _TRISBbits 1 3 -> -> 1 `i `uc ]
-[; ;carroMain.c: 61: TRISCbits.RC2 = 0;
-"61
+[; ;carroMain.c: 63: TRISCbits.RC2 = 0;
+"63
 [e = . . _TRISCbits 1 2 -> -> 0 `i `uc ]
-[; ;carroMain.c: 62: TRISCbits.RC1 = 0;
-"62
-[e = . . _TRISCbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 64: config_timer2(0,16);
+[; ;carroMain.c: 64: TRISCbits.RC1 = 0;
 "64
-[e ( _config_timer2 (2 , -> 0 `i -> 16 `i ]
-[; ;carroMain.c: 65: coinfig_ccpcon(48000000,5000);
-"65
-[e ( _coinfig_ccpcon (2 , -> -> 48000000 `l `f -> -> 5000 `i `f ]
-[; ;carroMain.c: 66: config_ccp1(25);
+[e = . . _TRISCbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 66: config_timer2(0,16);
 "66
-[e ( _config_ccp1 (1 -> 25 `i ]
-[; ;carroMain.c: 67: config_ccp2(35);
+[e ( _config_timer2 (2 , -> 0 `i -> 16 `i ]
+[; ;carroMain.c: 67: coinfig_ccpcon(48000000,15000);
 "67
-[e ( _config_ccp2 (1 -> 35 `i ]
-[; ;carroMain.c: 69: T2CONbits.TMR2ON = 0;
-"69
-[e = . . _T2CONbits 0 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 76: while(1) {
-"76
+[e ( _coinfig_ccpcon (2 , -> -> 48000000 `l `f -> -> 15000 `i `f ]
+[; ;carroMain.c: 71: T2CONbits.TMR2ON = 1;
+"71
+[e = . . _T2CONbits 0 1 -> -> 1 `i `uc ]
+[; ;carroMain.c: 78: while(1) {
+"78
 [e :U 370 ]
 {
+[; ;carroMain.c: 92: if(PORTBbits.RB3==0&&PORTBbits.RB4==0&&PORTBbits.RB5==0){
+"92
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 0 `i == -> . . _PORTBbits 0 5 `i -> 0 `i 372  ]
+{
+[; ;carroMain.c: 93: carroAvanzarEspecial();
+"93
+[e ( _carroAvanzarEspecial ..  ]
+"94
+}
+[; ;carroMain.c: 94: }
+[e $U 373  ]
+"95
+[e :U 372 ]
+[; ;carroMain.c: 95: else if(PORTBbits.RB3==0&&PORTBbits.RB4==0&&PORTBbits.RB5==1){
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 0 `i == -> . . _PORTBbits 0 5 `i -> 1 `i 374  ]
+{
+[; ;carroMain.c: 96: carroGirar(3);
 "96
+[e ( _carroGirar (1 -> -> 3 `i `uc ]
+"97
+}
+[; ;carroMain.c: 97: }
+[e $U 375  ]
+"98
+[e :U 374 ]
+[; ;carroMain.c: 98: else if(PORTBbits.RB3==0&&PORTBbits.RB4==1&&PORTBbits.RB5==0){
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 1 `i == -> . . _PORTBbits 0 5 `i -> 0 `i 376  ]
+{
+[; ;carroMain.c: 99: carroAvanzar();
+"99
+[e ( _carroAvanzar ..  ]
+"100
+}
+[; ;carroMain.c: 100: }
+[e $U 377  ]
+"101
+[e :U 376 ]
+[; ;carroMain.c: 101: else if(PORTBbits.RB3==0&&PORTBbits.RB4==1&&PORTBbits.RB5==1){
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 1 `i == -> . . _PORTBbits 0 5 `i -> 1 `i 378  ]
+{
+[; ;carroMain.c: 102: carroAvanzar();
+"102
+[e ( _carroAvanzar ..  ]
+"103
+}
+[; ;carroMain.c: 103: }
+[e $U 379  ]
+"104
+[e :U 378 ]
+[; ;carroMain.c: 104: else if(PORTBbits.RB3==1&&PORTBbits.RB4==0&&PORTBbits.RB5==0){
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 1 `i == -> . . _PORTBbits 0 4 `i -> 0 `i == -> . . _PORTBbits 0 5 `i -> 0 `i 380  ]
+{
+[; ;carroMain.c: 105: carroGirar(1);
+"105
+[e ( _carroGirar (1 -> -> 1 `i `uc ]
+"106
+}
+[; ;carroMain.c: 106: }
+[e $U 381  ]
+"107
+[e :U 380 ]
+[; ;carroMain.c: 107: else if(PORTBbits.RB3==1&&PORTBbits.RB4==1&&PORTBbits.RB5==0){
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 1 `i == -> . . _PORTBbits 0 4 `i -> 1 `i == -> . . _PORTBbits 0 5 `i -> 0 `i 382  ]
+{
+[; ;carroMain.c: 108: carroAvanzar();
+"108
+[e ( _carroAvanzar ..  ]
+"109
+}
+[; ;carroMain.c: 109: }
+[e $U 383  ]
+"110
+[e :U 382 ]
+[; ;carroMain.c: 110: else if(PORTBbits.RB3==1&&PORTBbits.RB4==1&&PORTBbits.RB5==1){
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 1 `i == -> . . _PORTBbits 0 4 `i -> 1 `i == -> . . _PORTBbits 0 5 `i -> 1 `i 384  ]
+{
+[; ;carroMain.c: 111: carroMatar();
+"111
+[e ( _carroMatar ..  ]
+"112
+}
+[e :U 384 ]
+"117
+[e :U 383 ]
+[e :U 381 ]
+[e :U 379 ]
+[e :U 377 ]
+[e :U 375 ]
+[e :U 373 ]
 }
 [e :U 369 ]
-"76
+"78
 [e $U 370  ]
 [e :U 371 ]
-[; ;carroMain.c: 96: }
-[; ;carroMain.c: 97: }
-"97
+[; ;carroMain.c: 112: }
+[; ;carroMain.c: 117: }
+[; ;carroMain.c: 118: }
+"118
 [e :UE 368 ]
 }
-"99
+"120
 [v _carroAvanzar `(v ~T0 @X0 1 ef ]
 {
-[; ;carroMain.c: 99: void carroAvanzar(){
+[; ;carroMain.c: 120: void carroAvanzar(){
 [e :U _carroAvanzar ]
 [f ]
-[; ;carroMain.c: 100: LATEbits.LE1=1;
-"100
-[e = . . _LATEbits 1 1 -> -> 1 `i `uc ]
-[; ;carroMain.c: 101: LATEbits.LE0=0;
-"101
-[e = . . _LATEbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 102: LATAbits.LA0=1;
-"102
-[e = . . _LATAbits 1 0 -> -> 1 `i `uc ]
-[; ;carroMain.c: 103: LATAbits.LA1=0;
-"103
-[e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 105: }
-"105
-[e :UE 372 ]
-}
-"107
-[v _carroAtras `(v ~T0 @X0 1 ef ]
-{
-[; ;carroMain.c: 107: void carroAtras(){
-[e :U _carroAtras ]
-[f ]
-[; ;carroMain.c: 108: LATEbits.LE1=0;
-"108
-[e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 109: LATEbits.LE0=1;
-"109
-[e = . . _LATEbits 1 0 -> -> 1 `i `uc ]
-[; ;carroMain.c: 110: LATAbits.LA0=0;
-"110
-[e = . . _LATAbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 111: LATAbits.LA1=1;
-"111
-[e = . . _LATAbits 1 1 -> -> 1 `i `uc ]
-[; ;carroMain.c: 113: }
-"113
-[e :UE 373 ]
-}
-"116
-[v _carroGirar `(v ~T0 @X0 1 ef1`uc ]
-"117
-{
-[; ;carroMain.c: 116: void carroGirar(unsigned char direccion)
-[; ;carroMain.c: 117: {
-[e :U _carroGirar ]
-"116
-[v _direccion `uc ~T0 @X0 1 r1 ]
-"117
-[f ]
-[; ;carroMain.c: 118: if(direccion==1){
-"118
-[e $ ! == -> _direccion `i -> 1 `i 375  ]
-{
-[; ;carroMain.c: 119: LATAbits.LA0=1;
-"119
-[e = . . _LATAbits 1 0 -> -> 1 `i `uc ]
-[; ;carroMain.c: 120: LATAbits.LA1=0;
-"120
-[e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 121: LATEbits.LE1 =0;
+[; ;carroMain.c: 121: LATEbits.LE1=1;
 "121
-[e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
+[e = . . _LATEbits 1 1 -> -> 1 `i `uc ]
 [; ;carroMain.c: 122: LATEbits.LE0=0;
 "122
 [e = . . _LATEbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 123: LATAbits.LA0=1;
 "123
-}
-[; ;carroMain.c: 123: }
-[e $U 376  ]
-"124
-[e :U 375 ]
-[; ;carroMain.c: 124: else if(direccion==2){
-[e $ ! == -> _direccion `i -> 2 `i 377  ]
-{
-[; ;carroMain.c: 125: LATAbits.LA0=1;
-"125
 [e = . . _LATAbits 1 0 -> -> 1 `i `uc ]
-[; ;carroMain.c: 126: LATAbits.LA1=0;
-"126
+[; ;carroMain.c: 124: LATAbits.LA1=0;
+"124
 [e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 127: LATEbits.LE1 =0;
-"127
-[e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 128: LATEbits.LE0=1;
+[; ;carroMain.c: 125: config_ccp1(100);
+"125
+[e ( _config_ccp1 (1 -> 100 `i ]
+[; ;carroMain.c: 126: config_ccp2(100);
+"126
+[e ( _config_ccp2 (1 -> 100 `i ]
+[; ;carroMain.c: 128: }
 "128
-[e = . . _LATEbits 1 0 -> -> 1 `i `uc ]
+[e :UE 385 ]
+}
 "129
-}
-[e :U 377 ]
-"130
-[e :U 376 ]
-[; ;carroMain.c: 129: }
-[; ;carroMain.c: 130: }
-[e :UE 374 ]
-}
-"132
-[v _carroMatar `(v ~T0 @X0 1 ef ]
+[v _carroAvanzarEspecial `(v ~T0 @X0 1 ef ]
 {
-[; ;carroMain.c: 132: void carroMatar(){
-[e :U _carroMatar ]
+[; ;carroMain.c: 129: void carroAvanzarEspecial(){
+[e :U _carroAvanzarEspecial ]
 [f ]
-[; ;carroMain.c: 133: LATAbits.LA0=0;
+[; ;carroMain.c: 131: LATEbits.LE1=1;
+"131
+[e = . . _LATEbits 1 1 -> -> 1 `i `uc ]
+[; ;carroMain.c: 132: LATEbits.LE0=0;
+"132
+[e = . . _LATEbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 133: LATAbits.LA0=1;
 "133
-[e = . . _LATAbits 1 0 -> -> 0 `i `uc ]
+[e = . . _LATAbits 1 0 -> -> 1 `i `uc ]
 [; ;carroMain.c: 134: LATAbits.LA1=0;
 "134
 [e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 135: LATEbits.LE1 =0;
+[; ;carroMain.c: 135: config_ccp1(80);
 "135
-[e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
-[; ;carroMain.c: 136: LATEbits.LE0=0;
+[e ( _config_ccp1 (1 -> 80 `i ]
+[; ;carroMain.c: 136: config_ccp2(80);
 "136
+[e ( _config_ccp2 (1 -> 80 `i ]
+[; ;carroMain.c: 138: }
+"138
+[e :UE 386 ]
+}
+"140
+[v _carroAtras `(v ~T0 @X0 1 ef ]
+{
+[; ;carroMain.c: 140: void carroAtras(){
+[e :U _carroAtras ]
+[f ]
+[; ;carroMain.c: 141: LATEbits.LE1=0;
+"141
+[e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 142: LATEbits.LE0=1;
+"142
+[e = . . _LATEbits 1 0 -> -> 1 `i `uc ]
+[; ;carroMain.c: 143: LATAbits.LA0=0;
+"143
+[e = . . _LATAbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 144: LATAbits.LA1=1;
+"144
+[e = . . _LATAbits 1 1 -> -> 1 `i `uc ]
+[; ;carroMain.c: 145: config_ccp1(100);
+"145
+[e ( _config_ccp1 (1 -> 100 `i ]
+[; ;carroMain.c: 146: config_ccp2(100);
+"146
+[e ( _config_ccp2 (1 -> 100 `i ]
+[; ;carroMain.c: 147: }
+"147
+[e :UE 387 ]
+}
+"150
+[v _carroGirar `(v ~T0 @X0 1 ef1`uc ]
+"151
+{
+[; ;carroMain.c: 150: void carroGirar(unsigned char direccion)
+[; ;carroMain.c: 151: {
+[e :U _carroGirar ]
+"150
+[v _direccion `uc ~T0 @X0 1 r1 ]
+"151
+[f ]
+[; ;carroMain.c: 152: if(direccion==1){
+"152
+[e $ ! == -> _direccion `i -> 1 `i 389  ]
+{
+[; ;carroMain.c: 153: LATAbits.LA0=1;
+"153
+[e = . . _LATAbits 1 0 -> -> 1 `i `uc ]
+[; ;carroMain.c: 154: LATAbits.LA1=0;
+"154
+[e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 155: LATEbits.LE1 =0;
+"155
+[e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 156: LATEbits.LE0=0;
+"156
 [e = . . _LATEbits 1 0 -> -> 0 `i `uc ]
-[; ;carroMain.c: 137: }
-"137
-[e :UE 378 ]
+"157
+}
+[; ;carroMain.c: 157: }
+[e $U 390  ]
+"158
+[e :U 389 ]
+[; ;carroMain.c: 158: else if(direccion==2){
+[e $ ! == -> _direccion `i -> 2 `i 391  ]
+{
+[; ;carroMain.c: 159: LATAbits.LA0=1;
+"159
+[e = . . _LATAbits 1 0 -> -> 1 `i `uc ]
+[; ;carroMain.c: 160: LATAbits.LA1=0;
+"160
+[e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 161: LATEbits.LE1 =0;
+"161
+[e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 162: LATEbits.LE0=1;
+"162
+[e = . . _LATEbits 1 0 -> -> 1 `i `uc ]
+"163
+}
+[; ;carroMain.c: 163: }
+[e $U 392  ]
+"164
+[e :U 391 ]
+[; ;carroMain.c: 164: else if(direccion==3){
+[e $ ! == -> _direccion `i -> 3 `i 393  ]
+{
+[; ;carroMain.c: 165: LATAbits.LA0=0;
+"165
+[e = . . _LATAbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 166: LATAbits.LA1=0;
+"166
+[e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 167: LATEbits.LE1 =1;
+"167
+[e = . . _LATEbits 1 1 -> -> 1 `i `uc ]
+[; ;carroMain.c: 168: LATEbits.LE0=0;
+"168
+[e = . . _LATEbits 1 0 -> -> 0 `i `uc ]
+"169
+}
+[e :U 393 ]
+"170
+[e :U 392 ]
+[e :U 390 ]
+[; ;carroMain.c: 169: }
+[; ;carroMain.c: 170: config_ccp1(100);
+[e ( _config_ccp1 (1 -> 100 `i ]
+[; ;carroMain.c: 171: config_ccp2(100);
+"171
+[e ( _config_ccp2 (1 -> 100 `i ]
+[; ;carroMain.c: 172: }
+"172
+[e :UE 388 ]
+}
+"174
+[v _carroMatar `(v ~T0 @X0 1 ef ]
+{
+[; ;carroMain.c: 174: void carroMatar(){
+[e :U _carroMatar ]
+[f ]
+[; ;carroMain.c: 175: LATAbits.LA0=0;
+"175
+[e = . . _LATAbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 176: LATAbits.LA1=0;
+"176
+[e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 177: LATEbits.LE1 =0;
+"177
+[e = . . _LATEbits 1 1 -> -> 0 `i `uc ]
+[; ;carroMain.c: 178: LATEbits.LE0=0;
+"178
+[e = . . _LATEbits 1 0 -> -> 0 `i `uc ]
+[; ;carroMain.c: 179: config_ccp1(0);
+"179
+[e ( _config_ccp1 (1 -> 0 `i ]
+[; ;carroMain.c: 180: config_ccp2(0);
+"180
+[e ( _config_ccp2 (1 -> 0 `i ]
+[; ;carroMain.c: 181: }
+"181
+[e :UE 394 ]
 }

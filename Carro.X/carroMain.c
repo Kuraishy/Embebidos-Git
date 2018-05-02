@@ -17,9 +17,9 @@
 
 #define StatusPWM T2CONbits.TMR2ON
 
-#define Sensor1 PORTBbits.RB5
-#define Sensor2 PORTBbits.RB4
-#define Sensor3 PORTBbits.RB3
+#define SensorIzquierda PORTBbits.RB5
+#define SensorCentral PORTBbits.RB4
+#define SensorDerecha PORTBbits.RB3
 
 
 #include <pic18f4550.h>
@@ -38,6 +38,8 @@ void carroAvanzar();//funcion de avanzar
 void carroAtras();//funcion de retroceder 
 void carroGirar(unsigned char direccion);//1 es a derecha  0 es izquierda
 void carroMatar();//para el carro
+void carroAvanzarEspecial();///para el caso donde no detecten nada, reduce la velocidad
+
 
 
  
@@ -62,11 +64,11 @@ void main()
     TRISCbits.RC1 = 0;
        /*********Funciones para configurar señal PWM ***********/
     config_timer2(0,16); //(Encendido/Apagado , Prescaler )
-    coinfig_ccpcon(48000000,5000);//(Fosc(Hz), Frecuencia (HZ))
-    config_ccp1(25);//(DutyCycle(%))
-    config_ccp2(35);//(DutyCycle(%))
+    coinfig_ccpcon(48000000,15000);//(Fosc(Hz), Frecuencia (HZ))
+  //  config_ccp1(25);//(DutyCycle(%))//llanta derecha
+    //config_ccp2(35);//(DutyCycle(%))//llanta izquierda
     
-   StatusPWM = 0;
+   StatusPWM = 1;
    
   
 
@@ -87,8 +89,27 @@ void main()
         carroMatar();
         carroGirar(2);*/
     
-        
-        
+        if(SensorDerecha==0&&SensorCentral==0&&SensorIzquierda==0){
+            carroAvanzarEspecial();
+        }
+        else if(SensorDerecha==0&&SensorCentral==0&&SensorIzquierda==1){
+            carroGirar(3);
+        }
+        else if(SensorDerecha==0&&SensorCentral==1&&SensorIzquierda==0){
+            carroAvanzar();
+        }
+        else if(SensorDerecha==0&&SensorCentral==1&&SensorIzquierda==1){
+            carroAvanzar();
+        }
+        else if(SensorDerecha==1&&SensorCentral==0&&SensorIzquierda==0){
+            carroGirar(1);
+        }
+        else if(SensorDerecha==1&&SensorCentral==1&&SensorIzquierda==0){
+            carroAvanzar();
+        }
+        else if(SensorDerecha==1&&SensorCentral==1&&SensorIzquierda==1){
+            carroMatar();
+        }
 
    
 
@@ -101,7 +122,19 @@ void carroAvanzar(){//avanza el carro
     MotorDerechoAtras=0;
     MotorIzquierdoAvanzar=1;
     MotorIzquierdoAtras=0;
+    config_ccp1(100);//(DutyCycle(%))
+    config_ccp2(100);//(DutyCycle(%))
     
+}
+void carroAvanzarEspecial(){
+
+     MotorDerechoAvanzar=1;
+    MotorDerechoAtras=0;
+    MotorIzquierdoAvanzar=1;
+    MotorIzquierdoAtras=0;
+    config_ccp1(80);//(DutyCycle(%))
+    config_ccp2(80);//(DutyCycle(%))
+
 }
 
 void carroAtras(){//retrocede el carro
@@ -109,7 +142,8 @@ void carroAtras(){//retrocede el carro
     MotorDerechoAtras=1;
     MotorIzquierdoAvanzar=0;
     MotorIzquierdoAtras=1;
-    
+    config_ccp1(100);//(DutyCycle(%))
+    config_ccp2(100);//(DutyCycle(%))
 }
     
 
@@ -127,6 +161,14 @@ void carroGirar(unsigned char direccion)//1 es a derecha  0 es izquierda
         MotorDerechoAvanzar =0;
         MotorDerechoAtras=1;
     }
+    else if(direccion==3){
+         MotorIzquierdoAvanzar=0;
+        MotorIzquierdoAtras=0;
+        MotorDerechoAvanzar =1;
+        MotorDerechoAtras=0;
+    }
+     config_ccp1(100);//(DutyCycle(%))
+    config_ccp2(100);//(DutyCycle(%))
 }
 
 void carroMatar(){
@@ -134,4 +176,6 @@ void carroMatar(){
         MotorIzquierdoAtras=0;
         MotorDerechoAvanzar =0;
         MotorDerechoAtras=0;
+        config_ccp1(0);//(DutyCycle(%))
+       config_ccp2(0);//(DutyCycle(%))
 }
