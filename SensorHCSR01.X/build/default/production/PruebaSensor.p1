@@ -1,60 +1,69 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"10 config.h
-[v _configBoard `(v ~T0 @X0 0 ef ]
-"52 lcd.h
-[v _lcd_iniciar `(v ~T0 @X0 0 ef ]
-"6585 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
-[s S264 :4 `uc 1 :2 `uc 1 ]
-[n S264 . PCFG VCFG ]
-"6589
-[s S265 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S265 . PCFG0 PCFG1 PCFG2 PCFG3 VCFG0 VCFG1 ]
-"6597
-[s S266 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S266 . . CHSN3 VCFG01 VCFG11 ]
-"6584
-[u S263 `S264 1 `S265 1 `S266 1 ]
-[n S263 . . . . ]
-"6604
-[v _ADCON1bits `VS263 ~T0 @X0 0 e@4033 ]
-"3856
-[s S149 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S149 . TRISC0 TRISC1 TRISC2 . TRISC6 TRISC7 ]
-"3864
-[s S150 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S150 . RC0 RC1 RC2 . RC6 RC7 ]
-"3855
-[u S148 `S149 1 `S150 1 ]
-[n S148 . . . ]
-"3873
-[v _TRISCbits `VS148 ~T0 @X0 0 e@3988 ]
-"3634
-[s S143 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S143 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
-"3644
-[s S144 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S144 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"3633
-[u S142 `S143 1 `S144 1 ]
-[n S142 . . . ]
-"3655
-[v _TRISBbits `VS142 ~T0 @X0 0 e@3987 ]
-"4010
-[s S155 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S155 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
-"4020
-[s S156 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S156 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
-"4009
-[u S154 `S155 1 `S156 1 ]
-[n S154 . . . ]
-"4031
-[v _TRISDbits `VS154 ~T0 @X0 0 e@3989 ]
-"59 lcd.h
-[v _lcd_origen `(v ~T0 @X0 0 ef ]
-"56
-[v _lcd_texto `(v ~T0 @X0 0 ef1`*uc ]
+"7984 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+[v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
+"3623
+[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
+"3999
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"8509
+[s S351 :7 `uc 1 :1 `uc 1 ]
+[n S351 . . NOT_RBPU ]
+"8513
+[s S352 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S352 . RBIP . TMR0IP . INTEDG2 INTEDG1 INTEDG0 nRBPU ]
+"8523
+[s S353 :2 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S353 . . T0IP . RBPU ]
+"8508
+[u S350 `S351 1 `S352 1 `S353 1 ]
+[n S350 . . . . ]
+"8530
+[v _INTCON2bits `VS350 ~T0 @X0 0 e@4081 ]
+"9623
+[v _LATD0 `Vb ~T0 @X0 0 e@31840 ]
+"7413
+[v _T1CON `Vuc ~T0 @X0 0 e@4045 ]
+"10185
+[v _TMR1IF `Vb ~T0 @X0 0 e@31984 ]
+"7516
+[v _TMR1 `Vus ~T0 @X0 0 e@4046 ]
+"25 PruebaSensor.c
+[v _Trigger_Pulse_10us `(v ~T0 @X0 0 ef ]
+"2457 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+[s S102 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S102 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"2467
+[s S103 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S103 . INT0 INT1 INT2 . PGM PGC PGD ]
+"2476
+[s S104 :3 `uc 1 :1 `uc 1 ]
+[n S104 . . CCP2_PA2 ]
+"2456
+[u S101 `S102 1 `S103 1 `S104 1 ]
+[n S101 . . . . ]
+"2481
+[v _PORTBbits `VS101 ~T0 @X0 0 e@3969 ]
+"10189
+[v _TMR1ON `Vb ~T0 @X0 0 e@32360 ]
+"2709
+[s S112 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S112 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"2719
+[s S113 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S113 . SPP0 SPP1 SPP2 SPP3 SPP4 SPP5 SPP6 SPP7 ]
+"2729
+[s S114 :7 `uc 1 :1 `uc 1 ]
+[n S114 . . SS2 ]
+"2708
+[u S111 `S112 1 `S113 1 `S114 1 ]
+[n S111 . . . . ]
+"2734
+[v _PORTDbits `VS111 ~T0 @X0 0 e@3971 ]
+[v F3964 `(v ~T0 @X0 1 tf1`ul ]
+"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
+[v __delay `JF3964 ~T0 @X0 0 e ]
+[p i __delay ]
 [; ;pic18f4550.h: 50: extern volatile unsigned char SPPDATA @ 0xF62;
 "52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [; ;pic18f4550.h: 52: asm("SPPDATA equ 0F62h");
@@ -3726,6 +3735,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lcd.h: 59: void lcd_origen();
 [; ;lcd.h: 60: void lcd_movimiento_derecha();
 [; ;lcd.h: 61: void lcd_movimiento_izquierda();
+[; ;PruebaSensor.c: 25: void Trigger_Pulse_10us();
 [v $root$_main `(v ~T0 @X0 0 e ]
 "30 PruebaSensor.c
 [v _main `(v ~T0 @X0 1 ef ]
@@ -3735,50 +3745,126 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;PruebaSensor.c: 31: {
 [e :U _main ]
 [f ]
-[; ;PruebaSensor.c: 32: configBoard();
 "32
-[e ( _configBoard ..  ]
-[; ;PruebaSensor.c: 33: lcd_iniciar();
+[v _Distance `f ~T0 @X0 1 a ]
 "33
-[e ( _lcd_iniciar ..  ]
-[; ;PruebaSensor.c: 34: ADCON1bits.PCFG = 0b1111;
+[v _Time `i ~T0 @X0 1 a ]
 "34
-[e = . . _ADCON1bits 0 0 -> -> 15 `i `uc ]
-[; ;PruebaSensor.c: 38: TRISCbits.RC2=0;
+[v _Total_distance `f ~T0 @X0 -> 10 `i a ]
+[; ;PruebaSensor.c: 32: float Distance;
+[; ;PruebaSensor.c: 33: int Time;
+[; ;PruebaSensor.c: 34: float Total_distance[10];
+[; ;PruebaSensor.c: 35: OSCCON=0x72;
+"35
+[e = _OSCCON -> -> 114 `i `uc ]
+[; ;PruebaSensor.c: 36: TRISB = 0xff;
+"36
+[e = _TRISB -> -> 255 `i `uc ]
+[; ;PruebaSensor.c: 37: TRISD = 0;
+"37
+[e = _TRISD -> -> 0 `i `uc ]
+[; ;PruebaSensor.c: 38: INTCON2bits.RBPU=0;
 "38
-[e = . . _TRISCbits 1 2 -> -> 0 `i `uc ]
-[; ;PruebaSensor.c: 39: TRISBbits.RB4=0;
-"39
-[e = . . _TRISBbits 1 4 -> -> 0 `i `uc ]
-[; ;PruebaSensor.c: 40: TRISDbits.RD3=1;
+[e = . . _INTCON2bits 2 3 -> -> 0 `i `uc ]
+[; ;PruebaSensor.c: 40: LATD0 = 0;
 "40
-[e = . . _TRISDbits 1 3 -> -> 1 `i `uc ]
-[; ;PruebaSensor.c: 41: TRISDbits.RD2=1;
-"41
-[e = . . _TRISDbits 1 2 -> -> 1 `i `uc ]
-[; ;PruebaSensor.c: 42: TRISCbits.RC7=1;
+[e = _LATD0 -> -> 0 `i `b ]
+[; ;PruebaSensor.c: 42: T1CON = 0x80;
 "42
-[e = . . _TRISCbits 1 5 -> -> 1 `i `uc ]
-[; ;PruebaSensor.c: 49: while(1) {
-"49
+[e = _T1CON -> -> 128 `i `uc ]
+[; ;PruebaSensor.c: 43: TMR1IF = 0;
+"43
+[e = _TMR1IF -> -> 0 `i `b ]
+[; ;PruebaSensor.c: 44: TMR1=0;
+"44
+[e = _TMR1 -> -> 0 `i `us ]
+[; ;PruebaSensor.c: 46: while(1)
+"46
 [e :U 370 ]
+[; ;PruebaSensor.c: 47: {
+"47
 {
-[; ;PruebaSensor.c: 52: lcd_origen();
+[; ;PruebaSensor.c: 49: Trigger_Pulse_10us();
+"49
+[e ( _Trigger_Pulse_10us ..  ]
+[; ;PruebaSensor.c: 50: while(PORTBbits.RB0==0);
+"50
+[e $U 372  ]
+[e :U 373 ]
+[e :U 372 ]
+[e $ == -> . . _PORTBbits 0 0 `i -> 0 `i 373  ]
+[e :U 374 ]
+[; ;PruebaSensor.c: 51: TMR1=0;
+"51
+[e = _TMR1 -> -> 0 `i `us ]
+[; ;PruebaSensor.c: 52: TMR1ON=1;
 "52
-[e ( _lcd_origen ..  ]
-[; ;PruebaSensor.c: 53: lcd_texto("hola");
+[e = _TMR1ON -> -> 1 `i `b ]
+[; ;PruebaSensor.c: 53: while(PORTBbits.RB0==1 && !TMR1IF);
 "53
-[e ( _lcd_texto (1 -> :s 1C `*uc ]
+[e $U 375  ]
+[e :U 376 ]
+[e :U 375 ]
+[e $ && == -> . . _PORTBbits 0 0 `i -> 1 `i ! _TMR1IF 376  ]
+[e :U 377 ]
+[; ;PruebaSensor.c: 54: Time = TMR1;
+"54
+[e = _Time -> _TMR1 `i ]
+[; ;PruebaSensor.c: 55: TMR1ON=0;
+"55
+[e = _TMR1ON -> -> 0 `i `b ]
+[; ;PruebaSensor.c: 56: Distance = ((float)Time/117.00);
+"56
+[e = _Distance -> / -> -> _Time `f `d .117.00 `f ]
+[; ;PruebaSensor.c: 57: if(Distance>5&&Distance<15){
 "57
+[e $ ! && > _Distance -> -> 5 `i `f < _Distance -> -> 15 `i `f 378  ]
+{
+[; ;PruebaSensor.c: 58: PORTDbits.RD2=1;
+"58
+[e = . . _PORTDbits 0 2 -> -> 1 `i `uc ]
+"59
+}
+[; ;PruebaSensor.c: 59: }else{
+[e $U 379  ]
+[e :U 378 ]
+{
+[; ;PruebaSensor.c: 60: PORTDbits.RD2=0;
+"60
+[e = . . _PORTDbits 0 2 -> -> 0 `i `uc ]
+"61
+}
+[e :U 379 ]
+"63
 }
 [e :U 369 ]
-"49
+"46
 [e $U 370  ]
 [e :U 371 ]
-[; ;PruebaSensor.c: 57: }
-[; ;PruebaSensor.c: 58: }
-"58
+[; ;PruebaSensor.c: 61: }
+[; ;PruebaSensor.c: 63: }
+[; ;PruebaSensor.c: 64: }
+"64
 [e :UE 368 ]
 }
-[a 1C 104 111 108 97 0 ]
-
+"65
+[v _Trigger_Pulse_10us `(v ~T0 @X0 1 ef ]
+"66
+{
+[; ;PruebaSensor.c: 65: void Trigger_Pulse_10us()
+[; ;PruebaSensor.c: 66: {
+[e :U _Trigger_Pulse_10us ]
+[f ]
+[; ;PruebaSensor.c: 67: LATD0 = 1;
+"67
+[e = _LATD0 -> -> 1 `i `b ]
+[; ;PruebaSensor.c: 68: _delay((unsigned long)((10)*(8000000/4000000.0)));
+"68
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+[; ;PruebaSensor.c: 69: LATD0 = 0;
+"69
+[e = _LATD0 -> -> 0 `i `b ]
+[; ;PruebaSensor.c: 70: }
+"70
+[e :UE 380 ]
+}

@@ -35,9 +35,7 @@ void main()
     
     TRISCbits.RC2=0;//motorderecho
     TRISBbits.RB4=0;//motor izuqierod
-    TRISDbits.RD3=1;//sensor central
-    TRISDbits.RD2=1;//Sensor Derecho
-    TRISCbits.RC7=1;//Sensor Izuqierod
+
     
     
     //////////////////////////
@@ -46,37 +44,11 @@ void main()
      
     while(1)       {    
     
-   
-    
-        if(SensorIzquierdo==0&&SensorCentral==1&&SensorDerecho==0){//Avanzar
-            MotorDerecho=1;
-            MotorIzquierdo=1;
-        }
-     
-        else if(SensorDerecho==1&&SensorIzquierdo==0&&SensorCentral==0){//derecha
-            MotorDerecho=1;
-            SensorIzquierdo=0;
-        }        
-        else if(SensorDerecho==1&&SensorIzquierdo==0&&SensorCentral==1){//anvanza
-            MotorDerecho=1;
-            MotorIzquierdo=1;
-        
-        }
-        else if(SensorDerecho==0&&SensorIzquierdo==1&&SensorCentral==0){//izquierda
-            MotorDerecho=0;
-            MotorIzquierdo=1;
-        
-        }
-        else if(SensorDerecho==0&&SensorIzquierdo==1&&SensorCentral==1){//avanza
-            MotorDerecho=1;
-            MotorIzquierdo=1;
-       
-        }
-        else{
-            MotorDerecho=1;
-            MotorIzquierdo=0;
-        }
-
+ 
+        PORTBbits.RB4=1;
+        wait_in_ms(100);
+        PORTBbits.RB4=0;
+        wait_in_ms(50);
    
 
         

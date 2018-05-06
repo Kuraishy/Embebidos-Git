@@ -5044,30 +5044,50 @@ void lcd_origen();
 void lcd_movimiento_derecha();
 void lcd_movimiento_izquierda();
 
-# 30 "PruebaSensor.c"
+# 25 "PruebaSensor.c"
+void Trigger_Pulse_10us();
+
+
+
+
 void main()
 {
-configBoard();
-lcd_iniciar();
-ADCON1bits.PCFG = 0b1111;
+float Distance;
+int Time;
+float Total_distance[10];
+OSCCON=0x72;
+TRISB = 0xff;
+TRISD = 0;
+INTCON2bits.RBPU=0;
 
+LATD0 = 0;
 
+T1CON = 0x80;
+TMR1IF = 0;
+TMR1=0;
 
-TRISCbits.RC2=0;
-TRISBbits.RB4=0;
-TRISDbits.RD3=1;
-TRISDbits.RD2=1;
-TRISCbits.RC7=1;
+while(1)
+{
 
-# 49
-while(1) {
-
-
-lcd_origen();
-lcd_texto("hola");
-
-
+Trigger_Pulse_10us();
+while(PORTBbits.RB0==0);
+TMR1=0;
+TMR1ON=1;
+while(PORTBbits.RB0==1 && !TMR1IF);
+Time = TMR1;
+TMR1ON=0;
+Distance = ((float)Time/117.00);
+if(Distance>5&&Distance<15){
+PORTDbits.RD2=1;
+}else{
+PORTDbits.RD2=0;
+}
 
 }
 }
-
+void Trigger_Pulse_10us()
+{
+LATD0 = 1;
+_delay((unsigned long)((10)*(8000000/4000000.0)));
+LATD0 = 0;
+}

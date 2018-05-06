@@ -29,105 +29,35 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "11 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\SensorPrueba.X\config.c
 [v _configBoard configBoard `(v  1 e 1 0 ]
+"80
+[v _wait_in_ms wait_in_ms `(v  1 e 1 0 ]
 "29 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\SensorPrueba.X\PruebaSensor.c
 [v _main main `(v  1 e 1 0 ]
 "2312 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
-[s S549 . 1 `uc 1 RC0 1 0 :1:0 
-`uc 1 RC1 1 0 :1:1 
-`uc 1 RC2 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
-`uc 1 RC4 1 0 :1:4 
-`uc 1 RC5 1 0 :1:5 
-`uc 1 RC6 1 0 :1:6 
-`uc 1 RC7 1 0 :1:7 
+[s S478 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
 ]
-"2603
-[s S558 . 1 `uc 1 T1OSO 1 0 :1:0 
-`uc 1 T1OSI 1 0 :1:1 
-`uc 1 CCP1 1 0 :1:2 
-`uc 1 . 1 0 :3:3 
-`uc 1 TX 1 0 :1:6 
-`uc 1 RX 1 0 :1:7 
+"2481
+[s S518 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
 ]
-[s S565 . 1 `uc 1 T13CKI 1 0 :1:0 
-`uc 1 . 1 0 :1:1 
-`uc 1 P1A 1 0 :1:2 
-`uc 1 . 1 0 :3:3 
-`uc 1 CK 1 0 :1:6 
-`uc 1 DT 1 0 :1:7 
+[s S526 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
 ]
-[s S572 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 CCP2 1 0 :1:1 
-`uc 1 PA1 1 0 :1:2 
-]
-[s S576 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 PA2 1 0 :1:1 
-]
-[u S579 . 1 `S549 1 . 1 0 `S558 1 . 1 0 `S565 1 . 1 0 `S572 1 . 1 0 `S576 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES579  1 e 1 @3970 ]
-[s S518 . 1 `uc 1 RD0 1 0 :1:0 
-`uc 1 RD1 1 0 :1:1 
-`uc 1 RD2 1 0 :1:2 
-`uc 1 RD3 1 0 :1:3 
-`uc 1 RD4 1 0 :1:4 
-`uc 1 RD5 1 0 :1:5 
-`uc 1 RD6 1 0 :1:6 
-`uc 1 RD7 1 0 :1:7 
-]
-"2734
-[s S625 . 1 `uc 1 SPP0 1 0 :1:0 
-`uc 1 SPP1 1 0 :1:1 
-`uc 1 SPP2 1 0 :1:2 
-`uc 1 SPP3 1 0 :1:3 
-`uc 1 SPP4 1 0 :1:4 
-`uc 1 SPP5 1 0 :1:5 
-`uc 1 SPP6 1 0 :1:6 
-`uc 1 SPP7 1 0 :1:7 
-]
-[s S634 . 1 `uc 1 . 1 0 :7:0 
-`uc 1 SS2 1 0 :1:7 
-]
-[u S637 . 1 `S518 1 . 1 0 `S625 1 . 1 0 `S634 1 . 1 0 ]
-[v _PORTDbits PORTDbits `VES637  1 e 1 @3971 ]
-[s S695 . 1 `uc 1 LATB0 1 0 :1:0 
-`uc 1 LATB1 1 0 :1:1 
-`uc 1 LATB2 1 0 :1:2 
-`uc 1 LATB3 1 0 :1:3 
-`uc 1 LATB4 1 0 :1:4 
-`uc 1 LATB5 1 0 :1:5 
-`uc 1 LATB6 1 0 :1:6 
-`uc 1 LATB7 1 0 :1:7 
-]
-"3098
-[s S704 . 1 `uc 1 LB0 1 0 :1:0 
-`uc 1 LB1 1 0 :1:1 
-`uc 1 LB2 1 0 :1:2 
-`uc 1 LB3 1 0 :1:3 
-`uc 1 LB4 1 0 :1:4 
-`uc 1 LB5 1 0 :1:5 
-`uc 1 LB6 1 0 :1:6 
-`uc 1 LB7 1 0 :1:7 
-]
-[u S713 . 1 `S695 1 . 1 0 `S704 1 . 1 0 ]
-[v _LATBbits LATBbits `VES713  1 e 1 @3978 ]
-[s S663 . 1 `uc 1 LATC0 1 0 :1:0 
-`uc 1 LATC1 1 0 :1:1 
-`uc 1 LATC2 1 0 :1:2 
-`uc 1 . 1 0 :3:3 
-`uc 1 LATC6 1 0 :1:6 
-`uc 1 LATC7 1 0 :1:7 
-]
-"3206
-[s S670 . 1 `uc 1 LC0 1 0 :1:0 
-`uc 1 LC1 1 0 :1:1 
-`uc 1 LC2 1 0 :1:2 
-`uc 1 . 1 0 :3:3 
-`uc 1 LC6 1 0 :1:6 
-`uc 1 LC7 1 0 :1:7 
-]
-[u S677 . 1 `S663 1 . 1 0 `S670 1 . 1 0 ]
-[v _LATCbits LATCbits `VES677  1 e 1 @3979 ]
+[u S529 . 1 `S478 1 . 1 0 `S518 1 . 1 0 `S526 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES529  1 e 1 @3969 ]
 [s S229 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
@@ -157,15 +87,6 @@
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "3655
-[s S478 . 1 `uc 1 RB0 1 0 :1:0 
-`uc 1 RB1 1 0 :1:1 
-`uc 1 RB2 1 0 :1:2 
-`uc 1 RB3 1 0 :1:3 
-`uc 1 RB4 1 0 :1:4 
-`uc 1 RB5 1 0 :1:5 
-`uc 1 RB6 1 0 :1:6 
-`uc 1 RB7 1 0 :1:7 
-]
 [u S487 . 1 `S469 1 . 1 0 `S478 1 . 1 0 ]
 [v _TRISBbits TRISBbits `VES487  1 e 1 @3987 ]
 [s S437 . 1 `uc 1 TRISC0 1 0 :1:0 
@@ -187,18 +108,6 @@
 [v _TRISCbits TRISCbits `VES451  1 e 1 @3988 ]
 "3999
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
-[s S509 . 1 `uc 1 TRISD0 1 0 :1:0 
-`uc 1 TRISD1 1 0 :1:1 
-`uc 1 TRISD2 1 0 :1:2 
-`uc 1 TRISD3 1 0 :1:3 
-`uc 1 TRISD4 1 0 :1:4 
-`uc 1 TRISD5 1 0 :1:5 
-`uc 1 TRISD6 1 0 :1:6 
-`uc 1 TRISD7 1 0 :1:7 
-]
-"4031
-[u S527 . 1 `S509 1 . 1 0 `S518 1 . 1 0 ]
-[v _TRISDbits TRISDbits `VES527  1 e 1 @3989 ]
 [s S265 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
@@ -354,7 +263,63 @@
 "29 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\SensorPrueba.X\PruebaSensor.c
 [v _main main `(v  1 e 1 0 ]
 {
-"84
+"56
+} 0
+"80 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\SensorPrueba.X\config.c
+[v _wait_in_ms wait_in_ms `(v  1 e 1 0 ]
+{
+"82
+[v wait_in_ms@count_ms count_ms `ui  1 a 2 50 ]
+"81
+[v wait_in_ms@count count `ui  1 a 2 48 ]
+"83
+[v wait_in_ms@flag flag `ui  1 a 2 46 ]
+"80
+[v wait_in_ms@time_in_ms time_in_ms `i  1 p 2 42 ]
+"108
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 37 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 41 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 36 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 27 ]
+"73
+} 0
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 22 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 26 ]
+[v ___ftdiv@exp exp `uc  1 a 1 25 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 21 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 12 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 15 ]
+"86
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 11 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
 } 0
 "11 C:\Users\Administrador\OneDrive\universida\Embebidos-Git\SensorPrueba.X\config.c
 [v _configBoard configBoard `(v  1 e 1 0 ]
