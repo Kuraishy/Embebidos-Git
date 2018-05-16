@@ -412,7 +412,7 @@ text18 80A 1386 CODE 80A 0
 %locals
 dist/default/production\comunicacio.X.production.obj
 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
-C:\Users\ADMINI~1\AppData\Local\Temp\sang.
+C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
 1897 11FA 0 CODE 0
 1899 11FA 0 CODE 0
 1902 11FA 0 CODE 0
@@ -803,6 +803,6 @@ comuni.c
 76 DB2 0 CODE 0
 77 DB6 0 CODE 0
 78 DB8 0 CODE 0
-82 DB8 0 CODE 0
+80 DB8 0 CODE 0
+81 DC0 0 CODE 0
 83 DC0 0 CODE 0
-85 DC0 0 CODE 0

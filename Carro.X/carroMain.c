@@ -241,6 +241,7 @@ void carroAtras();//funcion de retroceder
 void carroGirar(unsigned char direccion);//1 es a derecha  0 es izquierda
 void carroMatar();//para el carro
 void carroAvanzarEspecial();///para el caso donde no detecten nada, reduce la velocidad
+void carroGirarEspecial(unsigned char direccion2);
 
 
 void main()
@@ -311,6 +312,12 @@ void main()
         else if (SensorExtremoIzquierda==1&&SensorIzquierda==1&&SensorCentral==1&&SensorDerecha==1&&SensorExtremoDerecha==1){
             carroAvanzarEspecial();
         }
+        else if(SensorExtremoIzquierda==0&&SensorIzquierda==0&&SensorCentral==1&&SensorDerecha==1&&SensorExtremoDerecha==1){
+            carroGirarEspecial(1);
+        }
+        else if(SensorExtremoIzquierda==1&&SensorIzquierda==1&&SensorCentral==1&&SensorDerecha==0&&SensorExtremoDerecha==0){
+            carroGirarEspecial(2);
+        }
         
        
    
@@ -348,7 +355,23 @@ void carroAtras(){//retrocede el carro
     config_ccp2(100);//(DutyCycle(%))
 }
     
-
+void carroGirarEspecial(unsigned char direccion2){
+    if(direccion2==1){
+        MotorIzquierdoAvanzar=1;
+        MotorIzquierdoAtras=0;
+        MotorDerechoAvanzar=0;
+        MotorDerechoAtras=0;
+        
+    }
+    else if(direccion2==2){
+         MotorIzquierdoAvanzar=0;
+        MotorIzquierdoAtras=0;
+        MotorDerechoAvanzar=1;
+        MotorDerechoAtras=0;
+    }
+     config_ccp1(40);//(DutyCycle(%))
+    config_ccp2(40);//(DutyCycle(%))
+}
 void carroGirar(unsigned char direccion)//1 es a derecha  0 es izquierda
 {
     if(direccion==1){

@@ -2,20 +2,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
 "10 config.h
 [v _configBoard `(v ~T0 @X0 0 ef ]
-"42 lcd.h
-[v _lcd_inicializar `(v ~T0 @X0 0 ef ]
-"35 i2c.h
-[v _Acelerometro_Init `(v ~T0 @X0 0 ef ]
-"7984 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
-[v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
-"34 i2c.h
-[v _Acelerometro_Start `(v ~T0 @X0 0 ef ]
-"33
-[v _I2C_Read `(uc ~T0 @X0 0 ef1`uc ]
-"29
-[v _I2C_Stop `(uc ~T0 @X0 0 ef ]
-"194 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"7 I2C_config.h
+[v _initI2C `(v ~T0 @X0 0 ef ]
+"9
+[v _I2Cstart `(v ~T0 @X0 0 ef ]
+[v F3964 `(v ~T0 @X0 1 tf1`ul ]
+"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
+[v __delay `JF3964 ~T0 @X0 0 e ]
+[p i __delay ]
 [; ;pic18f4550.h: 50: extern volatile unsigned char SPPDATA @ 0xF62;
 "52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [; ;pic18f4550.h: 52: asm("SPPDATA equ 0F62h");
@@ -3672,59 +3666,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 58: extern char * strichr(const char *, int);
 [; ;string.h: 59: extern char * strrchr(const char *, int);
 [; ;string.h: 60: extern char * strrichr(const char *, int);
-[; ;math.h: 30: extern double fabs(double);
-[; ;math.h: 31: extern double floor(double);
-[; ;math.h: 32: extern double ceil(double);
-[; ;math.h: 33: extern double modf(double, double *);
-[; ;math.h: 34: extern double sqrt(double);
-[; ;math.h: 35: extern double atof(const char *);
-[; ;math.h: 36: extern double sin(double) ;
-[; ;math.h: 37: extern double cos(double) ;
-[; ;math.h: 38: extern double tan(double) ;
-[; ;math.h: 39: extern double asin(double) ;
-[; ;math.h: 40: extern double acos(double) ;
-[; ;math.h: 41: extern double atan(double);
-[; ;math.h: 42: extern double atan2(double, double) ;
-[; ;math.h: 43: extern double log(double);
-[; ;math.h: 44: extern double log10(double);
-[; ;math.h: 45: extern double pow(double, double) ;
-[; ;math.h: 46: extern double exp(double) ;
-[; ;math.h: 47: extern double sinh(double) ;
-[; ;math.h: 48: extern double cosh(double) ;
-[; ;math.h: 49: extern double tanh(double);
-[; ;math.h: 50: extern double eval_poly(double, const double *, int);
-[; ;math.h: 51: extern double frexp(double, int *);
-[; ;math.h: 52: extern double ldexp(double, int);
-[; ;math.h: 53: extern double fmod(double, double);
-[; ;math.h: 54: extern double trunc(double);
-[; ;math.h: 55: extern double round(double);
-[; ;i2c.h: 24: void I2C_Ready();
-[; ;i2c.h: 25: void I2C_Init();
-[; ;i2c.h: 26: char I2C_Start(char);
-[; ;i2c.h: 27: void I2C_Start_Wait(char);
-[; ;i2c.h: 28: char I2C_Repeated_Start(char);
-[; ;i2c.h: 29: char I2C_Stop();
-[; ;i2c.h: 30: char I2C_Write(unsigned char);
-[; ;i2c.h: 31: void I2C_Ack();
-[; ;i2c.h: 32: void I2C_Nack();
-[; ;i2c.h: 33: char I2C_Read(char);
-[; ;i2c.h: 34: void Acelerometro_Start();
-[; ;i2c.h: 35: void Acelerometro_Init();
-[; ;lcd.h: 42: void lcd_inicializar();
-[; ;lcd.h: 43: void lcd_pulso();
-[; ;lcd.h: 44: void lcd_orden(unsigned int);
-[; ;lcd.h: 45: void lcd_caracter(unsigned int );
-[; ;lcd.h: 46: void lcd_mensaje(char*);
-[; ;lcd.h: 52: void lcd_iniciar();
-[; ;lcd.h: 53: void lcd_comando(unsigned char);
-[; ;lcd.h: 54: void lcd_dato(unsigned char);
-[; ;lcd.h: 55: unsigned int lcd_Busy();
-[; ;lcd.h: 56: void lcd_texto(unsigned char M[32]);
-[; ;lcd.h: 57: void lcd_ubicarXY(char,char);
-[; ;lcd.h: 58: void lcd_limpiar();
-[; ;lcd.h: 59: void lcd_origen();
-[; ;lcd.h: 60: void lcd_movimiento_derecha();
-[; ;lcd.h: 61: void lcd_movimiento_izquierda();
+[; ;I2C_config.h: 7: void initI2C();
+[; ;I2C_config.h: 8: void I2Cidle();
+[; ;I2C_config.h: 9: void I2Cstart();
+[; ;I2C_config.h: 10: void I2Cstop();
+[; ;I2C_config.h: 11: void I2Cwrite(unsigned char);
+[; ;I2C_config.h: 12: void ack();
+[; ;I2C_config.h: 13: void not_ack();
+[; ;I2C_config.h: 14: unsigned char I2Cread(char);
+[; ;I2C_config.h: 15: void IC2WriteDevice(unsigned char, unsigned char, unsigned char*, unsigned char);
+[; ;I2C_config.h: 16: void I2CreadDevice(unsigned char, unsigned char, unsigned char*, unsigned char);
 [v $root$_main `(v ~T0 @X0 0 e ]
 "29 Main.c
 [v _main `(v ~T0 @X0 1 ef ]
@@ -3737,117 +3688,39 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Main.c: 32: configBoard();
 "32
 [e ( _configBoard ..  ]
-[; ;Main.c: 33: lcd_inicializar();
-"33
-[e ( _lcd_inicializar ..  ]
-[; ;Main.c: 34: Acelerometro_Init();
 "34
-[e ( _Acelerometro_Init ..  ]
+[v _x `i ~T0 @X0 1 a ]
+[; ;Main.c: 34: int x = 100;
+[e = _x -> 100 `i ]
 "35
-[v _buffer `uc ~T0 @X0 -> 20 `i a ]
-"36
-[v _buffer2 `uc ~T0 @X0 -> 20 `i a ]
-"37
-[v _buffer3 `uc ~T0 @X0 -> 20 `i a ]
-"38
-[v _Ax `i ~T0 @X0 1 a ]
-[v _Ay `i ~T0 @X0 1 a ]
-[v _Az `i ~T0 @X0 1 a ]
-[v _T `i ~T0 @X0 1 a ]
-[v _Gx `i ~T0 @X0 1 a ]
-[v _Gy `i ~T0 @X0 1 a ]
-[v _Gz `i ~T0 @X0 1 a ]
-"39
-[v _Xa `f ~T0 @X0 1 a ]
-[v _Ya `f ~T0 @X0 1 a ]
-[v _Za `f ~T0 @X0 1 a ]
-[v _t `f ~T0 @X0 1 a ]
-[v _Xg `f ~T0 @X0 1 a ]
-[v _Yg `f ~T0 @X0 1 a ]
-[v _Zg `f ~T0 @X0 1 a ]
-[; ;Main.c: 35: char buffer[20];
-[; ;Main.c: 36: char buffer2[20];
-[; ;Main.c: 37: char buffer3[20];
-[; ;Main.c: 38: int Ax,Ay,Az,T,Gx,Gy,Gz;
-[; ;Main.c: 39: float Xa,Ya,Za,t,Xg,Yg,Zg;
-[; ;Main.c: 40: OSCCON = 0x72;
-"40
-[e = _OSCCON -> -> 114 `i `uc ]
-[; ;Main.c: 46: while(1)
-"46
-[e :U 370 ]
-[; ;Main.c: 47: {
+[v _m `uc ~T0 @X0 -> 8 `i a ]
+"41
+[v _data `uc ~T0 @X0 -> 8 `i a ]
+[; ;Main.c: 35: char m[8];
+[; ;Main.c: 41: char data[8];
+[; ;Main.c: 42: initI2C();
+"42
+[e ( _initI2C ..  ]
+[; ;Main.c: 47: while(1)
 "47
+[e :U 370 ]
+[; ;Main.c: 48: {
+"48
 {
-[; ;Main.c: 49: Acelerometro_Start();
-"49
-[e ( _Acelerometro_Start ..  ]
-[; ;Main.c: 50: Ax = (((int)I2C_Read(0)<<8) | (int)I2C_Read(0));
-"50
-[e = _Ax | << -> ( _I2C_Read (1 -> -> 0 `i `uc `i -> 8 `i -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
-[; ;Main.c: 51: Ay = (((int)I2C_Read(0)<<8) | (int)I2C_Read(0));
+[; ;Main.c: 51: I2Cstart();
 "51
-[e = _Ay | << -> ( _I2C_Read (1 -> -> 0 `i `uc `i -> 8 `i -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
-[; ;Main.c: 52: Az = (((int)I2C_Read(0)<<8) | (int)I2C_Read(0));
+[e ( _I2Cstart ..  ]
+[; ;Main.c: 52: _delay((unsigned long)((500)*(48000000/4000.0)));
 "52
-[e = _Az | << -> ( _I2C_Read (1 -> -> 0 `i `uc `i -> 8 `i -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
-[; ;Main.c: 53: T = (((int)I2C_Read(0)<<8) | (int)I2C_Read(0));
-"53
-[e = _T | << -> ( _I2C_Read (1 -> -> 0 `i `uc `i -> 8 `i -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
-[; ;Main.c: 54: Gx = (((int)I2C_Read(0)<<8) | (int)I2C_Read(0));
-"54
-[e = _Gx | << -> ( _I2C_Read (1 -> -> 0 `i `uc `i -> 8 `i -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
-[; ;Main.c: 55: Gy = (((int)I2C_Read(0)<<8) | (int)I2C_Read(0));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
 "55
-[e = _Gy | << -> ( _I2C_Read (1 -> -> 0 `i `uc `i -> 8 `i -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
-[; ;Main.c: 56: Gz = (((int)I2C_Read(0)<<8) | (int)I2C_Read(1));
-"56
-[e = _Gz | << -> ( _I2C_Read (1 -> -> 0 `i `uc `i -> 8 `i -> ( _I2C_Read (1 -> -> 1 `i `uc `i ]
-[; ;Main.c: 57: I2C_Stop();
-"57
-[e ( _I2C_Stop ..  ]
-[; ;Main.c: 58: Xa = (float)Ax/16384.0;
-"58
-[e = _Xa -> / -> -> _Ax `f `d .16384.0 `f ]
-[; ;Main.c: 59: Ya = (float)Ay/16384.0;
-"59
-[e = _Ya -> / -> -> _Ay `f `d .16384.0 `f ]
-[; ;Main.c: 60: Za = (float)Az/16384.0;
-"60
-[e = _Za -> / -> -> _Az `f `d .16384.0 `f ]
-[; ;Main.c: 61: Xg = (float)Gx/131.0;
-"61
-[e = _Xg -> / -> -> _Gx `f `d .131.0 `f ]
-[; ;Main.c: 62: Yg = (float)Gy/131.0;
-"62
-[e = _Yg -> / -> -> _Gy `f `d .131.0 `f ]
-[; ;Main.c: 63: Zg = (float)Gz/131.0;
-"63
-[e = _Zg -> / -> -> _Gz `f `d .131.0 `f ]
-[; ;Main.c: 64: t = ((float)T/340.00)+36.53;
-"64
-[e = _t -> + / -> -> _T `f `d .340.00 .36.53 `f ]
-[; ;Main.c: 65: sprintf(buffer," Ax = %.2f g\t",Xa);
-"65
-[e ( _sprintf (1 , (. , &U _buffer :s 1C -> _Xa `d ]
-[; ;Main.c: 69: sprintf(buffer2," Ay = %.2f g\t",Ya);
-"69
-[e ( _sprintf (1 , (. , &U _buffer2 :s 2C -> _Ya `d ]
-[; ;Main.c: 73: sprintf(buffer3," Az = %.2f g \n",Za);
-"73
-[e ( _sprintf (1 , (. , &U _buffer3 :s 3C -> _Za `d ]
-"76
 }
 [e :U 369 ]
-"46
+"47
 [e $U 370  ]
 [e :U 371 ]
-[; ;Main.c: 76: }
-[; ;Main.c: 77: }
-"77
+[; ;Main.c: 55: }
+[; ;Main.c: 56: }
+"56
 [e :UE 368 ]
 }
-[p f _sprintf 8462336 ]
-[a 3C 32 65 122 32 61 32 37 46 50 102 32 103 32 10 0 ]
-[a 2C 32 65 121 32 61 32 37 46 50 102 32 103 9 0 ]
-[a 1C 32 65 120 32 61 32 37 46 50 102 32 103 9 0 ]

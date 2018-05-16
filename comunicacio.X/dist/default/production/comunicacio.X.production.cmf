@@ -45,7 +45,7 @@ intcode CODE 0 8 8 6 1
 smallconst SMALLCONST 0 800 800 A 1
 dataCOMRAM COMRAM 1 4B 4B 1 1
 bssCOMRAM COMRAM 1 40 40 B 1
-$C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
+$C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 E E 4 1
 reset_vec CODE 0 0 0 4 1
@@ -103,9 +103,9 @@ DA2 intcode_body CODE >75:C:\Users\Administrador\OneDrive\universida\Embebidos-G
 DB2 intcode_body CODE >76:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
 DB6 intcode_body CODE >77:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
 DB8 intcode_body CODE >78:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
-DB8 intcode_body CODE >82:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+DB8 intcode_body CODE >80:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
+DC0 intcode_body CODE >81:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
 DC0 intcode_body CODE >83:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
-DC0 intcode_body CODE >85:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
 126E text21 CODE >50:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
 126E text21 CODE >53:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
 1278 text21 CODE >54:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\USART_Source_File.c
@@ -429,38 +429,38 @@ E9E text0 CODE >61:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comu
 E9E text0 CODE >62:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
 EBA text0 CODE >63:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
 EC6 text0 CODE >45:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\comunicacio.X\comuni.c
-11FA cinit CODE >1897:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-11FA cinit CODE >1899:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-11FA cinit CODE >1902:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-11FA cinit CODE >1955:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-11FC cinit CODE >1956:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-11FE cinit CODE >1957:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1200 cinit CODE >1958:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1202 cinit CODE >1959:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1204 cinit CODE >1960:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1206 cinit CODE >1961:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1208 cinit CODE >1962:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-120C cinit CODE >1966:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1210 cinit CODE >1967:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1212 cinit CODE >1968:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1212 cinit CODE >1969:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1214 cinit CODE >1970:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1216 cinit CODE >1971:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1218 cinit CODE >1974:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-121C cinit CODE >1975:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-121E cinit CODE >1976:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-121E cinit CODE >1977:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1220 cinit CODE >1978:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1222 cinit CODE >1979:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1224 cinit CODE >1985:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1224 cinit CODE >1987:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1226 cinit CODE >1988:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1228 cinit CODE >1990:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-122A cinit CODE >1991:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-122C cinit CODE >1992:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-122E cinit CODE >1993:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1230 cinit CODE >1994:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
-1232 cinit CODE >1995:C:\Users\ADMINI~1\AppData\Local\Temp\sang.
+11FA cinit CODE >1897:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+11FA cinit CODE >1899:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+11FA cinit CODE >1902:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+11FA cinit CODE >1955:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+11FC cinit CODE >1956:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+11FE cinit CODE >1957:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1200 cinit CODE >1958:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1202 cinit CODE >1959:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1204 cinit CODE >1960:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1206 cinit CODE >1961:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1208 cinit CODE >1962:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+120C cinit CODE >1966:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1210 cinit CODE >1967:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1212 cinit CODE >1968:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1212 cinit CODE >1969:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1214 cinit CODE >1970:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1216 cinit CODE >1971:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1218 cinit CODE >1974:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+121C cinit CODE >1975:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+121E cinit CODE >1976:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+121E cinit CODE >1977:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1220 cinit CODE >1978:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1222 cinit CODE >1979:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1224 cinit CODE >1985:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1224 cinit CODE >1987:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1226 cinit CODE >1988:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1228 cinit CODE >1990:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+122A cinit CODE >1991:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+122C cinit CODE >1992:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+122E cinit CODE >1993:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1230 cinit CODE >1994:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
+1232 cinit CODE >1995:C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -480,21 +480,21 @@ __Hspace_1 8E 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __Hspace_2 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 ___ftdiv@exp 33 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\comunicacio.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
 ___awtoft@sign 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\comunicacio.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\comunicacio.X.production.obj
 _RCIF 7CF5 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 _TXIF 7CF4 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
+___sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
 _main E0C 0 CODE 0 text0 dist/default/production\comunicacio.X.production.obj
 _test 8 0 CODE 0 intcode dist/default/production\comunicacio.X.production.obj
 btemp 4C 0 COMRAM 1 temp dist/default/production\comunicacio.X.production.obj
 _lcd_origen 1342 0 CODE 0 text5 dist/default/production\comunicacio.X.production.obj
 ___ftadd@f1 35 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 ___ftadd@f2 38 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
-start E 0 CODE 0 init C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
+start E 0 CODE 0 init C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
 wait_in_ms@time_in_ms 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 __size_of___ftadd 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __size_of___ftdiv 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
@@ -517,11 +517,11 @@ __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\comunicacio.X.product
 __end_of_lcd_orden 11AE 0 CODE 0 text8 dist/default/production\comunicacio.X.production.obj
 __end_of_lcd_pulso 1342 0 CODE 0 text9 dist/default/production\comunicacio.X.production.obj
 __end_of_lcd_texto 12D4 0 CODE 0 text3 dist/default/production\comunicacio.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
-intlevel0 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
-intlevel1 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
-intlevel2 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
-intlevel3 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
+__accesstop 60 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
+intlevel0 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
+intlevel1 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
+intlevel2 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
+intlevel3 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
 __size_of_lcd_orden 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __size_of_lcd_pulso 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\comunicacio.X.production.obj
@@ -539,8 +539,8 @@ _ADCON0 FC2 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 _ADRESH FC4 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 _ADRESL FC3 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __end_of_lcd_origen 135E 0 CODE 0 text5 dist/default/production\comunicacio.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
 __size_of___altoft 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\comunicacio.X.production.obj
 __size_of___awtoft 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
@@ -618,7 +618,7 @@ __Htext9 0 0 ABS 0 text9 dist/default/production\comunicacio.X.production.obj
 USART_SendString@out 15 0 COMRAM 1 cstackCOMRAM dist/default/production\comunicacio.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\comunicacio.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\comunicacio.X.production.obj
-__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\comunicacio.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\comunicacio.X.production.obj
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\comunicacio.X.production.obj
@@ -758,8 +758,8 @@ __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\comunicacio.X.production.o
 _strcmp 11AE 0 CODE 0 text1 dist/default/production\comunicacio.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\comunicacio.X.production.obj
 __end_of_lcd_caracter 1144 0 CODE 0 text4 dist/default/production\comunicacio.X.production.obj
-stackhi 7FF 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
-stacklo 8E 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
+stackhi 7FF 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
+stacklo 8E 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\comunicacio.X.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\comunicacio.X.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\comunicacio.X.production.obj
@@ -816,7 +816,7 @@ __Ltext19 0 0 ABS 0 text19 dist/default/production\comunicacio.X.production.obj
 __Ltext20 0 0 ABS 0 text20 dist/default/production\comunicacio.X.production.obj
 __Ltext21 0 0 ABS 0 text21 dist/default/production\comunicacio.X.production.obj
 __size_of_lcd_iniciar 0 0 ABS 0 - dist/default/production\comunicacio.X.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Users\ADMINI~1\AppData\Local\Temp\sang.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\ADMINI~1\AppData\Local\Temp\s5i4.obj
 __end_of_USART_SendString 1324 0 CODE 0 text13 dist/default/production\comunicacio.X.production.obj
 __Lpowerup E 0 CODE 0 powerup dist/default/production\comunicacio.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\comunicacio.X.production.obj

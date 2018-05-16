@@ -4500,19 +4500,19 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 412 ]
 [; ;comuni.c: 78: else{
 {
-[; ;comuni.c: 82: i=0;
-"82
+[; ;comuni.c: 80: i=0;
+"80
 [e = _i -> 0 `i ]
-"83
+"81
 }
 [e :U 413 ]
-"84
+"82
 }
 [e :U 411 ]
+[; ;comuni.c: 81: }
+[; ;comuni.c: 82: }
 [; ;comuni.c: 83: }
-[; ;comuni.c: 84: }
-[; ;comuni.c: 85: }
-"85
+"83
 [e :UE 410 ]
 }
 [a 1C 111 110 0 ]
