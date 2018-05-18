@@ -45,9 +45,16 @@ void configstandard()
     /*********************************Registro INTCON*********************************/
     
     // Datasheet: pagina 99, PDF: 101
-    INTCONbits.GIE = 1; //Se activan las interrupciones globales
-    INTCONbits.PEIE = 1; // se activan las interrupciones por perifericos
-    PIE1bits.CCP1IE = 1; //Habilitamos la interrupcion por CCP1
+    INTCONbits.GIE = 0; //Se activan las interrupciones globales
+    INTCONbits.PEIE = 0; // se activan las interrupciones por perifericos
+    INTCONbits.INT0IE=0;
+    INTCONbits.INT0IF=0;
+    INTCON2bits.INTEDG0=0;
+    INTCON2bits.INTEDG1=0;
+    INTCON3bits.INT1E=0;
+    INTCON3bits.INT1F=0;
+    
+    PIE1bits.CCP1IE = 0; //Habilitamos la interrupcion por CCP1
     PIR1bits.CCP1IF = 0; //Limpiamos la bandera de int por CCP1
     
    /*********************************Registro TIMER1*********************************/
@@ -70,4 +77,22 @@ void configstandard()
     /**********adc  exp*******/
     ADCON2bits.ADCS=110;
     ADCON2bits.ACQT=010;
+    /**********************/
+    
+    
+    /************Registro T0CON - TIMER0 - Temporizador ************/
+    //Si se usa el TIMER0 con interrupciones hay que configurarlo en el registro INTCON
+     // Datasheet: pagina 125, PDF: 127
+    T0CONbits.TMR0ON = 0; //Descativa el inicio del TIMER0 (1 = ON, 0 = OFF)
+    T0CONbits.T08BIT = 1; //Se configuran de cuantos bits se uilizaran (1 = 8 bits, 0 = 16 bits)
+    T0CONbits.T0CS = 0; // Uso del pin TOKL(RA4) (1 = si, 0 = no) 
+    T0CONbits.T0SE = 1; // se configura en subida. Lectura de flanco de subida o de bajada (solo para modo contador es indiferente en modo temporizador )
+    T0CONbits.PSA = 0; //Uso del prescalador(0 = ON, 1 = OFF)
+    //Configuracion del preescalador con los bits 0,1 y 2 - valores en el datasheet
+    /// Modo del prescales en 1:256
+    T0CONbits.T0PS2 = 1;
+    T0CONbits.T0PS1 = 1;
+    T0CONbits.T0PS0 = 1;
+
+    
 }

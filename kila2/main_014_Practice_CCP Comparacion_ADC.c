@@ -86,31 +86,16 @@ unsigned int  adc1;
 #define analogIn PORTAbits.RA0;
 #define mVperAmp 185
 
-      unsigned char buffer1[20]; //Variable String(Arreglos de char) que permitira imprimir datos
+        unsigned char buffer1[20]; //Variable String(Arreglos de char) que permitira imprimir datos
         unsigned char buffer2[20];
+        unsigned char buffer3[20];
+ 
      
  /********************************* Funcion Interrupcion*********************************/
  
-void interrupt comparar()
-{
-    INTCONbits.GIE = 0; //Se desactivan las interrupciones globales para no generar errores
-    if(CCP1IF == 1)
-    {
-        T1CONbits.TMR1ON = 0;
-        PIR1bits.CCP1IF = 0;
    
-        adc1 = ADRESH;
-        adc1 = adc1<<8;
-        adc1 = adc1 + ADRESL;
-        
-        voltaje = adc1 * 4.72 /1024.0;
-        
-        
-    
-    }
    
-    
-}
+
 
 
 /*********************************Funcion Principal*********************************/
@@ -118,11 +103,11 @@ void main(void)
 {
     configstandard();//Funcion con las configuraciones basicas
     
-//    TRISCbits.RC2 = 0; //Se configura como  salida para el CCP1
     TRISAbits.RA0 = 1;//Definimos como entrada para el ADC
-  //  TRISAbits.RA1 = 0;
-   
-  //  T1CONbits.TMR1ON = 1;// Se enciende el timer1
+
+    TRISBbits.RB0=1;//interrupcion corriente
+    TRISBbits.RB1=1;//interrupcion voltaje
+    
     
     unsigned char buffer1[16]; //Variable String(Arreglos de char) que permitira imprimir datos
     
@@ -139,9 +124,56 @@ void main(void)
     float Irms=0;
      unsigned int numCiclosMuestro=0;
      float PotenciaReal=0;
+     float FactorPotencia=0;
+     double factorPotenciaNum=0;
+         unsigned char calculoFP=0;
+        unsigned int numTicks=0;
+        unsigned long long delay=0;
+        unsigned char loop=0;
+        float FPprom[51];
+        float fppromtotal=0;
+        float fppromtotal2=0;
+      INTCONbits.GIE = 0; //Se desactivan las interrupciones globales para no generar errores
+     
     while(1)//Bucle que evita que el programa termine
     {
-  
+        while(loop<51){
+        if(PORTBbits.RB0==1){//corriente
+            if(PORTBbits.RB1==1){//voltaje
+                delay=0;
+            }else{
+                __delay_us(1);
+                delay++;
+            }
+        }
+        
+        
+        // FactorPotencia=(((delay/1000000)*360)/(1/60));
+        FactorPotencia=(float)((((float)delay/1000000.0)*360.0)/(1.0/60.0));
+         factorPotenciaNum=cos(FactorPotencia);
+        sprintf(buffer1,"PReal %0.3f",factorPotenciaNum );
+        Lcd_Out2(2, 0, buffer1);   
+        sprintf(buffer2,"PReal %lu",delay );
+        Lcd_Out2(1, 0, buffer2);     
+        FPprom[loop]=factorPotenciaNum;
+        loop++;
+        }
+        
+        if(loop==50){
+        for(int i=0;i<51;i++){
+            
+             fppromtotal+=FPprom[i];
+        }
+         fppromtotal2=fppromtotal/51.0;
+          Lcd_Cmd(LCD_CLEAR); //Limpiammos LCD
+                sprintf(buffer1,"pF=%0.3f",fppromtotal2 );//dactor de potencia total real no fake
+        Lcd_Out2(1, 0, buffer1);     
+        loop++;
+        }
+        calculoFP=1;
+        while(calculoFP==0);
+          
+  ///////////IRMS////////////////////////////////////////
         while(numCiclosMuestro<200){
         ADCON0bits.GO_DONE = 1;
         adc1 = (ADRESH<<8)+ADRESL;
@@ -149,27 +181,36 @@ void main(void)
         float Amps=0;
         Voltage=(float)(adc1*5.0/1024.0);
         Amps=((Voltage-2.5)/0.185);
-     //sprintf(buffer1,"Voltage %0.2f", Voltage);
-        sprintf(buffer1,"Voltage %3d", numCiclosMuestro);
-        sprintf(buffer2,"amps %0.2f", Amps);
-        Lcd_Out2(1, 0, buffer1); //(Linea horizontal, posicion vertical, string)
-        Lcd_Out2(2, 0, buffer2);       
-       
+        //sprintf(buffer1,"Voltage %0.2f", Voltage);
+        //sprintf(buffer1,"Voltage %3d", numCiclosMuestro);
+        //sprintf(buffer2,"amps %0.2f", Amps);
+        //Lcd_Out2(1, 0, buffer1); //(Linea horizontal, posicion vertical, string)
+        //Lcd_Out2(2, 0, buffer2);       
          __delay_us(50);
         // if(Amps>0.110||Amps<-0.110){//ruido de 110 mili amp
                  sumIns+=Amps*Amps;
                  numCiclosMuestro+=1; 
         //      }
         }
-        
-        Irms=sqrt(sumIns/201)/2;
-        sprintf(buffer2,"IRMS %0.2f", Irms);
-        Lcd_Out2(2, 0, buffer2);       
-        
+
+        float PotenciaReal2=Irms*128;
+       //sprintf(buffer2,"PReal %0.2f", Irms*128);///pot real, editar voltaje
+        sprintf(buffer2,"PReal %0.2f",PotenciaReal2);///pot real, editar voltaje
+        Lcd_Out2(1, 8, buffer1);       
        
-        sprintf(buffer1,"PReal %0.2f", Irms*128);
-        Lcd_Out2(1, 0, buffer1);       
-       
+        ///////////////////despeje/////////////////
+        /*
+         * PotenciaReal2=potencia real
+         * fppromtotal2=power factor
+         */
+        //__wait_ms(500);
+        float potenciaAparente=0;
+        potenciaAparente=PotenciaReal2/fppromtotal2;
+        
+        
+        
+        
+        
     }
     return;
 }

@@ -32,54 +32,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _Lcd_Cmd `(v ~T0 @X0 0 ef1`uc ]
 "43
 [v _Lcd_Chr_CP `(v ~T0 @X0 0 ef1`uc ]
-"8586 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
-[s S355 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S355 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"8596
-[s S356 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S356 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"8606
-[s S357 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S357 . . GIEL GIEH ]
-"8585
-[u S354 `S355 1 `S356 1 `S357 1 ]
-[n S354 . . . . ]
-"8612
-[v _INTCONbits `VS354 ~T0 @X0 0 e@4082 ]
-"9009
-[v _CCP1IF `Vb ~T0 @X0 0 e@31986 ]
-"7419
-[s S312 :2 `uc 1 :1 `uc 1 ]
-[n S312 . . NOT_T1SYNC ]
-"7423
-[s S313 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S313 . TMR1ON TMR1CS nT1SYNC T1OSCEN T1CKPS T1RUN RD16 ]
-"7432
-[s S314 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S314 . . T1SYNC . T1CKPS0 T1CKPS1 ]
-"7439
-[s S315 :3 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
-[n S315 . . SOSCEN . T1RD16 ]
-"7418
-[u S311 `S312 1 `S313 1 `S314 1 `S315 1 ]
-[n S311 . . . . . ]
-"7446
-[v _T1CONbits `VS311 ~T0 @X0 0 e@4045 ]
-"4472
-[s S173 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S173 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF SPPIF ]
-"4482
-[s S174 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S174 . . TX1IF RC1IF . PSPIF ]
-"4471
-[u S172 `S173 1 `S174 1 ]
-[n S172 . . . ]
-"4490
-[v _PIR1bits `VS172 ~T0 @X0 0 e@3998 ]
-"6797
-[v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
-"6790
-[v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
 [p mainexit ]
 "14 config.h
 [v _configstandard `(v ~T0 @X0 0 ef ]
@@ -94,6 +46,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S136 . . . ]
 "3455
 [v _TRISAbits `VS136 ~T0 @X0 0 e@3986 ]
+"3634
+[s S143 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S143 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"3644
+[s S144 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S144 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"3633
+[u S142 `S143 1 `S144 1 ]
+[n S142 . . . ]
+"3655
+[v _TRISBbits `VS142 ~T0 @X0 0 e@3987 ]
 "6514
 [s S261 :3 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S261 . ADCS ACQT . ADFM ]
@@ -105,7 +68,39 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S260 . . . ]
 "6529
 [v _ADCON2bits `VS260 ~T0 @X0 0 e@4032 ]
-"6670
+"8586
+[s S355 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S355 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"8596
+[s S356 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S356 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"8606
+[s S357 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S357 . . GIEL GIEH ]
+"8585
+[u S354 `S355 1 `S356 1 `S357 1 ]
+[n S354 . . . . ]
+"8612
+[v _INTCONbits `VS354 ~T0 @X0 0 e@4082 ]
+"2457
+[s S102 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S102 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"2467
+[s S103 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S103 . INT0 INT1 INT2 . PGM PGC PGD ]
+"2476
+[s S104 :3 `uc 1 :1 `uc 1 ]
+[n S104 . . CCP2_PA2 ]
+"2456
+[u S101 `S102 1 `S103 1 `S104 1 ]
+[n S101 . . . . ]
+"2481
+[v _PORTBbits `VS101 ~T0 @X0 0 e@3969 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.45\include\math.h
+[v _cos `(d ~T0 @X0 0 ef1`d ]
+"194 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"6670 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [s S268 :1 `uc 1 :1 `uc 1 ]
 [n S268 . . GO_NOT_DONE ]
 "6674
@@ -134,10 +129,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S267 . . . . . . . . . ]
 "6708
 [v _ADCON0bits `VS267 ~T0 @X0 0 e@4034 ]
-"194 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"34 C:\Program Files (x86)\Microchip\xc8\v1.45\include\math.h
-[v _sqrt `(d ~T0 @X0 0 ef1`d ]
+"6797
+[v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
+"6790
+[v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -4315,192 +4310,305 @@ Version 3.2 HI-TECH Software Intermediate Code
 "90
 [v _buffer2 `uc ~T0 @X0 -> 20 `i e ]
 [; ;main_014_Practice_CCP Comparacion_ADC.c: 90: unsigned char buffer2[20];
-[v $root$_comparar `(v ~T0 @X0 0 e ]
-[v F4164 `(v ~T0 @X0 1 tf ]
-"94
-[v _comparar `IF4164 ~T0 @X0 1 e ]
-"95
-{
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 94: void interrupt comparar()
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 95: {
-[e :U _comparar ]
-[f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 96: INTCONbits.GIE = 0;
-"96
-[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 97: if(CCP1IF == 1)
-"97
-[e $ ! == -> _CCP1IF `i -> 1 `i 396  ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 98: {
-"98
-{
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 99: T1CONbits.TMR1ON = 0;
-"99
-[e = . . _T1CONbits 1 0 -> -> 0 `i `uc ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 100: PIR1bits.CCP1IF = 0;
-"100
-[e = . . _PIR1bits 0 2 -> -> 0 `i `uc ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 102: adc1 = ADRESH;
-"102
-[e = _adc1 -> _ADRESH `ui ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 103: adc1 = adc1<<8;
-"103
-[e = _adc1 << _adc1 -> 8 `i ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 104: adc1 = adc1 + ADRESL;
-"104
-[e = _adc1 + _adc1 -> _ADRESL `ui ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 106: voltaje = adc1 * 4.72 /1024.0;
-"106
-[e = _voltaje -> / * -> _adc1 `d .4.72 .1024.0 `f ]
-"110
-}
-[e :U 396 ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 110: }
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 113: }
-"113
-[e :UE 395 ]
-}
+"91
+[v _buffer3 `uc ~T0 @X0 -> 20 `i e ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 91: unsigned char buffer3[20];
 [v $root$_main `(v ~T0 @X0 0 e ]
-"117
+"102
 [v _main `(v ~T0 @X0 1 ef ]
-"118
+"103
 {
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 117: void main(void)
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 118: {
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 102: void main(void)
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 103: {
 [e :U _main ]
 [f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 119: configstandard();
-"119
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 104: configstandard();
+"104
 [e ( _configstandard ..  ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 122: TRISAbits.RA0 = 1;
-"122
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 106: TRISAbits.RA0 = 1;
+"106
 [e = . . _TRISAbits 1 0 -> -> 1 `i `uc ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 108: TRISBbits.RB0=1;
+"108
+[e = . . _TRISBbits 1 0 -> -> 1 `i `uc ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 109: TRISBbits.RB1=1;
+"109
+[e = . . _TRISBbits 1 1 -> -> 1 `i `uc ]
 [v _buffer1 `uc ~T0 @X0 -> 16 `i a ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 127: unsigned char buffer1[16];
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 130: Lcd_Init();
-"130
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 112: unsigned char buffer1[16];
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 115: Lcd_Init();
+"115
 [e ( _Lcd_Init ..  ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 131: Lcd_Cmd(1);
-"131
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 116: Lcd_Cmd(1);
+"116
 [e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 132: Lcd_Cmd(12);
-"132
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 117: Lcd_Cmd(12);
+"117
 [e ( _Lcd_Cmd (1 -> -> 12 `i `uc ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 133: _delay((unsigned long)((100)*(48000000/4000.0)));
-"133
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 118: _delay((unsigned long)((100)*(48000000/4000.0)));
+"118
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 135: ADCON2bits.ADCS=110;
-"135
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 120: ADCON2bits.ADCS=110;
+"120
 [e = . . _ADCON2bits 0 0 -> -> 110 `i `uc ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 136: ADCON2bits.ACQT=010;
-"136
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 121: ADCON2bits.ACQT=010;
+"121
 [e = . . _ADCON2bits 0 1 -> -> 8 `i `uc ]
-"138
+"123
 [v _sumIns `f ~T0 @X0 1 a ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 138: float sumIns=0;
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 123: float sumIns=0;
 [e = _sumIns -> -> 0 `i `f ]
-"139
+"124
 [v _Irms `f ~T0 @X0 1 a ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 139: float Irms=0;
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 124: float Irms=0;
 [e = _Irms -> -> 0 `i `f ]
-"140
+"125
 [v _numCiclosMuestro `ui ~T0 @X0 1 a ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 140: unsigned int numCiclosMuestro=0;
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 125: unsigned int numCiclosMuestro=0;
 [e = _numCiclosMuestro -> -> 0 `i `ui ]
-"141
+"126
 [v _PotenciaReal `f ~T0 @X0 1 a ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 141: float PotenciaReal=0;
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 126: float PotenciaReal=0;
 [e = _PotenciaReal -> -> 0 `i `f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 142: while(1)
-"142
-[e :U 399 ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 143: {
-"143
+"127
+[v _FactorPotencia `f ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 127: float FactorPotencia=0;
+[e = _FactorPotencia -> -> 0 `i `f ]
+"128
+[v _factorPotenciaNum `d ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 128: double factorPotenciaNum=0;
+[e = _factorPotenciaNum -> -> 0 `i `d ]
+"129
+[v _calculoFP `uc ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 129: unsigned char calculoFP=0;
+[e = _calculoFP -> -> 0 `i `uc ]
+"130
+[v _numTicks `ui ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 130: unsigned int numTicks=0;
+[e = _numTicks -> -> 0 `i `ui ]
+"131
+[v _delay `ul ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 131: unsigned long long delay=0;
+[e = _delay -> -> -> 0 `i `l `ul ]
+"132
+[v _loop `uc ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 132: unsigned char loop=0;
+[e = _loop -> -> 0 `i `uc ]
+"133
+[v _FPprom `f ~T0 @X0 -> 51 `i a ]
+"134
+[v _fppromtotal `f ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 133: float FPprom[51];
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 134: float fppromtotal=0;
+[e = _fppromtotal -> -> 0 `i `f ]
+"135
+[v _fppromtotal2 `f ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 135: float fppromtotal2=0;
+[e = _fppromtotal2 -> -> 0 `i `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 136: INTCONbits.GIE = 0;
+"136
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 138: while(1)
+"138
+[e :U 397 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 139: {
+"139
 {
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 145: while(numCiclosMuestro<200){
-"145
-[e $U 401  ]
-[e :U 402 ]
-{
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 146: ADCON0bits.GO_DONE = 1;
-"146
-[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 147: adc1 = (ADRESH<<8)+ADRESL;
-"147
-[e = _adc1 -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
-"148
-[v _Voltage `f ~T0 @X0 1 a ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 148: float Voltage=0;
-[e = _Voltage -> -> 0 `i `f ]
-"149
-[v _Amps `f ~T0 @X0 1 a ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 149: float Amps=0;
-[e = _Amps -> -> 0 `i `f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 150: Voltage=(float)(adc1*5.0/1024.0);
-"150
-[e = _Voltage -> / * -> _adc1 `d .5.0 .1024.0 `f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 151: Amps=((Voltage-2.5)/0.185);
-"151
-[e = _Amps -> / - -> _Voltage `d .2.5 .0.185 `f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 153: sprintf(buffer1,"Voltage %3d", numCiclosMuestro);
-"153
-[e ( _sprintf (1 , (. , &U _buffer1 :s 1C _numCiclosMuestro ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 154: sprintf(buffer2,"amps %0.2f", Amps);
-"154
-[e ( _sprintf (1 , (. , &U _buffer2 :s 2C -> _Amps `d ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 155: Lcd_Out2(1, 0, buffer1);
-"155
-[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 0 `i `uc &U _buffer1 ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 156: Lcd_Out2(2, 0, buffer2);
-"156
-[e ( _Lcd_Out2 (3 , , -> -> 2 `i `uc -> -> 0 `i `uc &U _buffer2 ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 158: _delay((unsigned long)((50)*(48000000/4000000.0)));
-"158
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 48000000 `l `d .4000000.0 `ul ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 160: sumIns+=Amps*Amps;
-"160
-[e =+ _sumIns * _Amps _Amps ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 161: numCiclosMuestro+=1;
-"161
-[e =+ _numCiclosMuestro -> -> 1 `i `ui ]
-"163
-}
-[e :U 401 ]
-"145
-[e $ < _numCiclosMuestro -> -> 200 `i `ui 402  ]
-[e :U 403 ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 163: }
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 165: Irms=sqrt(sumIns/201)/2;
-"165
-[e = _Irms -> / ( _sqrt (1 -> / _sumIns -> -> 201 `i `f `d -> -> 2 `i `d `f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 166: sprintf(buffer2,"IRMS %0.2f", Irms);
-"166
-[e ( _sprintf (1 , (. , &U _buffer2 :s 3C -> _Irms `d ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 167: Lcd_Out2(2, 0, buffer2);
-"167
-[e ( _Lcd_Out2 (3 , , -> -> 2 `i `uc -> -> 0 `i `uc &U _buffer2 ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 170: sprintf(buffer1,"PReal %0.2f", Irms*128);
-"170
-[e ( _sprintf (1 , (. , &U _buffer1 :s 4C -> * _Irms -> -> 128 `i `f `d ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 171: Lcd_Out2(1, 0, buffer1);
-"171
-[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 0 `i `uc &U _buffer1 ]
-"173
-}
-[e :U 398 ]
-"142
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 140: while(loop<51){
+"140
 [e $U 399  ]
 [e :U 400 ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 173: }
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 174: return;
-"174
-[e $UE 397  ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 175: }
-"175
-[e :UE 397 ]
+{
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 141: if(PORTBbits.RB0==1){
+"141
+[e $ ! == -> . . _PORTBbits 0 0 `i -> 1 `i 402  ]
+{
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 142: if(PORTBbits.RB1==1){
+"142
+[e $ ! == -> . . _PORTBbits 0 1 `i -> 1 `i 403  ]
+{
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 143: delay=0;
+"143
+[e = _delay -> -> -> 0 `i `l `ul ]
+"144
 }
-[p f _sprintf 8495236 ]
-[a 2C 97 109 112 115 32 37 48 46 50 102 0 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 144: }else{
+[e $U 404  ]
+[e :U 403 ]
+{
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 145: _delay((unsigned long)((1)*(48000000/4000000.0)));
+"145
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 48000000 `l `d .4000000.0 `ul ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 146: delay++;
+"146
+[e ++ _delay -> -> -> 1 `i `l `ul ]
+"147
+}
+[e :U 404 ]
+"148
+}
+[e :U 402 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 147: }
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 148: }
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 152: FactorPotencia=(float)((((float)delay/1000000.0)*360.0)/(1.0/60.0));
+"152
+[e = _FactorPotencia -> / * / -> -> _delay `f `d .1000000.0 .360.0 / .1.0 .60.0 `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 153: factorPotenciaNum=cos(FactorPotencia);
+"153
+[e = _factorPotenciaNum ( _cos (1 -> _FactorPotencia `d ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 154: sprintf(buffer1,"PReal %0.3f",factorPotenciaNum );
+"154
+[e ( _sprintf (1 , (. , &U _buffer1 :s 1C _factorPotenciaNum ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 155: Lcd_Out2(2, 0, buffer1);
+"155
+[e ( _Lcd_Out2 (3 , , -> -> 2 `i `uc -> -> 0 `i `uc &U _buffer1 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 156: sprintf(buffer2,"PReal %lu",delay );
+"156
+[e ( _sprintf (1 , (. , &U _buffer2 :s 2C _delay ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 157: Lcd_Out2(1, 0, buffer2);
+"157
+[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 0 `i `uc &U _buffer2 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 158: FPprom[loop]=factorPotenciaNum;
+"158
+[e = *U + &U _FPprom * -> _loop `ux -> -> # *U &U _FPprom `ui `ux -> _factorPotenciaNum `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 159: loop++;
+"159
+[e ++ _loop -> -> 1 `i `uc ]
+"160
+}
+[e :U 399 ]
+"140
+[e $ < -> _loop `i -> 51 `i 400  ]
+[e :U 401 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 160: }
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 162: if(loop==50){
+"162
+[e $ ! == -> _loop `i -> 50 `i 405  ]
+{
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 163: for(int i=0;i<51;i++){
+"163
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 51 `i 406  ]
+[e $U 407  ]
+[e :U 406 ]
+{
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 165: fppromtotal+=FPprom[i];
+"165
+[e =+ _fppromtotal *U + &U _FPprom * -> -> _i `ui `ux -> -> # *U &U _FPprom `ui `ux ]
+"166
+}
+"163
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 51 `i 406  ]
+[e :U 407 ]
+"166
+}
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 166: }
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 167: fppromtotal2=fppromtotal/51.0;
+"167
+[e = _fppromtotal2 -> / -> _fppromtotal `d .51.0 `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 168: Lcd_Cmd(1);
+"168
+[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 169: sprintf(buffer1,"pF=%0.3f",fppromtotal2 );
+"169
+[e ( _sprintf (1 , (. , &U _buffer1 :s 3C -> _fppromtotal2 `d ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 170: Lcd_Out2(1, 0, buffer1);
+"170
+[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 0 `i `uc &U _buffer1 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 171: loop++;
+"171
+[e ++ _loop -> -> 1 `i `uc ]
+"172
+}
+[e :U 405 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 172: }
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 173: calculoFP=1;
+"173
+[e = _calculoFP -> -> 1 `i `uc ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 174: while(calculoFP==0);
+"174
+[e $U 409  ]
+[e :U 410 ]
+[e :U 409 ]
+[e $ == -> _calculoFP `i -> 0 `i 410  ]
+[e :U 411 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 177: while(numCiclosMuestro<200){
+"177
+[e $U 412  ]
+[e :U 413 ]
+{
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 178: ADCON0bits.GO_DONE = 1;
+"178
+[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 179: adc1 = (ADRESH<<8)+ADRESL;
+"179
+[e = _adc1 -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
+"180
+[v _Voltage `f ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 180: float Voltage=0;
+[e = _Voltage -> -> 0 `i `f ]
+"181
+[v _Amps `f ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 181: float Amps=0;
+[e = _Amps -> -> 0 `i `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 182: Voltage=(float)(adc1*5.0/1024.0);
+"182
+[e = _Voltage -> / * -> _adc1 `d .5.0 .1024.0 `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 183: Amps=((Voltage-2.5)/0.185);
+"183
+[e = _Amps -> / - -> _Voltage `d .2.5 .0.185 `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 189: _delay((unsigned long)((50)*(48000000/4000000.0)));
+"189
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 48000000 `l `d .4000000.0 `ul ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 191: sumIns+=Amps*Amps;
+"191
+[e =+ _sumIns * _Amps _Amps ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 192: numCiclosMuestro+=1;
+"192
+[e =+ _numCiclosMuestro -> -> 1 `i `ui ]
+"194
+}
+[e :U 412 ]
+"177
+[e $ < _numCiclosMuestro -> -> 200 `i `ui 413  ]
+[e :U 414 ]
+"196
+[v _PotenciaReal2 `f ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 194: }
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 196: float PotenciaReal2=Irms*128;
+[e = _PotenciaReal2 * _Irms -> -> 128 `i `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 198: sprintf(buffer2,"PReal %0.2f",PotenciaReal2);
+"198
+[e ( _sprintf (1 , (. , &U _buffer2 :s 4C -> _PotenciaReal2 `d ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 199: Lcd_Out2(1, 8, buffer1);
+"199
+[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 8 `i `uc &U _buffer1 ]
+"207
+[v _potenciaAparente `f ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 207: float potenciaAparente=0;
+[e = _potenciaAparente -> -> 0 `i `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 208: potenciaAparente=PotenciaReal2/fppromtotal2;
+"208
+[e = _potenciaAparente / _PotenciaReal2 _fppromtotal2 ]
+"214
+}
+[e :U 396 ]
+"138
+[e $U 397  ]
+[e :U 398 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 214: }
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 215: return;
+"215
+[e $UE 395  ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 216: }
+"216
+[e :UE 395 ]
+}
+[p f _sprintf 8463380 ]
+[a 2C 80 82 101 97 108 32 37 108 117 0 ]
+[a 3C 112 70 61 37 48 46 51 102 0 ]
+[a 1C 80 82 101 97 108 32 37 48 46 51 102 0 ]
 [a 4C 80 82 101 97 108 32 37 48 46 50 102 0 ]
-[a 3C 73 82 77 83 32 37 48 46 50 102 0 ]
-[a 1C 86 111 108 116 97 103 101 32 37 51 100 0 ]

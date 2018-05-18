@@ -402,20 +402,23 @@ flag |= 0x1000;
 
 }
 
-# 635
+
+loop:
+
 switch(c = *f++) {
 
 case 0:
 goto alldone;
 
+
+case 'l':
+
+flag |= 0x10;
+goto loop;
+
 # 662
 case 'f':
 flag |= 0x400;
-break;
-
-# 697
-case 'd':
-case 'i':
 break;
 
 # 802
@@ -424,7 +427,13 @@ default:
 # 813
 continue;
 
-# 822
+
+
+case 'u':
+flag |= 0xC0;
+break;
+
+
 }
 
 
@@ -576,20 +585,19 @@ prec--;
 continue;
 }
 
-# 1253
+# 1273
 {
 
-# 1259
-val = (long)(*(int *)__va_arg((*(int **)ap), (int)0));
+# 1281
+if(flag & 0x10)
+val = (*(unsigned long *)__va_arg((*(unsigned long **)ap), (unsigned long)0));
+else
 
-if((long)val < 0) {
-flag |= 0x03;
-val = -val;
+
+val = (*(unsigned *)__va_arg((*(unsigned **)ap), (unsigned)0));
 }
 
-}
 
-# 1290
 if(prec == 0 && val == 0)
 prec++;
 
