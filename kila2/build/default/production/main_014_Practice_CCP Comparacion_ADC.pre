@@ -5187,6 +5187,7 @@ unsigned int adc1;
 unsigned char buffer1[20];
 unsigned char buffer2[20];
 unsigned char buffer3[20];
+unsigned char buffer4[20];
 
 
 void interrupt comparar()
@@ -5320,11 +5321,18 @@ sprintf(buffer2,"pF=%0.3f",fppromtotal2 );
 Lcd_Out2(1, 8, buffer2);
 while(calculoFP==0);
 
-# 230
+# 231
 float potenciaAparente=0;
 potenciaAparente=PotenciaReal/fppromtotal2;
-sprintf(buffer3,"%0.3f VA",potenciaAparente );
+sprintf(buffer3,"%0.2fVA",potenciaAparente );
 Lcd_Out2(2, 0, buffer3);
+_delay((unsigned long)((300)*(48000000/4000.0)));
+float potenciaReactiva=0;
+float temp=(potenciaAparente*potenciaAparente)-(PotenciaReal*PotenciaReal);
+potenciaReactiva=sqrt(temp);
+sprintf(buffer4,"%0.2fVAR",potenciaReactiva );
+Lcd_Out2(2, 8, buffer4);
+
 _delay((unsigned long)((1000)*(48000000/4000.0)));
 Lcd_Cmd(1);
 }

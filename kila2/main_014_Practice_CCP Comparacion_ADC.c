@@ -89,6 +89,7 @@ unsigned int  adc1;
         unsigned char buffer1[20]; //Variable String(Arreglos de char) que permitira imprimir datos
         unsigned char buffer2[20];
         unsigned char buffer3[20];
+        unsigned char buffer4[20];
  /********************************* Funcion Interrupcion*********************************/
  
 void interrupt comparar()
@@ -229,8 +230,15 @@ void main(void)
         //__wait_ms(500);
         float potenciaAparente=0;
         potenciaAparente=PotenciaReal/fppromtotal2;
-        sprintf(buffer3,"%0.3f VA",potenciaAparente );//dactor de potencia total real no fake
+        sprintf(buffer3,"%0.2fVA",potenciaAparente );//dactor de potencia total real no fake
         Lcd_Out2(2, 0, buffer3);     
+        __delay_ms(300);
+        float potenciaReactiva=0;
+        float temp=(potenciaAparente*potenciaAparente)-(PotenciaReal*PotenciaReal);
+        potenciaReactiva=sqrt(temp);
+        sprintf(buffer4,"%0.2fVAR",potenciaReactiva );//dactor de potencia total real no fake
+        Lcd_Out2(2, 8, buffer4);    
+                
         __delay_ms(1000);
 Lcd_Cmd(LCD_CLEAR); //Limpiammos LCD
     }
