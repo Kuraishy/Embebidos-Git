@@ -5071,14 +5071,14 @@ void carroGirar(unsigned char direccion);
 void carroMatar();
 void carroAvanzarEspecial();
 void carroGirarEspecial(unsigned char direccion2);
-
+void carroEsquivar();
 
 void main()
 {
 configBoard();
 ADCON1bits.PCFG = 0b1111;
 
-TRISAbits.RA0=0;
+TRISAbits.RA4=0;
 TRISAbits.RA1=0;
 TRISEbits.RE0=0;
 TRISEbits.RE1=0;
@@ -5089,7 +5089,7 @@ TRISBbits.RB3=1;
 TRISBbits.RB2=1;
 TRISBbits.RB1=1;
 
-
+TRISAbits.RA0=1;
 
 TRISCbits.RC2 = 0;
 TRISCbits.RC1 = 0;
@@ -5103,6 +5103,8 @@ T2CONbits.TMR2ON = 1;
 
 
 while(1) {
+
+
 
 
 if(PORTBbits.RB2==0&&PORTBbits.RB5==0&&PORTBbits.RB4==0&&PORTBbits.RB3==0&&PORTBbits.RB1==0){
@@ -5148,34 +5150,34 @@ else if(PORTBbits.RB2==1&&PORTBbits.RB5==1&&PORTBbits.RB4==1&&PORTBbits.RB3==0&&
 carroGirarEspecial(2);
 }
 
-# 326
+# 330
 }
 }
 
 void carroAvanzar(){
 LATEbits.LE1=1;
 LATEbits.LE0=0;
-LATAbits.LA0=1;
+LATAbits.LA4=1;
 LATAbits.LA1=0;
-config_ccp1(100);
-config_ccp2(100);
+config_ccp1(85);
+config_ccp2(85);
 
 }
 void carroAvanzarEspecial(){
 
 LATEbits.LE1=1;
 LATEbits.LE0=0;
-LATAbits.LA0=1;
+LATAbits.LA4=1;
 LATAbits.LA1=0;
-config_ccp1(80);
-config_ccp2(80);
+config_ccp1(70);
+config_ccp2(70);
 
 }
 
 void carroAtras(){
 LATEbits.LE1=0;
 LATEbits.LE0=1;
-LATAbits.LA0=0;
+LATAbits.LA4=0;
 LATAbits.LA1=1;
 config_ccp1(100);
 config_ccp2(100);
@@ -5183,14 +5185,14 @@ config_ccp2(100);
 
 void carroGirarEspecial(unsigned char direccion2){
 if(direccion2==1){
-LATAbits.LA0=1;
+LATAbits.LA4=1;
 LATAbits.LA1=0;
 LATEbits.LE1=0;
 LATEbits.LE0=0;
 
 }
 else if(direccion2==2){
-LATAbits.LA0=0;
+LATAbits.LA4=0;
 LATAbits.LA1=0;
 LATEbits.LE1=1;
 LATEbits.LE0=0;
@@ -5201,32 +5203,60 @@ config_ccp2(40);
 void carroGirar(unsigned char direccion)
 {
 if(direccion==1){
-LATAbits.LA0=1;
+LATAbits.LA4=1;
 LATAbits.LA1=0;
 LATEbits.LE1 =0;
 LATEbits.LE0=0;
 }
 else if(direccion==2){
-LATAbits.LA0=1;
+LATAbits.LA4=1;
 LATAbits.LA1=0;
 LATEbits.LE1 =0;
 LATEbits.LE0=1;
 }
 else if(direccion==3){
-LATAbits.LA0=0;
+LATAbits.LA4=0;
 LATAbits.LA1=0;
 LATEbits.LE1 =1;
 LATEbits.LE0=0;
 }
-config_ccp1(100);
-config_ccp2(100);
+else if(direccion==4){
+LATAbits.LA4=0;
+LATAbits.LA1=1;
+LATEbits.LE1 =1;
+LATEbits.LE0=0;
+}
+config_ccp1(85);
+config_ccp2(85);
 }
 
 void carroMatar(){
-LATAbits.LA0=0;
+LATAbits.LA4=0;
 LATAbits.LA1=0;
 LATEbits.LE1 =0;
 LATEbits.LE0=0;
 config_ccp1(0);
 config_ccp2(0);
+}
+
+void carroEsquivar(){
+
+
+
+carroMatar();
+wait_in_ms(100);
+carroAtras();
+wait_in_ms(700);
+carroGirar(1);
+wait_in_ms(400);
+carroAvanzarEspecial();
+wait_in_ms(1000);
+carroGirar(3);
+wait_in_ms(400);
+carroAvanzarEspecial();
+wait_in_ms(1500);
+carroMatar();
+wait_in_ms(100);
+carroAvanzarEspecial();
+
 }

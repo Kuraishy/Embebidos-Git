@@ -207,7 +207,7 @@ void carroMatar(){
 
 //Motor derecho
 //segun como se ponga va a delante o atras. adelante (avanzar =1 atras=0);
-#define MotorIzquierdoAvanzar LATAbits.LA0     //(IN4)
+#define MotorIzquierdoAvanzar LATAbits.LA4     //(IN4)
  #define MotorIzquierdoAtras LATAbits.LA1 //(IN3)
 
 //Motor izquierdo
@@ -242,14 +242,14 @@ void carroGirar(unsigned char direccion);//1 es a derecha  0 es izquierda
 void carroMatar();//para el carro
 void carroAvanzarEspecial();///para el caso donde no detecten nada, reduce la velocidad
 void carroGirarEspecial(unsigned char direccion2);
-
+void carroEsquivar();
 
 void main()
 {
     configBoard();
     ADCON1bits.PCFG = 0b1111;//opcion de todos los pines en digitales
     //salidas para los pines del motor
-    TRISAbits.RA0=0;
+    TRISAbits.RA4=0;
     TRISAbits.RA1=0;
     TRISEbits.RE0=0;
     TRISEbits.RE1=0;
@@ -260,7 +260,7 @@ void main()
     TRISBbits.RB2=1;
     TRISBbits.RB1=1;
     
-   
+    TRISAbits.RA0=1;//sensor distancia
   /*********Configuracion de pines***********/
     TRISCbits.RC2 = 0; //Pin del CCP1 es declarada como salida 
     TRISCbits.RC1 = 0;
@@ -275,6 +275,8 @@ void main()
      
     while(1)       {    
 
+        
+  //      while(PORTAbits.RA0==1){
     
         if(SensorExtremoIzquierda==0&&SensorIzquierda==0&&SensorCentral==0&&SensorDerecha==0&&SensorExtremoDerecha==0){
             carroAvanzarEspecial();
@@ -318,9 +320,11 @@ void main()
         else if(SensorExtremoIzquierda==1&&SensorIzquierda==1&&SensorCentral==1&&SensorDerecha==0&&SensorExtremoDerecha==0){
             carroGirarEspecial(2);
         }
-        
+      //  }
        
-   
+     
+       //     carroEsquivar();
+        
 
         
                 }
@@ -331,8 +335,8 @@ void carroAvanzar(){//avanza el carro
     MotorDerechoAtras=0;
     MotorIzquierdoAvanzar=1;
     MotorIzquierdoAtras=0;
-    config_ccp1(100);//(DutyCycle(%))
-    config_ccp2(100);//(DutyCycle(%))
+    config_ccp1(85);//(DutyCycle(%))
+    config_ccp2(85);//(DutyCycle(%))
     
 }
 void carroAvanzarEspecial(){
@@ -341,8 +345,8 @@ void carroAvanzarEspecial(){
     MotorDerechoAtras=0;
     MotorIzquierdoAvanzar=1;
     MotorIzquierdoAtras=0;
-    config_ccp1(80);//(DutyCycle(%))
-    config_ccp2(80);//(DutyCycle(%))
+    config_ccp1(70);//(DutyCycle(%))
+    config_ccp2(70);//(DutyCycle(%))
 
 }
 
@@ -392,8 +396,14 @@ void carroGirar(unsigned char direccion)//1 es a derecha  0 es izquierda
         MotorDerechoAvanzar =1;
         MotorDerechoAtras=0;
     }
-     config_ccp1(100);//(DutyCycle(%))
-    config_ccp2(100);//(DutyCycle(%))
+    else if(direccion==4){
+        MotorIzquierdoAvanzar=0;
+        MotorIzquierdoAtras=1;
+        MotorDerechoAvanzar =1;
+        MotorDerechoAtras=0;
+    }
+     config_ccp1(85);//(DutyCycle(%))
+    config_ccp2(85);//(DutyCycle(%))
 }
 
 void carroMatar(){
@@ -403,4 +413,26 @@ void carroMatar(){
         MotorDerechoAtras=0;
         config_ccp1(0);//(DutyCycle(%))
        config_ccp2(0);//(DutyCycle(%))
+}
+
+void carroEsquivar(){
+    
+    
+    
+    carroMatar();
+    wait_in_ms(100);
+    carroAtras();
+    wait_in_ms(700);
+    carroGirar(1);
+    wait_in_ms(400);
+    carroAvanzarEspecial();
+     wait_in_ms(1000);
+     carroGirar(3);
+     wait_in_ms(400);
+      carroAvanzarEspecial();
+     wait_in_ms(1500);
+     carroMatar();
+    wait_in_ms(100);
+    carroAvanzarEspecial();
+    
 }

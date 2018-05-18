@@ -11,43 +11,43 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
+$C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
 $dist/default/production\Carro.X.production.obj
-cinit CODE 0 2150 2150 16 1
-text0 CODE 0 1178 1178 19C 1
-text1 CODE 0 1E74 1E74 70 1
-text2 CODE 0 1EE4 1EE4 60 1
-text3 CODE 0 1AF2 1AF2 B8 1
-text4 CODE 0 20C4 20C4 24 1
-text5 CODE 0 202C 202C 3A 1
-text6 CODE 0 1FA0 1FA0 4C 1
-text7 CODE 0 210C 210C 22 1
-text8 CODE 0 212E 212E 22 1
+cinit CODE 0 2160 2160 16 1
+text0 CODE 0 1178 1178 19E 1
+text1 CODE 0 1E76 1E76 70 1
+text2 CODE 0 1EE6 1EE6 60 1
+text3 CODE 0 1AF4 1AF4 B8 1
+text4 CODE 0 20D4 20D4 24 1
+text5 CODE 0 203C 203C 3A 1
+text6 CODE 0 1FA2 1FA2 5A 1
+text7 CODE 0 211C 211C 22 1
+text8 CODE 0 213E 213E 22 1
 text9 CODE 0 83C 83C 2D2 1
 text10 CODE 0 B0E B0E 2D2 1
-text11 CODE 0 1314 1314 17C 1
-text12 CODE 0 1490 1490 11E 1
+text11 CODE 0 1316 1316 17C 1
+text12 CODE 0 1492 1492 11E 1
 text13 CODE 0 DE0 DE0 1EC 1
-text14 CODE 0 1A2C 1A2C C6 1
-text15 CODE 0 187C 187C DE 1
-text16 CODE 0 1C58 1C58 90 1
-text17 CODE 0 15AE 15AE F4 1
-text18 CODE 0 1CE8 1CE8 90 1
-text19 CODE 0 1DFC 1DFC 78 1
-text20 CODE 0 195A 195A D2 1
-text21 CODE 0 209E 209E 26 1
-text22 CODE 0 16A2 16A2 F4 1
-text23 CODE 0 1FEC 1FEC 40 1
+text14 CODE 0 1A2E 1A2E C6 1
+text15 CODE 0 187E 187E DE 1
+text16 CODE 0 1C5A 1C5A 90 1
+text17 CODE 0 15B0 15B0 F4 1
+text18 CODE 0 1CEA 1CEA 90 1
+text19 CODE 0 1DFE 1DFE 78 1
+text20 CODE 0 195C 195C D2 1
+text21 CODE 0 20AE 20AE 26 1
+text22 CODE 0 16A4 16A4 F4 1
+text23 CODE 0 1FFC 1FFC 40 1
 text24 CODE 0 FCC FCC 1AC 1
-text25 CODE 0 20E8 20E8 24 1
-text26 CODE 0 1796 1796 E6 1
-text27 CODE 0 2066 2066 38 1
-text28 CODE 0 1F44 1F44 5C 1
-text29 CODE 0 1BAA 1BAA AE 1
-text30 CODE 0 1D78 1D78 84 1
+text25 CODE 0 20F8 20F8 24 1
+text26 CODE 0 1798 1798 E6 1
+text27 CODE 0 2076 2076 38 1
+text28 CODE 0 1F46 1F46 5C 1
+text29 CODE 0 1BAC 1BAC AE 1
+text30 CODE 0 1D7A 1D7A 84 1
 nvBANK0 BANK0 1 EF EF 3 1
 cstackCOMRAM COMRAM 1 1 1 5F 1
 cstackBANK0 BANK0 1 60 60 4E 1
@@ -70,14 +70,14 @@ BANK5 500-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
 CONST 4-7FF 1
-CONST 2166-7FFF 1
+CONST 2176-7FFF 1
 STACK F2-7FF 1
-SMALLCONST 2166-7FFF 1
+SMALLCONST 2176-7FFF 1
 CODE 4-7FF 1
-CODE 2166-7FFF 1
+CODE 2176-7FFF 1
 BIGRAM F2-7FF 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 2166-7FFF 1
+MEDIUMCONST 2176-7FFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -92,104 +92,104 @@ MEDIUMCONST 2166-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Carro.X.production.obj
-1D78 text30 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D78 text30 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D7C text30 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D80 text30 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D88 text30 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D8C text30 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D8C text30 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D90 text30 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D98 text30 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D9C text30 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1D9C text30 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DA4 text30 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DAC text30 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DB0 text30 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DB2 text30 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DB8 text30 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DBA text30 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DBA text30 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DBE text30 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DC4 text30 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DD0 text30 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DD8 text30 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DDA text30 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DDA text30 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DE0 text30 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DE4 text30 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DEA text30 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1DF2 text30 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-1BAA text29 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BAA text29 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BBA text29 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BC8 text29 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BC8 text29 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BCA text29 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BD2 text29 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BD2 text29 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BF0 text29 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BF0 text29 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BF2 text29 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1BFE text29 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C06 text29 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C06 text29 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C24 text29 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C24 text29 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C26 text29 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C2E text29 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C2E text29 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C38 text29 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C3A text29 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C3C text29 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C40 text29 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C44 text29 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C48 text29 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1C4A text29 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-1F44 text28 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
-1F44 text28 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
-1F48 text28 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
-1F4A text28 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
-1F54 text28 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
-1F56 text28 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
-1F56 text28 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
-1F7A text28 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
-2066 text27 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
-2066 text27 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
-206A text27 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
-206E text27 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
-2076 text27 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
-207A text27 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
-207A text27 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
-1796 text26 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1796 text26 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-17B0 text26 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-17BE text26 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-17D8 text26 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-17E6 text26 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-17F2 text26 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-17F8 text26 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-17FC text26 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1800 text26 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1804 text26 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1806 text26 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1812 text26 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1814 text26 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1820 text26 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1824 text26 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1824 text26 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-182C text26 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-183C text26 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1848 text26 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-184A text26 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-184A text26 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1852 text26 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-1856 text26 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-20E8 text25 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
-20E8 text25 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
-20F2 text25 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
-20FE text25 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
-210A text25 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+1D7A text30 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D7A text30 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D7E text30 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D82 text30 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D8A text30 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D8E text30 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D8E text30 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D92 text30 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D9A text30 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D9E text30 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1D9E text30 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DA6 text30 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DAE text30 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DB2 text30 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DB4 text30 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DBA text30 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DBC text30 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DBC text30 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DC0 text30 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DC6 text30 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DD2 text30 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DDA text30 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DDC text30 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DDC text30 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DE2 text30 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DE6 text30 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DEC text30 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1DF4 text30 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+1BAC text29 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BAC text29 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BBC text29 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BCA text29 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BCA text29 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BCC text29 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BD4 text29 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BD4 text29 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BF2 text29 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BF2 text29 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1BF4 text29 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C00 text29 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C08 text29 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C08 text29 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C26 text29 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C26 text29 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C28 text29 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C30 text29 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C30 text29 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C3A text29 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C3C text29 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C3E text29 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C42 text29 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C46 text29 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C4A text29 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1C4C text29 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1F46 text28 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+1F46 text28 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+1F4A text28 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+1F4C text28 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+1F56 text28 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+1F58 text28 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+1F58 text28 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+1F7C text28 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+2076 text27 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+2076 text27 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+207A text27 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+207E text27 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+2086 text27 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+208A text27 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+208A text27 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+1798 text26 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1798 text26 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+17B2 text26 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+17C0 text26 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+17DA text26 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+17E8 text26 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+17F4 text26 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+17FA text26 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+17FE text26 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1802 text26 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1806 text26 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1808 text26 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1814 text26 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1816 text26 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1822 text26 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1826 text26 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1826 text26 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+182E text26 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+183E text26 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+184A text26 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+184C text26 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+184C text26 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1854 text26 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1858 text26 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+20F8 text25 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+20F8 text25 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+2102 text25 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+210E text25 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+211A text25 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
 FCC text24 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
 FCC text24 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
 FE0 text24 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
@@ -240,138 +240,138 @@ FF4 text24 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ft
 114E text24 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
 1152 text24 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
 1152 text24 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-1FEC text23 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
-1FEC text23 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
-1FF6 text23 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
-2002 text23 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
-2002 text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
-16A2 text22 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-16A2 text22 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-16BC text22 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-16CA text22 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-16E4 text22 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-16F2 text22 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-16F8 text22 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-16FC text22 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1700 text22 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1704 text22 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1706 text22 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1708 text22 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1714 text22 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1720 text22 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1724 text22 CODE >135:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1724 text22 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1728 text22 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1734 text22 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-173C text22 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1744 text22 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1748 text22 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-174C text22 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-174C text22 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1750 text22 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-175C text22 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1764 text22 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-176C text22 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-1770 text22 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-209E text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-209E text21 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-20AA text21 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-20B2 text21 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-20BA text21 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-195A text20 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
-195A text20 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
-1998 text20 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
-199A text20 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
-1A16 text20 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
-1A1E text20 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
-1A2A text20 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
-1DFC text19 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1DFC text19 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E00 text19 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E04 text19 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E08 text19 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E18 text19 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E1C text19 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E1E text19 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E28 text19 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E2A text19 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E2A text19 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1E4E text19 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
-1CE8 text18 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-1CE8 text18 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-1CEC text18 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-1D18 text18 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-1D1C text18 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-1D48 text18 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-1D54 text18 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-1D60 text18 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-15AE text17 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-15AE text17 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-15C8 text17 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-15DA text17 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1600 text17 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1602 text17 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-160E text17 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-161C text17 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1620 text17 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1624 text17 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-162E text17 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1640 text17 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-164A text17 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-164E text17 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1650 text17 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1656 text17 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1668 text17 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1668 text17 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1672 text17 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1674 text17 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1674 text17 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-167A text17 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1680 text17 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1690 text17 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-1C58 text16 CODE >254:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1C58 text16 CODE >256:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1C62 text16 CODE >257:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1C72 text16 CODE >258:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1C80 text16 CODE >259:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1C80 text16 CODE >261:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1C9E text16 CODE >262:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1CBA text16 CODE >263:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1CCA text16 CODE >268:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1CD8 text16 CODE >269:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1CDA text16 CODE >273:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-187C text15 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-187C text15 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-1894 text15 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-1898 text15 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-189C text15 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-18AA text15 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-18B8 text15 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-18B8 text15 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-18C4 text15 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-18D2 text15 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-1902 text15 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-1922 text15 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-194C text15 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-1958 text15 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
-1A2C text14 CODE >277:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A2C text14 CODE >279:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A36 text14 CODE >280:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A44 text14 CODE >282:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A5A text14 CODE >283:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A6E text14 CODE >287:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A72 text14 CODE >288:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A7C text14 CODE >289:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A8A text14 CODE >291:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A94 text14 CODE >292:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1A9E text14 CODE >293:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1AA2 text14 CODE >294:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1AAE text14 CODE >295:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1AAE text14 CODE >296:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1ABA text14 CODE >298:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1ABA text14 CODE >300:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1ACE text14 CODE >301:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
-1AE4 text14 CODE >306:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1FFC text23 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+1FFC text23 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+2006 text23 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+2012 text23 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+2012 text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+16A4 text22 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16A4 text22 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16BE text22 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16CC text22 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16E6 text22 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16F4 text22 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16FA text22 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16FE text22 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1702 text22 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1706 text22 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1708 text22 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+170A text22 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1716 text22 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1722 text22 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1726 text22 CODE >135:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1726 text22 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+172A text22 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1736 text22 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+173E text22 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1746 text22 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+174A text22 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+174E text22 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+174E text22 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1752 text22 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+175E text22 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1766 text22 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+176E text22 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1772 text22 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+20AE text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+20AE text21 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+20BA text21 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+20C2 text21 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+20CA text21 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+195C text20 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+195C text20 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+199A text20 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+199C text20 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+1A18 text20 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+1A20 text20 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+1A2C text20 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+1DFE text19 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1DFE text19 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E02 text19 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E06 text19 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E0A text19 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E1A text19 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E1E text19 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E20 text19 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E2A text19 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E2C text19 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E2C text19 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1E50 text19 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1CEA text18 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+1CEA text18 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+1CEE text18 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+1D1A text18 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+1D1E text18 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+1D4A text18 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+1D56 text18 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+1D62 text18 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+15B0 text17 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15B0 text17 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15CA text17 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15DC text17 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1602 text17 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1604 text17 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1610 text17 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+161E text17 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1622 text17 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1626 text17 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1630 text17 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1642 text17 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+164C text17 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1650 text17 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1652 text17 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1658 text17 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+166A text17 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+166A text17 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1674 text17 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1676 text17 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1676 text17 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+167C text17 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1682 text17 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1692 text17 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1C5A text16 CODE >254:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1C5A text16 CODE >256:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1C64 text16 CODE >257:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1C74 text16 CODE >258:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1C82 text16 CODE >259:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1C82 text16 CODE >261:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1CA0 text16 CODE >262:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1CBC text16 CODE >263:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1CCC text16 CODE >268:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1CDA text16 CODE >269:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1CDC text16 CODE >273:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+187E text15 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+187E text15 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+1896 text15 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+189A text15 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+189E text15 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+18AC text15 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+18BA text15 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+18BA text15 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+18C6 text15 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+18D4 text15 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+1904 text15 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+1924 text15 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+194E text15 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+195A text15 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+1A2E text14 CODE >277:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1A2E text14 CODE >279:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1A38 text14 CODE >280:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1A46 text14 CODE >282:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1A5C text14 CODE >283:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1A70 text14 CODE >287:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1A74 text14 CODE >288:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1A7E text14 CODE >289:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1A8C text14 CODE >291:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1A96 text14 CODE >292:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1AA0 text14 CODE >293:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1AA4 text14 CODE >294:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1AB0 text14 CODE >295:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1AB0 text14 CODE >296:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1ABC text14 CODE >298:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1ABC text14 CODE >300:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1AD0 text14 CODE >301:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+1AE6 text14 CODE >306:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
 DE0 text13 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\exp.c
 DE0 text13 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\exp.c
 DEA text13 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\exp.c
@@ -397,43 +397,43 @@ F94 text13 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ex
 FBE text13 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\exp.c
 FBE text13 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\exp.c
 FCA text13 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\exp.c
-1490 text12 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-1490 text12 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-1494 text12 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-149E text12 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-14AC text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-14AC text12 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-14B6 text12 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-14C0 text12 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-14CE text12 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-14CE text12 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-152A text12 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-1530 text12 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-155C text12 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
-1314 text11 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-1314 text11 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-131A text11 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-1324 text11 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-1344 text11 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-134E text11 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-134E text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-135E text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-135E text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-1368 text11 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-1376 text11 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-137A text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-139A text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-13C4 text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-13CC text11 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-13DA text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-13DA text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-13E0 text11 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-13FC text11 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-13FC text11 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-145C text11 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-1464 text11 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-1482 text11 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
-148E text11 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1492 text12 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+1492 text12 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+1496 text12 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+14A0 text12 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+14AE text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+14AE text12 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+14B8 text12 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+14C2 text12 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+14D0 text12 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+14D0 text12 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+152C text12 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+1532 text12 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+155E text12 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+1316 text11 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1316 text11 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+131C text11 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1326 text11 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1346 text11 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1350 text11 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1350 text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1360 text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1360 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+136A text11 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1378 text11 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+137C text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+139C text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+13C6 text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+13CE text11 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+13DC text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+13DC text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+13E2 text11 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+13FE text11 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+13FE text11 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+145E text11 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1466 text11 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1484 text11 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+1490 text11 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
 B0E text10 CODE >43:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
 B0E text10 CODE >47:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
 BAE text10 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
@@ -490,107 +490,110 @@ AF2 text9 CODE >114:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Car
 AF8 text9 CODE >121:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
 B08 text9 CODE >122:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
 B0C text9 CODE >124:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-212E text8 CODE >329:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-212E text8 CODE >330:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2130 text8 CODE >331:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2132 text8 CODE >332:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2134 text8 CODE >333:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2136 text8 CODE >334:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2142 text8 CODE >335:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-214E text8 CODE >337:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-210C text7 CODE >338:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-210C text7 CODE >340:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-210E text7 CODE >341:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2110 text7 CODE >342:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2112 text7 CODE >343:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2114 text7 CODE >344:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2120 text7 CODE >345:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-212C text7 CODE >347:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FA0 text6 CODE >375:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FA2 text6 CODE >377:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FA8 text6 CODE >378:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FAA text6 CODE >379:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FAC text6 CODE >380:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FB0 text6 CODE >383:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FB8 text6 CODE >384:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FBA text6 CODE >385:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FBC text6 CODE >386:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FBE text6 CODE >387:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FC0 text6 CODE >388:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FC2 text6 CODE >389:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FCA text6 CODE >390:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FCC text6 CODE >391:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FCE text6 CODE >392:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FD0 text6 CODE >393:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FD2 text6 CODE >394:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FD2 text6 CODE >395:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FDE text6 CODE >396:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1FEA text6 CODE >397:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-202C text5 CODE >358:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-202E text5 CODE >359:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2034 text5 CODE >360:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2036 text5 CODE >361:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2038 text5 CODE >362:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-203C text5 CODE >366:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2044 text5 CODE >367:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2046 text5 CODE >368:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2048 text5 CODE >369:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-204A text5 CODE >370:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-204C text5 CODE >371:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-204C text5 CODE >372:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+213E text8 CODE >333:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+213E text8 CODE >334:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2140 text8 CODE >335:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2142 text8 CODE >336:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2144 text8 CODE >337:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2146 text8 CODE >338:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2152 text8 CODE >339:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+215E text8 CODE >341:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+211C text7 CODE >342:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+211C text7 CODE >344:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+211E text7 CODE >345:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2120 text7 CODE >346:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2122 text7 CODE >347:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2124 text7 CODE >348:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2130 text7 CODE >349:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+213C text7 CODE >351:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FA2 text6 CODE >379:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FA4 text6 CODE >381:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FAA text6 CODE >382:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FAC text6 CODE >383:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FAE text6 CODE >384:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FB2 text6 CODE >387:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FBA text6 CODE >388:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FBC text6 CODE >389:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FBE text6 CODE >390:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FC0 text6 CODE >391:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FC2 text6 CODE >392:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FC4 text6 CODE >393:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FCC text6 CODE >394:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FCE text6 CODE >395:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FD2 text6 CODE >399:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FDA text6 CODE >400:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FDC text6 CODE >401:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FDE text6 CODE >402:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FE0 text6 CODE >403:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FE2 text6 CODE >404:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FE2 text6 CODE >405:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FEE text6 CODE >406:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1FFA text6 CODE >407:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+203C text5 CODE >362:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+203E text5 CODE >363:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2044 text5 CODE >364:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2046 text5 CODE >365:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2048 text5 CODE >366:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+204C text5 CODE >370:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2054 text5 CODE >371:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2056 text5 CODE >372:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
 2058 text5 CODE >373:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2064 text5 CODE >374:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-20C4 text4 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lbtoft.c
-20C6 text4 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lbtoft.c
-1AF2 text3 CODE >34:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1AF2 text3 CODE >36:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1B82 text3 CODE >37:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1B94 text3 CODE >38:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1B98 text3 CODE >39:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1BA0 text3 CODE >40:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1BA8 text3 CODE >41:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1EE4 text2 CODE >11:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1EE4 text2 CODE >15:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1EE6 text2 CODE >16:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1EE8 text2 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1EEA text2 CODE >26:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1EEC text2 CODE >27:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1EEE text2 CODE >29:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1EF0 text2 CODE >30:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1EF8 text2 CODE >31:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1EFA text2 CODE >33:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F02 text2 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F06 text2 CODE >47:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F08 text2 CODE >51:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F0A text2 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F12 text2 CODE >53:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F1A text2 CODE >55:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F1C text2 CODE >56:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F24 text2 CODE >57:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F26 text2 CODE >58:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F28 text2 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F2A text2 CODE >64:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F2C text2 CODE >66:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F2E text2 CODE >67:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F30 text2 CODE >69:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F36 text2 CODE >70:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F38 text2 CODE >72:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F3A text2 CODE >75:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F3E text2 CODE >76:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1F42 text2 CODE >78:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
-1E74 text1 CODE >14:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1E74 text1 CODE >16:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1E7C text1 CODE >18:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1E94 text1 CODE >20:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1E96 text1 CODE >22:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1E9C text1 CODE >23:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1EA6 text1 CODE >24:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1EAA text1 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1EAC text1 CODE >20:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1ED0 text1 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1ED0 text1 CODE >27:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1ED8 text1 CODE >29:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
-1EE2 text1 CODE >31:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+205A text5 CODE >374:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+205C text5 CODE >375:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+205C text5 CODE >376:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2068 text5 CODE >377:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2074 text5 CODE >378:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+20D4 text4 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lbtoft.c
+20D6 text4 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lbtoft.c
+1AF4 text3 CODE >34:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1AF4 text3 CODE >36:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1B84 text3 CODE >37:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1B96 text3 CODE >38:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1B9A text3 CODE >39:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1BA2 text3 CODE >40:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1BAA text3 CODE >41:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1EE6 text2 CODE >11:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1EE6 text2 CODE >15:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1EE8 text2 CODE >16:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1EEA text2 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1EEC text2 CODE >26:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1EEE text2 CODE >27:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1EF0 text2 CODE >29:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1EF2 text2 CODE >30:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1EFA text2 CODE >31:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1EFC text2 CODE >33:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F04 text2 CODE >44:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F08 text2 CODE >47:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F0A text2 CODE >51:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F0C text2 CODE >52:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F14 text2 CODE >53:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F1C text2 CODE >55:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F1E text2 CODE >56:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F26 text2 CODE >57:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F28 text2 CODE >58:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F2A text2 CODE >60:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F2C text2 CODE >64:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F2E text2 CODE >66:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F30 text2 CODE >67:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F32 text2 CODE >69:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F38 text2 CODE >70:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F3A text2 CODE >72:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F3C text2 CODE >75:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F40 text2 CODE >76:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1F44 text2 CODE >78:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\config.c
+1E76 text1 CODE >14:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1E76 text1 CODE >16:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1E7E text1 CODE >18:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1E96 text1 CODE >20:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1E98 text1 CODE >22:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1E9E text1 CODE >23:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1EA8 text1 CODE >24:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1EAC text1 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1EAE text1 CODE >20:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1ED2 text1 CODE >25:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1ED2 text1 CODE >27:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1EDA text1 CODE >29:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
+1EE4 text1 CODE >31:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\Pwm.c
 1178 text0 CODE >247:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
 1178 text0 CODE >249:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
 117C text0 CODE >250:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
@@ -603,68 +606,69 @@ B0C text9 CODE >124:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Car
 1190 text0 CODE >259:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
 1192 text0 CODE >260:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
 1194 text0 CODE >261:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1196 text0 CODE >265:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1198 text0 CODE >266:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-119A text0 CODE >268:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11AE text0 CODE >269:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11CA text0 CODE >273:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11CC text0 CODE >276:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11CC text0 CODE >279:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11DC text0 CODE >280:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11E0 text0 CODE >281:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11E2 text0 CODE >282:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11F2 text0 CODE >283:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11F8 text0 CODE >284:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-11FA text0 CODE >285:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-120A text0 CODE >286:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1210 text0 CODE >287:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1212 text0 CODE >288:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1222 text0 CODE >289:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1228 text0 CODE >290:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-122A text0 CODE >291:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-123A text0 CODE >292:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-123E text0 CODE >293:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1240 text0 CODE >294:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1250 text0 CODE >295:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1256 text0 CODE >296:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1258 text0 CODE >297:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1268 text0 CODE >298:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-126E text0 CODE >299:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1270 text0 CODE >300:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1280 text0 CODE >301:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1286 text0 CODE >302:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1288 text0 CODE >303:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1298 text0 CODE >304:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-129C text0 CODE >305:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-129E text0 CODE >306:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12AE text0 CODE >307:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12B4 text0 CODE >308:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12B6 text0 CODE >309:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12C6 text0 CODE >310:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12CC text0 CODE >311:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12CE text0 CODE >312:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12DE text0 CODE >313:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12E2 text0 CODE >314:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12E4 text0 CODE >315:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12F4 text0 CODE >316:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12FA text0 CODE >317:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-12FC text0 CODE >318:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-130C text0 CODE >319:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-1312 text0 CODE >276:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
-2150 cinit CODE >1303:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-2150 cinit CODE >1305:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-2150 cinit CODE >1308:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-2150 cinit CODE >1327:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-2154 cinit CODE >1328:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-2156 cinit CODE >1329:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-2156 cinit CODE >1330:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-2158 cinit CODE >1331:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-215A cinit CODE >1332:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-215C cinit CODE >1338:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-215C cinit CODE >1341:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-215E cinit CODE >1342:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-2160 cinit CODE >1343:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
-2162 cinit CODE >1344:C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.
+1196 text0 CODE >263:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1198 text0 CODE >265:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+119A text0 CODE >266:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+119C text0 CODE >268:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11B0 text0 CODE >269:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11CC text0 CODE >273:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11CE text0 CODE >276:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11CE text0 CODE >281:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11DE text0 CODE >282:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11E2 text0 CODE >283:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11E4 text0 CODE >284:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11F4 text0 CODE >285:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11FA text0 CODE >286:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+11FC text0 CODE >287:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+120C text0 CODE >288:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1212 text0 CODE >289:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1214 text0 CODE >290:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1224 text0 CODE >291:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+122A text0 CODE >292:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+122C text0 CODE >293:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+123C text0 CODE >294:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1240 text0 CODE >295:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1242 text0 CODE >296:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1252 text0 CODE >297:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1258 text0 CODE >298:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+125A text0 CODE >299:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+126A text0 CODE >300:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1270 text0 CODE >301:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1272 text0 CODE >302:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1282 text0 CODE >303:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1288 text0 CODE >304:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+128A text0 CODE >305:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+129A text0 CODE >306:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+129E text0 CODE >307:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12A0 text0 CODE >308:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12B0 text0 CODE >309:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12B6 text0 CODE >310:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12B8 text0 CODE >311:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12C8 text0 CODE >312:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12CE text0 CODE >313:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12D0 text0 CODE >314:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12E0 text0 CODE >315:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12E4 text0 CODE >316:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12E6 text0 CODE >317:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12F6 text0 CODE >318:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12FC text0 CODE >319:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+12FE text0 CODE >320:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+130E text0 CODE >321:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+1314 text0 CODE >276:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Carro.X\carroMain.c
+2160 cinit CODE >1303:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+2160 cinit CODE >1305:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+2160 cinit CODE >1308:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+2160 cinit CODE >1327:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+2164 cinit CODE >1328:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+2166 cinit CODE >1329:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+2166 cinit CODE >1330:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+2168 cinit CODE >1331:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+216A cinit CODE >1332:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+216C cinit CODE >1338:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+216C cinit CODE >1341:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+216E cinit CODE >1342:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+2170 cinit CODE >1343:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
+2172 cinit CODE >1344:C:\Users\ADMINI~1\AppData\Local\Temp\sc20.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -678,8 +682,8 @@ B0C text9 CODE >124:C:\Users\Administrador\OneDrive\universida\Embebidos-Git\Car
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___awdiv@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-_pow$1554 6C 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
-_pow$1555 6F 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
+_pow$1560 6C 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
+_pow$1561 6F 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Carro.X.production.obj
 __Hspace_0 30000E 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __Hspace_1 F2 0 ABS 0 - dist/default/production\Carro.X.production.obj
@@ -687,7 +691,7 @@ __Hspace_2 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 frexp@eptr 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ___ftdiv@exp 29 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Carro.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
 ___awtoft@sign C 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Carro.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
@@ -696,7 +700,7 @@ __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 ?_pow 66 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\Carro.X.production.obj
 _RCIF 7CF5 0 ABS 0 - dist/default/production\Carro.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
+___sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
 _main 1178 0 CODE 0 text0 dist/default/production\Carro.X.production.obj
 _pr2g EA 0 BANK0 1 bssBANK0 dist/default/production\Carro.X.production.obj
 exp@x 58 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
@@ -705,7 +709,7 @@ ___ftadd@f1 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.productio
 ___ftadd@f2 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 pow@x 66 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
 pow@y 69 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
-start 0 0 CODE 0 init C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
+start 0 0 CODE 0 init C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __size_of___ftadd 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __size_of___ftdiv 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
@@ -720,17 +724,17 @@ pow@yi 73 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
 ___ftdiv@f1 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ___ftdiv@f2 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ___ftdiv@f3 26 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-_carroAvanzar 212E 0 CODE 0 text8 dist/default/production\Carro.X.production.obj
+_carroAvanzar 213E 0 CODE 0 text8 dist/default/production\Carro.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\Carro.X.production.obj
 log@coeff 81F 0 SMALLCONST 0 smallconst dist/default/production\Carro.X.production.obj
 ___ftge@ff1 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ___ftge@ff2 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 _T0CONbits FD5 0 ABS 0 - dist/default/production\Carro.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
-intlevel0 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
-intlevel1 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
-intlevel2 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
-intlevel3 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
+__accesstop 60 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
+intlevel0 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
+intlevel1 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
+intlevel2 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
+intlevel3 0 0 CODE 0 text C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
 __end_oflog@coeff 83A 0 SMALLCONST 0 smallconst dist/default/production\Carro.X.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Carro.X.production.obj
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\Carro.X.production.obj
@@ -743,16 +747,16 @@ ___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.p
 _ADCON0 FC2 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __size_of_carroAvanzar 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 ___awdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
 __size_of___altoft 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __size_of___awtoft 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _CCPR1L FBE 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _CCPR2L FBB 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Carro.X.production.obj
 ___altoft@c 46 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-__end_of___ftge 1D78 0 CODE 0 text18 dist/default/production\Carro.X.production.obj
-__end_of___wmul 20C4 0 CODE 0 text21 dist/default/production\Carro.X.production.obj
+__end_of___ftge 1D7A 0 CODE 0 text18 dist/default/production\Carro.X.production.obj
+__end_of___wmul 20D4 0 CODE 0 text21 dist/default/production\Carro.X.production.obj
 __size_of_configBoard 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Carro.X.production.obj
 ___ftsub@f1 37 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
@@ -765,15 +769,15 @@ __LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\Carro.X.production.obj
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\Carro.X.production.obj
 ___awdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __size_of___ftpack 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
-__end_of___awdiv 1DFC 0 CODE 0 text30 dist/default/production\Carro.X.production.obj
+__end_of___awdiv 1DFE 0 CODE 0 text30 dist/default/production\Carro.X.production.obj
 __end_of___ftadd 1178 0 CODE 0 text24 dist/default/production\Carro.X.production.obj
-__end_of___ftdiv 187C 0 CODE 0 text26 dist/default/production\Carro.X.production.obj
-__end_of___ftmul 1796 0 CODE 0 text22 dist/default/production\Carro.X.production.obj
-__end_of___ftneg 210C 0 CODE 0 text25 dist/default/production\Carro.X.production.obj
-__end_of___ftsub 202C 0 CODE 0 text23 dist/default/production\Carro.X.production.obj
-__end_of___fttol 16A2 0 CODE 0 text17 dist/default/production\Carro.X.production.obj
-__end_of_carroAvanzar 2150 0 CODE 0 text8 dist/default/production\Carro.X.production.obj
-_carroAvanzarEspecial 210C 0 CODE 0 text7 dist/default/production\Carro.X.production.obj
+__end_of___ftdiv 187E 0 CODE 0 text26 dist/default/production\Carro.X.production.obj
+__end_of___ftmul 1798 0 CODE 0 text22 dist/default/production\Carro.X.production.obj
+__end_of___ftneg 211C 0 CODE 0 text25 dist/default/production\Carro.X.production.obj
+__end_of___ftsub 203C 0 CODE 0 text23 dist/default/production\Carro.X.production.obj
+__end_of___fttol 16A4 0 CODE 0 text17 dist/default/production\Carro.X.production.obj
+__end_of_carroAvanzar 2160 0 CODE 0 text8 dist/default/production\Carro.X.production.obj
+_carroAvanzarEspecial 211C 0 CODE 0 text7 dist/default/production\Carro.X.production.obj
 ?_eval_poly 37 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __size_of_floor 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __size_of_frexp 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
@@ -782,25 +786,25 @@ __size_of___lbtoft 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __size_of___lltoft 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\Carro.X.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
-start_initialization 2150 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
+start_initialization 2160 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
 pow@sign 72 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Carro.X.production.obj
-___altoft 1DFC 0 CODE 0 text19 dist/default/production\Carro.X.production.obj
-___awtoft 2066 0 CODE 0 text27 dist/default/production\Carro.X.production.obj
+___altoft 1DFE 0 CODE 0 text19 dist/default/production\Carro.X.production.obj
+___awtoft 2076 0 CODE 0 text27 dist/default/production\Carro.X.production.obj
 _TRISAbits F92 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _TRISBbits F93 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _TRISCbits F94 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _TRISEbits F96 0 ABS 0 - dist/default/production\Carro.X.production.obj
-_config_ccp1$1548 95 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
-_config_ccp1$1549 9E 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
-_config_ccp1$1550 A1 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
+_config_ccp1$1554 95 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
+_config_ccp1$1555 9E 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
+_config_ccp1$1556 A1 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
 ___rparam_used 1 0 ABS 0 - dist/default/production\Carro.X.production.obj
-_config_ccp2$1551 95 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
-_config_ccp2$1552 9E 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
-_config_ccp2$1553 A1 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
-__end_of___altoft 1E74 0 CODE 0 text19 dist/default/production\Carro.X.production.obj
-_config_timer2 1E74 0 CODE 0 text1 dist/default/production\Carro.X.production.obj
-__end_of___awtoft 209E 0 CODE 0 text27 dist/default/production\Carro.X.production.obj
+_config_ccp2$1557 95 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
+_config_ccp2$1558 9E 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
+_config_ccp2$1559 A1 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
+__end_of___altoft 1E76 0 CODE 0 text19 dist/default/production\Carro.X.production.obj
+_config_timer2 1E76 0 CODE 0 text1 dist/default/production\Carro.X.production.obj
+__end_of___awtoft 20AE 0 CODE 0 text27 dist/default/production\Carro.X.production.obj
 _T08BIT 7EAE 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
 ___fttol@exp1 45 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
@@ -811,12 +815,12 @@ _TMR0IF 7F92 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _TMR0ON 7EAF 0 ABS 0 - dist/default/production\Carro.X.production.obj
 ___lltoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 config_ccp1@duty1 5B 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-___ftpack 1BAA 0 CODE 0 text29 dist/default/production\Carro.X.production.obj
+___ftpack 1BAC 0 CODE 0 text29 dist/default/production\Carro.X.production.obj
 ___ftpack@arg 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ___ftpack@exp 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __size_of_coinfig_ccpcon 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 carroGirarEspecial@direccion2 5F 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-__end_of___ftpack 1C58 0 CODE 0 text29 dist/default/production\Carro.X.production.obj
+__end_of___ftpack 1C5A 0 CODE 0 text29 dist/default/production\Carro.X.production.obj
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\Carro.X.production.obj
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\Carro.X.production.obj
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\Carro.X.production.obj
@@ -847,9 +851,9 @@ __Htext8 0 0 ABS 0 text8 dist/default/production\Carro.X.production.obj
 __Htext9 0 0 ABS 0 text9 dist/default/production\Carro.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Carro.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Carro.X.production.obj
-__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
-___lbtoft 20C4 0 CODE 0 text4 dist/default/production\Carro.X.production.obj
-___lltoft 1F44 0 CODE 0 text28 dist/default/production\Carro.X.production.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
+___lbtoft 20D4 0 CODE 0 text4 dist/default/production\Carro.X.production.obj
+___lltoft 1F46 0 CODE 0 text28 dist/default/production\Carro.X.production.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\Carro.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\Carro.X.production.obj
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\Carro.X.production.obj
@@ -881,9 +885,9 @@ __Ltext6 0 0 ABS 0 text6 dist/default/production\Carro.X.production.obj
 __Ltext7 0 0 ABS 0 text7 dist/default/production\Carro.X.production.obj
 __Ltext8 0 0 ABS 0 text8 dist/default/production\Carro.X.production.obj
 __Ltext9 0 0 ABS 0 text9 dist/default/production\Carro.X.production.obj
-__end_of___lbtoft 20E8 0 CODE 0 text4 dist/default/production\Carro.X.production.obj
+__end_of___lbtoft 20F8 0 CODE 0 text4 dist/default/production\Carro.X.production.obj
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Carro.X.production.obj
-__end_of___lltoft 1FA0 0 CODE 0 text28 dist/default/production\Carro.X.production.obj
+__end_of___lltoft 1FA2 0 CODE 0 text28 dist/default/production\Carro.X.production.obj
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Carro.X.production.obj
 _PORTBbits F81 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _INTCONbits FF2 0 ABS 0 - dist/default/production\Carro.X.production.obj
@@ -904,8 +908,8 @@ __Ltext 0 0 ABS 0 text dist/default/production\Carro.X.production.obj
 __pnvBANK0 EF 0 BANK0 1 nvBANK0 dist/default/production\Carro.X.production.obj
 config_timer2@onoff D 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 config_timer2@presc F 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-___ftge 1CE8 0 CODE 0 text18 dist/default/production\Carro.X.production.obj
-___wmul 209E 0 CODE 0 text21 dist/default/production\Carro.X.production.obj
+___ftge 1CEA 0 CODE 0 text18 dist/default/production\Carro.X.production.obj
+___wmul 20AE 0 CODE 0 text21 dist/default/production\Carro.X.production.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\Carro.X.production.obj
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __Hintret 0 0 ABS 0 intret dist/default/production\Carro.X.production.obj
@@ -915,28 +919,28 @@ __S0 30000E 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __S1 F2 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __S2 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _exp DE0 0 CODE 0 text13 dist/default/production\Carro.X.production.obj
-_log 1490 0 CODE 0 text12 dist/default/production\Carro.X.production.obj
-_pow 1314 0 CODE 0 text11 dist/default/production\Carro.X.production.obj
+_log 1492 0 CODE 0 text12 dist/default/production\Carro.X.production.obj
+_pow 1316 0 CODE 0 text11 dist/default/production\Carro.X.production.obj
 config_ccp1@valreg 98 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
-__end_of_carroGirarEspecial 2066 0 CODE 0 text5 dist/default/production\Carro.X.production.obj
-_exp$1556 60 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
+__end_of_carroGirarEspecial 2076 0 CODE 0 text5 dist/default/production\Carro.X.production.obj
+_exp$1562 60 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
 __CFG_PLLDIV$2 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 eval_poly@res 40 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ___awtoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Carro.X.production.obj
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Carro.X.production.obj
 __end_of_exp FCC 0 CODE 0 text13 dist/default/production\Carro.X.production.obj
-__end_of_log 15AE 0 CODE 0 text12 dist/default/production\Carro.X.production.obj
-__end_of_pow 1490 0 CODE 0 text11 dist/default/production\Carro.X.production.obj
+__end_of_log 15B0 0 CODE 0 text12 dist/default/production\Carro.X.production.obj
+__end_of_pow 1492 0 CODE 0 text11 dist/default/production\Carro.X.production.obj
 __HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\Carro.X.production.obj
-_configBoard 1EE4 0 CODE 0 text2 dist/default/production\Carro.X.production.obj
+_configBoard 1EE6 0 CODE 0 text2 dist/default/production\Carro.X.production.obj
 __size_of_config_timer2 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __Lintentry 0 0 ABS 0 intentry dist/default/production\Carro.X.production.obj
 _config_ccp1 B0E 0 CODE 0 text10 dist/default/production\Carro.X.production.obj
 _config_ccp2 83C 0 CODE 0 text9 dist/default/production\Carro.X.production.obj
 __Hramtop 800 0 RAM 0 ramtop dist/default/production\Carro.X.production.obj
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\Carro.X.production.obj
-_carroGirarEspecial 202C 0 CODE 0 text5 dist/default/production\Carro.X.production.obj
+_carroGirarEspecial 203C 0 CODE 0 text5 dist/default/production\Carro.X.production.obj
 __activetblptr 2 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\Carro.X.production.obj
 __size_of___ftge 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
@@ -985,40 +989,40 @@ _PIE1bits F9D 0 ABS 0 - dist/default/production\Carro.X.production.obj
 floor@expon 56 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ___altoft@exp 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __ptext10 B0E 0 CODE 0 text10 dist/default/production\Carro.X.production.obj
-__ptext11 1314 0 CODE 0 text11 dist/default/production\Carro.X.production.obj
-__ptext12 1490 0 CODE 0 text12 dist/default/production\Carro.X.production.obj
+__ptext11 1316 0 CODE 0 text11 dist/default/production\Carro.X.production.obj
+__ptext12 1492 0 CODE 0 text12 dist/default/production\Carro.X.production.obj
 __ptext13 DE0 0 CODE 0 text13 dist/default/production\Carro.X.production.obj
-__ptext14 1A2C 0 CODE 0 text14 dist/default/production\Carro.X.production.obj
-__ptext15 187C 0 CODE 0 text15 dist/default/production\Carro.X.production.obj
-__ptext16 1C58 0 CODE 0 text16 dist/default/production\Carro.X.production.obj
-__ptext17 15AE 0 CODE 0 text17 dist/default/production\Carro.X.production.obj
-__ptext18 1CE8 0 CODE 0 text18 dist/default/production\Carro.X.production.obj
-__ptext19 1DFC 0 CODE 0 text19 dist/default/production\Carro.X.production.obj
-__ptext20 195A 0 CODE 0 text20 dist/default/production\Carro.X.production.obj
-__ptext21 209E 0 CODE 0 text21 dist/default/production\Carro.X.production.obj
-__ptext22 16A2 0 CODE 0 text22 dist/default/production\Carro.X.production.obj
-__ptext23 1FEC 0 CODE 0 text23 dist/default/production\Carro.X.production.obj
+__ptext14 1A2E 0 CODE 0 text14 dist/default/production\Carro.X.production.obj
+__ptext15 187E 0 CODE 0 text15 dist/default/production\Carro.X.production.obj
+__ptext16 1C5A 0 CODE 0 text16 dist/default/production\Carro.X.production.obj
+__ptext17 15B0 0 CODE 0 text17 dist/default/production\Carro.X.production.obj
+__ptext18 1CEA 0 CODE 0 text18 dist/default/production\Carro.X.production.obj
+__ptext19 1DFE 0 CODE 0 text19 dist/default/production\Carro.X.production.obj
+__ptext20 195C 0 CODE 0 text20 dist/default/production\Carro.X.production.obj
+__ptext21 20AE 0 CODE 0 text21 dist/default/production\Carro.X.production.obj
+__ptext22 16A4 0 CODE 0 text22 dist/default/production\Carro.X.production.obj
+__ptext23 1FFC 0 CODE 0 text23 dist/default/production\Carro.X.production.obj
 __ptext24 FCC 0 CODE 0 text24 dist/default/production\Carro.X.production.obj
-__ptext25 20E8 0 CODE 0 text25 dist/default/production\Carro.X.production.obj
-__ptext26 1796 0 CODE 0 text26 dist/default/production\Carro.X.production.obj
-__ptext27 2066 0 CODE 0 text27 dist/default/production\Carro.X.production.obj
-__ptext28 1F44 0 CODE 0 text28 dist/default/production\Carro.X.production.obj
-__ptext29 1BAA 0 CODE 0 text29 dist/default/production\Carro.X.production.obj
-__ptext30 1D78 0 CODE 0 text30 dist/default/production\Carro.X.production.obj
-___awdiv 1D78 0 CODE 0 text30 dist/default/production\Carro.X.production.obj
+__ptext25 20F8 0 CODE 0 text25 dist/default/production\Carro.X.production.obj
+__ptext26 1798 0 CODE 0 text26 dist/default/production\Carro.X.production.obj
+__ptext27 2076 0 CODE 0 text27 dist/default/production\Carro.X.production.obj
+__ptext28 1F46 0 CODE 0 text28 dist/default/production\Carro.X.production.obj
+__ptext29 1BAC 0 CODE 0 text29 dist/default/production\Carro.X.production.obj
+__ptext30 1D7A 0 CODE 0 text30 dist/default/production\Carro.X.production.obj
+___awdiv 1D7A 0 CODE 0 text30 dist/default/production\Carro.X.production.obj
 ___ftadd FCC 0 CODE 0 text24 dist/default/production\Carro.X.production.obj
-___ftdiv 1796 0 CODE 0 text26 dist/default/production\Carro.X.production.obj
-___ftmul 16A2 0 CODE 0 text22 dist/default/production\Carro.X.production.obj
-___ftneg 20E8 0 CODE 0 text25 dist/default/production\Carro.X.production.obj
-___ftsub 1FEC 0 CODE 0 text23 dist/default/production\Carro.X.production.obj
-___fttol 15AE 0 CODE 0 text17 dist/default/production\Carro.X.production.obj
+___ftdiv 1798 0 CODE 0 text26 dist/default/production\Carro.X.production.obj
+___ftmul 16A4 0 CODE 0 text22 dist/default/production\Carro.X.production.obj
+___ftneg 20F8 0 CODE 0 text25 dist/default/production\Carro.X.production.obj
+___ftsub 1FFC 0 CODE 0 text23 dist/default/production\Carro.X.production.obj
+___fttol 15B0 0 CODE 0 text17 dist/default/production\Carro.X.production.obj
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Carro.X.production.obj
 __Lbigram 0 0 ABS 0 bigram dist/default/production\Carro.X.production.obj
 coinfig_ccpcon@fosc 46 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 coinfig_ccpcon@freq 49 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __CFG_BORV$3 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
-_carroGirar 1FA0 0 CODE 0 text6 dist/default/production\Carro.X.production.obj
-__end_of_config_timer2 1EE4 0 CODE 0 text1 dist/default/production\Carro.X.production.obj
+_carroGirar 1FA2 0 CODE 0 text6 dist/default/production\Carro.X.production.obj
+__end_of_config_timer2 1EE6 0 CODE 0 text1 dist/default/production\Carro.X.production.obj
 __Lcomram 0 0 ABS 0 comram dist/default/production\Carro.X.production.obj
 __Lconfig 300000 0 CONFIG 0 config dist/default/production\Carro.X.production.obj
 ?___ftpack 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
@@ -1030,14 +1034,14 @@ __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Carro.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Carro.X.production.obj
 config_ccp2@F3978 AE 0 BANK0 1 bssBANK0 dist/default/production\Carro.X.production.obj
 config_ccp2@duty2 5B 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-stackhi 7FF 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
-stacklo F2 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
+stackhi 7FF 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
+stacklo F2 0 ABS 0 - C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
 ?___lbtoft 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __Lintcode 0 0 CODE 0 intcode dist/default/production\Carro.X.production.obj
 ?___lltoft 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\Carro.X.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\Carro.X.production.obj
-__end_of_eval_poly 1A2C 0 CODE 0 text20 dist/default/production\Carro.X.production.obj
+__end_of_eval_poly 1A2E 0 CODE 0 text20 dist/default/production\Carro.X.production.obj
 _ADCON0bits FC2 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _ADCON1bits FC1 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _ADCON2bits FC0 0 ABS 0 - dist/default/production\Carro.X.production.obj
@@ -1054,11 +1058,11 @@ __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\Carro.X.production.
 _PIR1bits F9E 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
-end_of_initialization 215C 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
+end_of_initialization 216C 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Carro.X.production.obj
 __Hintentry 0 0 ABS 0 intentry dist/default/production\Carro.X.production.obj
 ___awdiv@quotient 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-_eval_poly 195A 0 CODE 0 text20 dist/default/production\Carro.X.production.obj
+_eval_poly 195C 0 CODE 0 text20 dist/default/production\Carro.X.production.obj
 ?___awdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ?___ftadd 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ?___ftdiv 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
@@ -1069,20 +1073,20 @@ _eval_poly 195A 0 CODE 0 text20 dist/default/production\Carro.X.production.obj
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\Carro.X.production.obj
 ldexp@value 43 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Carro.X.production.obj
-__end_of_carroGirar 1FEC 0 CODE 0 text6 dist/default/production\Carro.X.production.obj
+__end_of_carroGirar 1FFC 0 CODE 0 text6 dist/default/production\Carro.X.production.obj
 __Lramtop 800 0 RAM 0 ramtop dist/default/production\Carro.X.production.obj
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\Carro.X.production.obj
-__pcinit 2150 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
+__pcinit 2160 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
 ___lltoft@exp 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __ptext0 1178 0 CODE 0 text0 dist/default/production\Carro.X.production.obj
-__ptext1 1E74 0 CODE 0 text1 dist/default/production\Carro.X.production.obj
-__ptext2 1EE4 0 CODE 0 text2 dist/default/production\Carro.X.production.obj
-__ptext3 1AF2 0 CODE 0 text3 dist/default/production\Carro.X.production.obj
-__ptext4 20C4 0 CODE 0 text4 dist/default/production\Carro.X.production.obj
-__ptext5 202C 0 CODE 0 text5 dist/default/production\Carro.X.production.obj
-__ptext6 1FA0 0 CODE 0 text6 dist/default/production\Carro.X.production.obj
-__ptext7 210C 0 CODE 0 text7 dist/default/production\Carro.X.production.obj
-__ptext8 212E 0 CODE 0 text8 dist/default/production\Carro.X.production.obj
+__ptext1 1E76 0 CODE 0 text1 dist/default/production\Carro.X.production.obj
+__ptext2 1EE6 0 CODE 0 text2 dist/default/production\Carro.X.production.obj
+__ptext3 1AF4 0 CODE 0 text3 dist/default/production\Carro.X.production.obj
+__ptext4 20D4 0 CODE 0 text4 dist/default/production\Carro.X.production.obj
+__ptext5 203C 0 CODE 0 text5 dist/default/production\Carro.X.production.obj
+__ptext6 1FA2 0 CODE 0 text6 dist/default/production\Carro.X.production.obj
+__ptext7 211C 0 CODE 0 text7 dist/default/production\Carro.X.production.obj
+__ptext8 213E 0 CODE 0 text8 dist/default/production\Carro.X.production.obj
 __ptext9 83C 0 CODE 0 text9 dist/default/production\Carro.X.production.obj
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\Carro.X.production.obj
 __Ltext10 0 0 ABS 0 text10 dist/default/production\Carro.X.production.obj
@@ -1106,14 +1110,14 @@ __Ltext27 0 0 ABS 0 text27 dist/default/production\Carro.X.production.obj
 __Ltext28 0 0 ABS 0 text28 dist/default/production\Carro.X.production.obj
 __Ltext29 0 0 ABS 0 text29 dist/default/production\Carro.X.production.obj
 __Ltext30 0 0 ABS 0 text30 dist/default/production\Carro.X.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Users\ADMINI~1\AppData\Local\Temp\s8lo.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\ADMINI~1\AppData\Local\Temp\sc20.obj
 __size_of_carroAvanzarEspecial 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\Carro.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Carro.X.production.obj
 __psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\Carro.X.production.obj
 exp@sign 65 0 BANK0 1 cstackBANK0 dist/default/production\Carro.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Carro.X.production.obj
-_coinfig_ccpcon$1547 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
+_coinfig_ccpcon$1553 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 eval_poly@d 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 eval_poly@n 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 eval_poly@x 37 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
@@ -1121,10 +1125,10 @@ carroGirar@direccion 5F 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.
 ___param_bank 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Carro.X.production.obj
-__end_of_carroAvanzarEspecial 212E 0 CODE 0 text7 dist/default/production\Carro.X.production.obj
+__end_of_carroAvanzarEspecial 213E 0 CODE 0 text7 dist/default/production\Carro.X.production.obj
 ___ftmul@exp 16 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-__end_of__initialization 215C 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
-_coinfig_ccpcon 1AF2 0 CODE 0 text3 dist/default/production\Carro.X.production.obj
+__end_of__initialization 216C 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
+_coinfig_ccpcon 1AF4 0 CODE 0 text3 dist/default/production\Carro.X.production.obj
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\Carro.X.production.obj
 frexp@value 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ?_floor 50 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
@@ -1137,13 +1141,13 @@ __CFG_FOSC$HSPLL_HS 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ___ftdiv@cntr 25 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 ___ftdiv@sign 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-__end_of_main 1314 0 CODE 0 text0 dist/default/production\Carro.X.production.obj
+__end_of_main 1316 0 CODE 0 text0 dist/default/production\Carro.X.production.obj
 _CCP2CONbits FBA 0 ABS 0 - dist/default/production\Carro.X.production.obj
 log@exponent 46 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
-__end_of_floor 195A 0 CODE 0 text15 dist/default/production\Carro.X.production.obj
-__end_of_frexp 1CE8 0 CODE 0 text16 dist/default/production\Carro.X.production.obj
+__end_of_floor 195C 0 CODE 0 text15 dist/default/production\Carro.X.production.obj
+__end_of_frexp 1CEA 0 CODE 0 text16 dist/default/production\Carro.X.production.obj
 _PORTA F80 0 ABS 0 - dist/default/production\Carro.X.production.obj
-__end_of_ldexp 1AF2 0 CODE 0 text14 dist/default/production\Carro.X.production.obj
+__end_of_ldexp 1AF4 0 CODE 0 text14 dist/default/production\Carro.X.production.obj
 _TMR0L FD6 0 ABS 0 - dist/default/production\Carro.X.production.obj
 _TRISD F95 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __HRAM 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
@@ -1155,9 +1159,9 @@ __Lbss 0 0 RAM 1 bss dist/default/production\Carro.X.production.obj
 __Lram 0 0 ABS 0 ram dist/default/production\Carro.X.production.obj
 __Lsfr 0 0 ABS 0 sfr dist/default/production\Carro.X.production.obj
 _errno ED 0 BANK0 1 bssBANK0 dist/default/production\Carro.X.production.obj
-_floor 187C 0 CODE 0 text15 dist/default/production\Carro.X.production.obj
-_frexp 1C58 0 CODE 0 text16 dist/default/production\Carro.X.production.obj
-_ldexp 1A2C 0 CODE 0 text14 dist/default/production\Carro.X.production.obj
+_floor 187E 0 CODE 0 text15 dist/default/production\Carro.X.production.obj
+_frexp 1C5A 0 CODE 0 text16 dist/default/production\Carro.X.production.obj
+_ldexp 1A2E 0 CODE 0 text14 dist/default/production\Carro.X.production.obj
 ldexp@newexp 46 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
 __size_of_carroGirarEspecial 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 ___fttol@sign1 40 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.X.production.obj
@@ -1165,9 +1169,9 @@ exp@coeff 801 0 SMALLCONST 0 smallconst dist/default/production\Carro.X.producti
 __size_of_exp 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __size_of_log 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
 __size_of_pow 0 0 ABS 0 - dist/default/production\Carro.X.production.obj
-__end_of_configBoard 1F44 0 CODE 0 text2 dist/default/production\Carro.X.production.obj
-__initialization 2150 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
-__end_of_coinfig_ccpcon 1BAA 0 CODE 0 text3 dist/default/production\Carro.X.production.obj
+__end_of_configBoard 1F46 0 CODE 0 text2 dist/default/production\Carro.X.production.obj
+__initialization 2160 0 CODE 0 cinit dist/default/production\Carro.X.production.obj
+__end_of_coinfig_ccpcon 1BAC 0 CODE 0 text3 dist/default/production\Carro.X.production.obj
 __pbssBANK0 AE 0 BANK0 1 bssBANK0 dist/default/production\Carro.X.production.obj
 __end_of_config_ccp1 DE0 0 CODE 0 text10 dist/default/production\Carro.X.production.obj
 __end_of_config_ccp2 B0E 0 CODE 0 text9 dist/default/production\Carro.X.production.obj
@@ -1206,7 +1210,7 @@ ___ftmul@f3_as_product 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Carro.
 # All other numeric quantities are in decimal.
 %SEGMENTS
 idloc 0 200000 200000 8 1
-text9 0 83C 83C 192A 1
+text9 0 83C 83C 193A 1
 cstackCOMRAM 1 1 1 5F 1
 cstackBANK0 1 60 60 92 1
 reset_vec 0 0 0 4 1
