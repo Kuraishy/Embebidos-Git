@@ -16,6 +16,8 @@
                    projectFiles="true">
       <itemPath>configstandard.c</itemPath>
       <itemPath>main_014_Practice_CCP Comparacion_ADC.c</itemPath>
+      <itemPath>newtextfile.txt</itemPath>
+      <itemPath>newtextfile1.txt</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -135,6 +137,7 @@
         <property key="ToolFirmwareFilePath"
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>

@@ -45,86 +45,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
 "6790
 [v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
-"8586
-[s S355 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S355 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"8596
-[s S356 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S356 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"8606
-[s S357 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S357 . . GIEL GIEH ]
-"8585
-[u S354 `S355 1 `S356 1 `S357 1 ]
-[n S354 . . . . ]
-"8612
-[v _INTCONbits `VS354 ~T0 @X0 0 e@4082 ]
-"8509
-[s S351 :7 `uc 1 :1 `uc 1 ]
-[n S351 . . NOT_RBPU ]
-"8513
-[s S352 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S352 . RBIP . TMR0IP . INTEDG2 INTEDG1 INTEDG0 nRBPU ]
-"8523
-[s S353 :2 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
-[n S353 . . T0IP . RBPU ]
-"8508
-[u S350 `S351 1 `S352 1 `S353 1 ]
-[n S350 . . . . ]
-"8530
-[v _INTCON2bits `VS350 ~T0 @X0 0 e@4081 ]
-"8417
-[s S348 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S348 . INT1IF INT2IF . INT1IE INT2IE . INT1IP INT2IP ]
-"8427
-[s S349 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S349 . INT1F INT2F . INT1E INT2E . INT1P INT2P ]
-"8416
-[u S347 `S348 1 `S349 1 ]
-[n S347 . . . ]
-"8438
-[v _INTCON3bits `VS347 ~T0 @X0 0 e@4080 ]
-"4388
-[s S170 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S170 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE SPPIE ]
-"4398
-[s S171 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S171 . . TX1IE RC1IE . PSPIE ]
-"4387
-[u S169 `S170 1 `S171 1 ]
-[n S169 . . . ]
-"4406
-[v _PIE1bits `VS169 ~T0 @X0 0 e@3997 ]
-"4472
-[s S173 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S173 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF SPPIF ]
-"4482
-[s S174 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S174 . . TX1IF RC1IF . PSPIF ]
-"4471
-[u S172 `S173 1 `S174 1 ]
-[n S172 . . . ]
-"4490
-[v _PIR1bits `VS172 ~T0 @X0 0 e@3998 ]
-"7419
-[s S312 :2 `uc 1 :1 `uc 1 ]
-[n S312 . . NOT_T1SYNC ]
-"7423
-[s S313 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S313 . TMR1ON TMR1CS nT1SYNC T1OSCEN T1CKPS T1RUN RD16 ]
-"7432
-[s S314 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S314 . . T1SYNC . T1CKPS0 T1CKPS1 ]
-"7439
-[s S315 :3 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
-[n S315 . . SOSCEN . T1RD16 ]
-"7418
-[u S311 `S312 1 `S313 1 `S314 1 `S315 1 ]
-[n S311 . . . . . ]
-"7446
-[v _T1CONbits `VS311 ~T0 @X0 0 e@4045 ]
-"7516
-[v _TMR1 `Vus ~T0 @X0 0 e@4046 ]
 "6336
 [s S255 :4 `uc 1 :2 `uc 1 :2 `uc 1 ]
 [n S255 . CCP1M DC1B P1M ]
@@ -138,17 +58,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CCP1CONbits `VS254 ~T0 @X0 0 e@4029 ]
 "6487
 [v _CCPR1 `Vus ~T0 @X0 0 e@4030 ]
-"8073
-[s S342 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S342 . T0PS PSA T0SE T0CS T08BIT TMR0ON ]
-"8081
-[s S343 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S343 . T0PS0 T0PS1 T0PS2 ]
-"8072
-[u S341 `S342 1 `S343 1 ]
-[n S341 . . . ]
-"8087
-[v _T0CONbits `VS341 ~T0 @X0 0 e@4053 ]
 [; ;pic18F4550.h: 50: extern volatile unsigned char SPPDATA @ 0xF62;
 "52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18F4550.h
 [; ;pic18F4550.h: 52: asm("SPPDATA equ 0F62h");
@@ -3699,88 +3608,19 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;configstandard.c: 37: ADRESL = 0;
 "37
 [e = _ADRESL -> -> 0 `i `uc ]
-[; ;configstandard.c: 48: INTCONbits.GIE = 0;
-"48
-[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
-[; ;configstandard.c: 49: INTCONbits.PEIE = 0;
-"49
-[e = . . _INTCONbits 1 6 -> -> 0 `i `uc ]
-[; ;configstandard.c: 50: INTCONbits.INT0IE=0;
-"50
-[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
-[; ;configstandard.c: 51: INTCONbits.INT0IF=0;
-"51
-[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
-[; ;configstandard.c: 52: INTCON2bits.INTEDG0=0;
-"52
-[e = . . _INTCON2bits 1 6 -> -> 0 `i `uc ]
-[; ;configstandard.c: 53: INTCON2bits.INTEDG1=0;
-"53
-[e = . . _INTCON2bits 1 5 -> -> 0 `i `uc ]
-[; ;configstandard.c: 54: INTCON3bits.INT1E=0;
+[; ;configstandard.c: 54: CCP1CONbits.CCP1M = 0b1011;
 "54
-[e = . . _INTCON3bits 1 3 -> -> 0 `i `uc ]
-[; ;configstandard.c: 55: INTCON3bits.INT1F=0;
-"55
-[e = . . _INTCON3bits 1 0 -> -> 0 `i `uc ]
-[; ;configstandard.c: 57: PIE1bits.CCP1IE = 0;
-"57
-[e = . . _PIE1bits 0 2 -> -> 0 `i `uc ]
-[; ;configstandard.c: 58: PIR1bits.CCP1IF = 0;
-"58
-[e = . . _PIR1bits 0 2 -> -> 0 `i `uc ]
-[; ;configstandard.c: 65: T1CONbits.TMR1CS = 0;
-"65
-[e = . . _T1CONbits 1 1 -> -> 0 `i `uc ]
-[; ;configstandard.c: 66: T1CONbits.RD16 = 1;
-"66
-[e = . . _T1CONbits 1 6 -> -> 1 `i `uc ]
-[; ;configstandard.c: 67: T1CONbits.T1CKPS = 0b00;
-"67
-[e = . . _T1CONbits 1 4 -> -> 0 `i `uc ]
-[; ;configstandard.c: 68: T1CONbits.TMR1ON = 0;
-"68
-[e = . . _T1CONbits 1 0 -> -> 0 `i `uc ]
-[; ;configstandard.c: 69: TMR1 = 0;
-"69
-[e = _TMR1 -> -> 0 `i `us ]
-[; ;configstandard.c: 73: CCP1CONbits.CCP1M = 0b1011;
-"73
 [e = . . _CCP1CONbits 0 0 -> -> 11 `i `uc ]
-[; ;configstandard.c: 74: CCPR1 = 2400;
-"74
+[; ;configstandard.c: 55: CCPR1 = 2400;
+"55
 [e = _CCPR1 -> -> 2400 `i `us ]
-[; ;configstandard.c: 78: ADCON2bits.ADCS=110;
-"78
+[; ;configstandard.c: 59: ADCON2bits.ADCS=110;
+"59
 [e = . . _ADCON2bits 0 0 -> -> 110 `i `uc ]
-[; ;configstandard.c: 79: ADCON2bits.ACQT=010;
-"79
+[; ;configstandard.c: 60: ADCON2bits.ACQT=010;
+"60
 [e = . . _ADCON2bits 0 1 -> -> 8 `i `uc ]
-[; ;configstandard.c: 86: T0CONbits.TMR0ON = 0;
-"86
-[e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
-[; ;configstandard.c: 87: T0CONbits.T08BIT = 1;
-"87
-[e = . . _T0CONbits 0 4 -> -> 1 `i `uc ]
-[; ;configstandard.c: 88: T0CONbits.T0CS = 0;
-"88
-[e = . . _T0CONbits 0 3 -> -> 0 `i `uc ]
-[; ;configstandard.c: 89: T0CONbits.T0SE = 1;
-"89
-[e = . . _T0CONbits 0 2 -> -> 1 `i `uc ]
-[; ;configstandard.c: 90: T0CONbits.PSA = 0;
-"90
-[e = . . _T0CONbits 0 1 -> -> 0 `i `uc ]
-[; ;configstandard.c: 93: T0CONbits.T0PS2 = 1;
-"93
-[e = . . _T0CONbits 1 2 -> -> 1 `i `uc ]
-[; ;configstandard.c: 94: T0CONbits.T0PS1 = 1;
-"94
-[e = . . _T0CONbits 1 1 -> -> 1 `i `uc ]
-[; ;configstandard.c: 95: T0CONbits.T0PS0 = 1;
-"95
-[e = . . _T0CONbits 1 0 -> -> 1 `i `uc ]
-[; ;configstandard.c: 98: }
-"98
+[; ;configstandard.c: 67: }
+"67
 [e :UE 362 ]
 }

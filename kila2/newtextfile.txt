@@ -86,9 +86,9 @@ unsigned int  adc1;
 #define analogIn PORTAbits.RA0;
 #define mVperAmp 185
 
-        unsigned char buffer1[20]; //Variable String(Arreglos de char) que permitira imprimir datos
+      unsigned char buffer1[20]; //Variable String(Arreglos de char) que permitira imprimir datos
         unsigned char buffer2[20];
-        unsigned char buffer3[20];
+     
  /********************************* Funcion Interrupcion*********************************/
  
 void interrupt comparar()
@@ -116,13 +116,13 @@ void interrupt comparar()
 /*********************************Funcion Principal*********************************/
 void main(void)
 {
-  configstandard();//Funcion con las configuraciones basicas
+    configstandard();//Funcion con las configuraciones basicas
     
+//    TRISCbits.RC2 = 0; //Se configura como  salida para el CCP1
     TRISAbits.RA0 = 1;//Definimos como entrada para el ADC
-
-    TRISBbits.RB0=1;//interrupcion corriente
-    TRISBbits.RB1=1;//interrupcion voltaje
-    
+  //  TRISAbits.RA1 = 0;
+   
+  //  T1CONbits.TMR1ON = 1;// Se enciende el timer1
     
     unsigned char buffer1[16]; //Variable String(Arreglos de char) que permitira imprimir datos
     
@@ -134,25 +134,14 @@ void main(void)
     
      ADCON2bits.ADCS=110;
     ADCON2bits.ACQT=010;
+    
     float sumIns=0;
     float Irms=0;
      unsigned int numCiclosMuestro=0;
      float PotenciaReal=0;
-     float FactorPotencia=0;
-     double factorPotenciaNum=0;
-         unsigned char calculoFP=0;
-        unsigned int numTicks=0;
-        unsigned long long delay=0;
-        unsigned char loop=0;
-        float FPprom[51];
-        float fppromtotal=0;
-        float fppromtotal2=0;
-     
-     
     while(1)//Bucle que evita que el programa termine
     {
-        
-  /******************************************************/
+  
         while(numCiclosMuestro<200){
         ADCON0bits.GO_DONE = 1;
         adc1 = (ADRESH<<8)+ADRESL;
@@ -173,52 +162,14 @@ void main(void)
         //      }
         }
         
-        Irms=sqrt(sumIns/201)/20;
+        Irms=sqrt(sumIns/201)/2;
         sprintf(buffer2,"IRMS %0.2f", Irms);
         Lcd_Out2(2, 0, buffer2);       
         
        
-       // sprintf(buffer1,"PReal %0.2f", Irms*128);
-      //  Lcd_Out2(1, 0, buffer1);       
-       /*********************************************************/
-        
-        __delay_ms(500);
-         while(loop<51){
-              Lcd_Out2(1, 0, "test");     
-        if(PORTBbits.RB0==1){//corriente
-            if(PORTBbits.RB1==1){//voltaje
-                delay=0;
-            }else{
-                __delay_us(1);
-                delay++;
-            }
-        }
-        
-        
-        // FactorPotencia=(((delay/1000000)*360)/(1/60));
-        FactorPotencia=(float)((((float)delay/1000000.0)*360.0)/(1.0/60.0));
-         factorPotenciaNum=cos(FactorPotencia);
-        //sprintf(buffer1,"PReal %0.3f",factorPotenciaNum );
-       // Lcd_Out2(2, 0, buffer1);   
-        //sprintf(buffer2,"PReal %lu",delay );
-        //Lcd_Out2(1, 0, buffer2);     
-        FPprom[loop]=factorPotenciaNum;
-        loop++;
-        }
-                        if(calculoFP==0){
-        for(int i=0;i<51;i++){
-            
-             fppromtotal+=FPprom[i];
-        }
-         fppromtotal2=fppromtotal/51.0;
-        //  Lcd_Cmd(LCD_CLEAR); //Limpiammos LCD
-                sprintf(buffer1,"pF=%0.3f",fppromtotal2 );//dactor de potencia total real no fake
-        Lcd_Out2(1, 0, buffer1);     
-      //  loop++;
-        calculoFP=1;
-        }
-        calculoFP=1;
-        while(calculoFP==0);
+        sprintf(buffer1,"PReal %0.2f", Irms*128);
+        Lcd_Out2(1, 0, buffer1);       
+       
     }
     return;
 }
