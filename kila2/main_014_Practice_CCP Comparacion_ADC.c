@@ -161,8 +161,8 @@ void main(void)
         Voltage=(float)(adc1*5.0/1024.0);
         Amps=((Voltage-2.5)/0.185);
      //sprintf(buffer1,"Voltage %0.2f", Voltage);
-        sprintf(buffer1,"Voltage %3d", numCiclosMuestro);
-        sprintf(buffer2,"amps %0.2f", Amps);
+        sprintf(buffer1,"cargando %3d", numCiclosMuestro);
+        sprintf(buffer2,"cargando %0.2f", Amps);
         Lcd_Out2(1, 0, buffer1); //(Linea horizontal, posicion vertical, string)
         Lcd_Out2(2, 0, buffer2);       
        
@@ -174,17 +174,17 @@ void main(void)
         }
         
         Irms=sqrt(sumIns/201)/20;
-        sprintf(buffer2,"IRMS %0.2f", Irms);
-        Lcd_Out2(2, 0, buffer2);       
-        
-       
-       // sprintf(buffer1,"PReal %0.2f", Irms*128);
-      //  Lcd_Out2(1, 0, buffer1);       
+      //  sprintf(buffer2,"IRMS %0.2f", Irms);
+       // Lcd_Out2(2, 0, buffer2);       
+       // Lcd_Cmd(LCD_CLEAR); //Limpiammos LCD
+       PotenciaReal=Irms*128;
+        sprintf(buffer1,"%0.2f W", PotenciaReal);
+        Lcd_Out2(1, 0, buffer1);       
        /*********************************************************/
         
         __delay_ms(500);
          while(loop<51){
-              Lcd_Out2(1, 0, "test");     
+              Lcd_Out2(1, 8, "cargandp");     
         if(PORTBbits.RB0==1){//corriente
             if(PORTBbits.RB1==1){//voltaje
                 delay=0;
@@ -212,13 +212,27 @@ void main(void)
         }
          fppromtotal2=fppromtotal/51.0;
         //  Lcd_Cmd(LCD_CLEAR); //Limpiammos LCD
-                sprintf(buffer1,"pF=%0.3f",fppromtotal2 );//dactor de potencia total real no fake
-        Lcd_Out2(1, 0, buffer1);     
+                sprintf(buffer2,"pF=%0.3f",fppromtotal2 );//dactor de potencia total real no fake
+        Lcd_Out2(1, 8, buffer2);     
       //  loop++;
         calculoFP=1;
         }
         calculoFP=1;
+         sprintf(buffer2,"pF=%0.3f",fppromtotal2 );//dactor de potencia total real no fake
+         Lcd_Out2(1, 8, buffer2);  
         while(calculoFP==0);
+        /****************despejes**********************/
+          /*
+         * PotenciaReal2=potencia real
+         * fppromtotal2=power factor
+         */
+        //__wait_ms(500);
+        float potenciaAparente=0;
+        potenciaAparente=PotenciaReal/fppromtotal2;
+        sprintf(buffer3,"%0.3f VA",potenciaAparente );//dactor de potencia total real no fake
+        Lcd_Out2(2, 0, buffer3);     
+        __delay_ms(1000);
+Lcd_Cmd(LCD_CLEAR); //Limpiammos LCD
     }
     return;
 }

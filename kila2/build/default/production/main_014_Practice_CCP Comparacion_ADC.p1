@@ -4513,10 +4513,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main_014_Practice_CCP Comparacion_ADC.c: 162: Amps=((Voltage-2.5)/0.185);
 "162
 [e = _Amps -> / - -> _Voltage `d .2.5 .0.185 `f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 164: sprintf(buffer1,"Voltage %3d", numCiclosMuestro);
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 164: sprintf(buffer1,"cargando %3d", numCiclosMuestro);
 "164
 [e ( _sprintf (1 , (. , &U _buffer1 :s 1C _numCiclosMuestro ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 165: sprintf(buffer2,"amps %0.2f", Amps);
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 165: sprintf(buffer2,"cargando %0.2f", Amps);
 "165
 [e ( _sprintf (1 , (. , &U _buffer2 :s 2C -> _Amps `d ]
 [; ;main_014_Practice_CCP Comparacion_ADC.c: 166: Lcd_Out2(1, 0, buffer1);
@@ -4544,12 +4544,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main_014_Practice_CCP Comparacion_ADC.c: 176: Irms=sqrt(sumIns/201)/20;
 "176
 [e = _Irms -> / ( _sqrt (1 -> / _sumIns -> -> 201 `i `f `d -> -> 20 `i `d `f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 177: sprintf(buffer2,"IRMS %0.2f", Irms);
-"177
-[e ( _sprintf (1 , (. , &U _buffer2 :s 3C -> _Irms `d ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 178: Lcd_Out2(2, 0, buffer2);
-"178
-[e ( _Lcd_Out2 (3 , , -> -> 2 `i `uc -> -> 0 `i `uc &U _buffer2 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 180: PotenciaReal=Irms*128;
+"180
+[e = _PotenciaReal * _Irms -> -> 128 `i `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 181: sprintf(buffer1,"%0.2f W", PotenciaReal);
+"181
+[e ( _sprintf (1 , (. , &U _buffer1 :s 3C -> _PotenciaReal `d ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 182: Lcd_Out2(1, 0, buffer1);
+"182
+[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 0 `i `uc &U _buffer1 ]
 [; ;main_014_Practice_CCP Comparacion_ADC.c: 185: _delay((unsigned long)((500)*(48000000/4000.0)));
 "185
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
@@ -4558,9 +4561,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $U 404  ]
 [e :U 405 ]
 {
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 187: Lcd_Out2(1, 0, "test");
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 187: Lcd_Out2(1, 8, "cargandp");
 "187
-[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 0 `i `uc -> :s 4C `*uc ]
+[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 8 `i `uc -> :s 4C `*uc ]
 [; ;main_014_Practice_CCP Comparacion_ADC.c: 188: if(PORTBbits.RB0==1){
 "188
 [e $ ! == -> . . _PORTBbits 0 0 `i -> 1 `i 407  ]
@@ -4639,12 +4642,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main_014_Practice_CCP Comparacion_ADC.c: 213: fppromtotal2=fppromtotal/51.0;
 "213
 [e = _fppromtotal2 -> / -> _fppromtotal `d .51.0 `f ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 215: sprintf(buffer1,"pF=%0.3f",fppromtotal2 );
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 215: sprintf(buffer2,"pF=%0.3f",fppromtotal2 );
 "215
-[e ( _sprintf (1 , (. , &U _buffer1 :s 5C -> _fppromtotal2 `d ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 216: Lcd_Out2(1, 0, buffer1);
+[e ( _sprintf (1 , (. , &U _buffer2 :s 5C -> _fppromtotal2 `d ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 216: Lcd_Out2(1, 8, buffer2);
 "216
-[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 0 `i `uc &U _buffer1 ]
+[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 8 `i `uc &U _buffer2 ]
 [; ;main_014_Practice_CCP Comparacion_ADC.c: 218: calculoFP=1;
 "218
 [e = _calculoFP -> -> 1 `i `uc ]
@@ -4655,30 +4658,57 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main_014_Practice_CCP Comparacion_ADC.c: 220: calculoFP=1;
 "220
 [e = _calculoFP -> -> 1 `i `uc ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 221: while(calculoFP==0);
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 221: sprintf(buffer2,"pF=%0.3f",fppromtotal2 );
 "221
+[e ( _sprintf (1 , (. , &U _buffer2 :s 6C -> _fppromtotal2 `d ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 222: Lcd_Out2(1, 8, buffer2);
+"222
+[e ( _Lcd_Out2 (3 , , -> -> 1 `i `uc -> -> 8 `i `uc &U _buffer2 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 223: while(calculoFP==0);
+"223
 [e $U 414  ]
 [e :U 415 ]
 [e :U 414 ]
 [e $ == -> _calculoFP `i -> 0 `i 415  ]
 [e :U 416 ]
-"222
+"230
+[v _potenciaAparente `f ~T0 @X0 1 a ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 230: float potenciaAparente=0;
+[e = _potenciaAparente -> -> 0 `i `f ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 231: potenciaAparente=PotenciaReal/fppromtotal2;
+"231
+[e = _potenciaAparente / _PotenciaReal _fppromtotal2 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 232: sprintf(buffer3,"%0.3f VA",potenciaAparente );
+"232
+[e ( _sprintf (1 , (. , &U _buffer3 :s 7C -> _potenciaAparente `d ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 233: Lcd_Out2(2, 0, buffer3);
+"233
+[e ( _Lcd_Out2 (3 , , -> -> 2 `i `uc -> -> 0 `i `uc &U _buffer3 ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 234: _delay((unsigned long)((1000)*(48000000/4000.0)));
+"234
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 235: Lcd_Cmd(1);
+"235
+[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
+"236
 }
 [e :U 398 ]
 "152
 [e $U 399  ]
 [e :U 400 ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 222: }
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 223: return;
-"223
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 236: }
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 237: return;
+"237
 [e $UE 397  ]
-[; ;main_014_Practice_CCP Comparacion_ADC.c: 224: }
-"224
+[; ;main_014_Practice_CCP Comparacion_ADC.c: 238: }
+"238
 [e :UE 397 ]
 }
 [p f _sprintf 8495236 ]
-[a 4C 116 101 115 116 0 ]
+[a 4C 99 97 114 103 97 110 100 112 0 ]
 [a 5C 112 70 61 37 48 46 51 102 0 ]
-[a 2C 97 109 112 115 32 37 48 46 50 102 0 ]
-[a 3C 73 82 77 83 32 37 48 46 50 102 0 ]
-[a 1C 86 111 108 116 97 103 101 32 37 51 100 0 ]
+[a 6C 112 70 61 37 48 46 51 102 0 ]
+[a 2C 99 97 114 103 97 110 100 111 32 37 48 46 50 102 0 ]
+[a 1C 99 97 114 103 97 110 100 111 32 37 51 100 0 ]
+[a 3C 37 48 46 50 102 32 87 0 ]
+[a 7C 37 48 46 51 102 32 86 65 0 ]

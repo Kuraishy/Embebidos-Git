@@ -5259,8 +5259,8 @@ float Amps=0;
 Voltage=(float)(adc1*5.0/1024.0);
 Amps=((Voltage-2.5)/0.185);
 
-sprintf(buffer1,"Voltage %3d", numCiclosMuestro);
-sprintf(buffer2,"amps %0.2f", Amps);
+sprintf(buffer1,"cargando %3d", numCiclosMuestro);
+sprintf(buffer2,"cargando %0.2f", Amps);
 Lcd_Out2(1, 0, buffer1);
 Lcd_Out2(2, 0, buffer2);
 
@@ -5272,13 +5272,17 @@ numCiclosMuestro+=1;
 }
 
 Irms=sqrt(sumIns/201)/20;
-sprintf(buffer2,"IRMS %0.2f", Irms);
-Lcd_Out2(2, 0, buffer2);
 
-# 185
+
+
+PotenciaReal=Irms*128;
+sprintf(buffer1,"%0.2f W", PotenciaReal);
+Lcd_Out2(1, 0, buffer1);
+
+
 _delay((unsigned long)((500)*(48000000/4000.0)));
 while(loop<51){
-Lcd_Out2(1, 0, "test");
+Lcd_Out2(1, 8, "cargandp");
 if(PORTBbits.RB0==1){
 if(PORTBbits.RB1==1){
 delay=0;
@@ -5306,13 +5310,23 @@ fppromtotal+=FPprom[i];
 }
 fppromtotal2=fppromtotal/51.0;
 
-sprintf(buffer1,"pF=%0.3f",fppromtotal2 );
-Lcd_Out2(1, 0, buffer1);
+sprintf(buffer2,"pF=%0.3f",fppromtotal2 );
+Lcd_Out2(1, 8, buffer2);
 
 calculoFP=1;
 }
 calculoFP=1;
+sprintf(buffer2,"pF=%0.3f",fppromtotal2 );
+Lcd_Out2(1, 8, buffer2);
 while(calculoFP==0);
+
+# 230
+float potenciaAparente=0;
+potenciaAparente=PotenciaReal/fppromtotal2;
+sprintf(buffer3,"%0.3f VA",potenciaAparente );
+Lcd_Out2(2, 0, buffer3);
+_delay((unsigned long)((1000)*(48000000/4000.0)));
+Lcd_Cmd(1);
 }
 return;
 }

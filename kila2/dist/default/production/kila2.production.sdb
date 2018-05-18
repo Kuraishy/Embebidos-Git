@@ -332,44 +332,48 @@
 [v _adc1 adc1 `ui  1 e 2 0 ]
 "90
 [v _buffer2 buffer2 `[20]uc  1 e 20 0 ]
+"91
+[v _buffer3 buffer3 `[20]uc  1 e 20 0 ]
 "117
 [v _main main `(v  1 e 1 0 ]
 {
 "209
-[v main@i i `i  1 a 2 209 ]
+[v main@i i `i  1 a 2 212 ]
 "160
-[v main@Amps Amps `f  1 a 3 206 ]
+[v main@Amps Amps `f  1 a 3 209 ]
 "159
-[v main@Voltage Voltage `f  1 a 3 186 ]
+[v main@Voltage Voltage `f  1 a 3 180 ]
+"230
+[v main@potenciaAparente potenciaAparente `f  1 a 3 183 ]
 "147
 [v main@FPprom FPprom `[51]f  1 a 153 0 ]
 "124
-[v main@buffer1 buffer1 `[16]uc  1 a 16 158 ]
+[v main@buffer1 buffer1 `[16]uc  1 a 16 155 ]
 "145
-[v main@delay delay `ul  1 a 4 189 ]
+[v main@delay delay `ul  1 a 4 186 ]
+"149
+[v main@fppromtotal2 fppromtotal2 `f  1 a 3 206 ]
 "148
 [v main@fppromtotal fppromtotal `f  1 a 3 196 ]
-"137
-[v main@sumIns sumIns `f  1 a 3 193 ]
-"149
-[v main@fppromtotal2 fppromtotal2 `f  1 a 3 183 ]
-"142
-[v main@factorPotenciaNum factorPotenciaNum `d  1 a 3 180 ]
-"141
-[v main@FactorPotencia FactorPotencia `f  1 a 3 177 ]
-"138
-[v main@Irms Irms `f  1 a 3 174 ]
 "140
-[v main@PotenciaReal PotenciaReal `f  1 a 3 153 ]
+[v main@PotenciaReal PotenciaReal `f  1 a 3 193 ]
+"137
+[v main@sumIns sumIns `f  1 a 3 190 ]
+"142
+[v main@factorPotenciaNum factorPotenciaNum `d  1 a 3 177 ]
+"141
+[v main@FactorPotencia FactorPotencia `f  1 a 3 174 ]
+"138
+[v main@Irms Irms `f  1 a 3 171 ]
 "139
 [v main@numCiclosMuestro numCiclosMuestro `ui  1 a 2 202 ]
 "144
-[v main@numTicks numTicks `ui  1 a 2 156 ]
+[v main@numTicks numTicks `ui  1 a 2 153 ]
 "143
 [v main@calculoFP calculoFP `uc  1 a 1 205 ]
 "146
 [v main@loop loop `uc  1 a 1 204 ]
-"224
+"238
 } 0
 "9 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcsqrt.c
 [v _sqrt sqrt `(d  1 e 3 0 ]
@@ -390,9 +394,9 @@
 {
 "528
 [v sprintf@val val `ul  1 a 4 103 ]
-[u S769 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
+[u S772 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
 "526
-[v sprintf@tmpval tmpval `S769  1 a 4 99 ]
+[v sprintf@tmpval tmpval `S772  1 a 4 99 ]
 "516
 [v sprintf@fval fval `d  1 a 3 113 ]
 "504
