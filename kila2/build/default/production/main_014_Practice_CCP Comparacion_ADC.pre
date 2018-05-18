@@ -5090,10 +5090,38 @@ PORTDbits.RD3 = 1; _delay((unsigned long)((5)*(48000000/4000000.0))); PORTDbits.
 _delay((unsigned long)((5500)*(48000000/4000000.0)));
 }
 
+# 30 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\math.h"
+extern double fabs(double);
+extern double floor(double);
+extern double ceil(double);
+extern double modf(double, double *);
+extern double sqrt(double);
+extern double atof(const char *);
+extern double sin(double) ;
+extern double cos(double) ;
+extern double tan(double) ;
+extern double asin(double) ;
+extern double acos(double) ;
+extern double atan(double);
+extern double atan2(double, double) ;
+extern double log(double);
+extern double log10(double);
+extern double pow(double, double) ;
+extern double exp(double) ;
+extern double sinh(double) ;
+extern double cosh(double) ;
+extern double tanh(double);
+extern double eval_poly(double, const double *, int);
+extern double frexp(double, int *);
+extern double ldexp(double, int);
+extern double fmod(double, double);
+extern double trunc(double);
+extern double round(double);
 
-# 24 "main_014_Practice_CCP Comparacion_ADC.c"
+
+# 25 "main_014_Practice_CCP Comparacion_ADC.c"
 #pragma config PLLDIV = 2
-#pragma config CPUDIV = OSC4_PLL6
+#pragma config CPUDIV = OSC1_PLL2
 
 
 #pragma config FOSC = HSPLL_HS
@@ -5200,29 +5228,45 @@ unsigned char buffer1[16];
 Lcd_Init();
 Lcd_Cmd(1);
 Lcd_Cmd(12);
-_delay((unsigned long)((100)*(16000000/4000.0)));
+_delay((unsigned long)((100)*(48000000/4000.0)));
 
 ADCON2bits.ADCS=110;
 ADCON2bits.ACQT=010;
+
+float sumIns=0;
+float Irms=0;
+unsigned int numCiclosMuestro=0;
+float PotenciaReal=0;
 while(1)
 {
 
+while(numCiclosMuestro<200){
 ADCON0bits.GO_DONE = 1;
-
 adc1 = (ADRESH<<8)+ADRESL;
-
-# 147
 float Voltage=0;
 float Amps=0;
-
 Voltage=(float)(adc1*5.0/1024.0);
 Amps=((Voltage-2.5)/0.185);
-sprintf(buffer1,"Voltage %0.2f", Voltage);
+
+sprintf(buffer1,"Voltage %3d", numCiclosMuestro);
 sprintf(buffer2,"amps %0.2f", Amps);
 Lcd_Out2(1, 0, buffer1);
 Lcd_Out2(2, 0, buffer2);
 
+_delay((unsigned long)((50)*(48000000/4000000.0)));
 
+sumIns+=Amps*Amps;
+numCiclosMuestro+=1;
+
+}
+
+Irms=sqrt(sumIns/201)/2;
+sprintf(buffer2,"IRMS %0.2f", Irms);
+Lcd_Out2(2, 0, buffer2);
+
+
+sprintf(buffer1,"PReal %0.2f", Irms*128);
+Lcd_Out2(1, 0, buffer1);
 
 }
 return;

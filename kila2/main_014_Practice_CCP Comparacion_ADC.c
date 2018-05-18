@@ -16,13 +16,14 @@
 #include <string.h>
 #include "config.h"
 #include "Library_LCD_2.h"
-#define _XTAL_FREQ 16000000 //Se define la frecuencia con la que trebaja nuestro oscilador para que tenga un areferencia con el comando __delay_ms
+#include<math.h>
+#define _XTAL_FREQ 48000000 //Se define la frecuencia con la que trebaja nuestro oscilador para que tenga un areferencia con el comando __delay_ms
 
 
 /*********************************Empezamos con los Configuration bits**********************************/
 
 #pragma config PLLDIV = 2       // PLL Prescaler Selection bits (No prescale (4 MHz oscillator input drives PLL directly))
-#pragma config CPUDIV = OSC4_PLL6// System Clock Postscaler Selection bits ([Primary Oscillator Src: /4][96 MHz PLL Src: /6])
+#pragma config CPUDIV = OSC1_PLL2// System Clock Postscaler Selection bits ([Primary Oscillator Src: /4][96 MHz PLL Src: /6])
 
 // CONFIG1H
 #pragma config FOSC = HSPLL_HS    // Oscillator Selection bits (EC oscillator, CLKO function on RA6 (EC))
@@ -87,7 +88,7 @@ unsigned int  adc1;
 
       unsigned char buffer1[20]; //Variable String(Arreglos de char) que permitira imprimir datos
         unsigned char buffer2[20];
-
+     
  /********************************* Funcion Interrupcion*********************************/
  
 void interrupt comparar()
@@ -133,28 +134,41 @@ void main(void)
     
      ADCON2bits.ADCS=110;
     ADCON2bits.ACQT=010;
+    
+    float sumIns=0;
+    float Irms=0;
+     unsigned int numCiclosMuestro=0;
+     float PotenciaReal=0;
     while(1)//Bucle que evita que el programa termine
     {
-    //    T1CONbits.TMR1ON = 1;
+  
+        while(numCiclosMuestro<200){
         ADCON0bits.GO_DONE = 1;
-     //   sprintf(buffer1,"Voltaje: %.02f", voltaje);
         adc1 = (ADRESH<<8)+ADRESL;
-        
-     //   voltaje = adc1 * 4.72 /1024.0;
-     //   Lcd_Out(1, 0, buffer1);
-      //  __delay_ms(100);
-        
-float Voltage=0;
-float Amps=0;
-   
-    Voltage=(float)(adc1*5.0/1024.0);
-    Amps=((Voltage-2.5)/0.185);
-      sprintf(buffer1,"Voltage %0.2f", Voltage);
-     sprintf(buffer2,"amps %0.2f", Amps);
+        float Voltage=0;
+        float Amps=0;
+        Voltage=(float)(adc1*5.0/1024.0);
+        Amps=((Voltage-2.5)/0.185);
+     //sprintf(buffer1,"Voltage %0.2f", Voltage);
+        sprintf(buffer1,"Voltage %3d", numCiclosMuestro);
+        sprintf(buffer2,"amps %0.2f", Amps);
         Lcd_Out2(1, 0, buffer1); //(Linea horizontal, posicion vertical, string)
-         Lcd_Out2(2, 0, buffer2);
-     
-    
+        Lcd_Out2(2, 0, buffer2);       
+       
+         __delay_us(50);
+        // if(Amps>0.110||Amps<-0.110){//ruido de 110 mili amp
+                 sumIns+=Amps*Amps;
+                 numCiclosMuestro+=1; 
+        //      }
+        }
+        
+        Irms=sqrt(sumIns/201)/2;
+        sprintf(buffer2,"IRMS %0.2f", Irms);
+        Lcd_Out2(2, 0, buffer2);       
+        
+       
+        sprintf(buffer1,"PReal %0.2f", Irms*128);
+        Lcd_Out2(1, 0, buffer1);       
        
     }
     return;
